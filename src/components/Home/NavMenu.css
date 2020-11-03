@@ -1,0 +1,93 @@
+body {
+    background-color: #2a3a49;
+    padding: 0;
+    margin: 0;
+}
+
+.container,
+.menu {
+    height: 70px;
+    width: 80px;
+    position: absolute;
+    margin: auto;
+    top: 65%;
+    bottom: 0;
+    left: 80%;
+    right: 0;
+    cursor: pointer;
+}
+
+.menu {
+    z-index: -1;
+    transform: scale(0.9);
+}
+
+.toggle {
+    height: 0;
+    width: 40px;
+    border-bottom: 35px solid #8D1515;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position: absolute;
+    top: 0;
+}
+
+.toggle:before {
+    content: '';
+    height: 0;
+    width: 40px;
+    border-top: 35px solid #8D1515;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position: absolute;
+    top: 35px;
+    left: -20px;
+}
+
+.item {
+    height: 0;
+    width: 40px;
+    border-bottom: 35px solid #ffffff;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position: absolute;
+    top: 0;
+    transition: 1s;
+}
+
+.item:before {
+    content: '';
+    height: 0;
+    width: 40px;
+    border-top: 35px solid #ffffff;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position: absolute;
+    top: 35px;
+    left: -20px;
+}
+
+#add {
+    font-size: 50px;
+    color: white;
+    position: relative;
+    top: 10px;
+    right: 5px;
+    transition: 1s;
+}
+
+a>.material-icons {
+    color: #d2d2d2;
+    font-size: 30px;
+}
+
+a {
+    position: relative;
+    top: 20px;
+    left: 5px;
+}
+
+a>.material-icons:hover {
+    color: #8D1515;
+    transform: scale(1.5);
+}
