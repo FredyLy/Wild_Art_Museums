@@ -75,7 +75,7 @@ body {
     right: 5px;
 }
 
-a>.material-icons {
+a>.react-icons {
     color: #d2d2d2;
     font-size: 30px;
 }
@@ -85,7 +85,7 @@ a {
     top: 20px;
 }
 
-a>.material-icons:hover {
+a>.react-icons:hover {
     color: #8D1515;
     transform: scale(1.5);
 }
