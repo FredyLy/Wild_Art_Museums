@@ -5,6 +5,8 @@ import './NavMenu.css';
 import { FaHome } from 'react-icons/fa';
 import { MdContactMail } from 'react-icons/md';
 import { AiOutlineMail, AiOutlinePlus } from 'react-icons/ai';
+import { GrGallery } from 'react-icons/gr';
+import { GiGreekTemple } from 'react-icons/gi';
 
 class NavMenu extends Component {
   state = {
@@ -52,7 +54,7 @@ class NavMenu extends Component {
         <div className="menu" id="menu">
           <div className="item">
             <a href="#">
-              <i className="material-icons"><span>&#9733;</span></i>
+              <i className="material-icons"><GiGreekTemple/></i>
             </a>
           </div>
           <div className="item">
@@ -67,7 +69,7 @@ class NavMenu extends Component {
           </div>
           <div className="item">
             <a href="#">
-              <i className="material-icons">D</i>
+              <i className="material-icons"></i>
             </a>
           </div>
           <div className="item">
@@ -77,7 +79,7 @@ class NavMenu extends Component {
           </div>
           <div className="item">
             <a href="#">
-              <i className="material-icons">F</i>
+              <i className="material-icons"><GrGallery/></i>
             </a>
           </div>
         </div>
