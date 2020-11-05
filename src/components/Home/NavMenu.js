@@ -51,7 +51,7 @@ class NavMenu extends Component {
         <div className="menu" id="menu">
           <div className="item">
             <a href="#">
-              <i className="react-icons"><GiGreekTemple /></i>
+              <i className="react-icons" ><GiGreekTemple /></i>
             </a>
           </div>
           <div className="item">
