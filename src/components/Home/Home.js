@@ -11,7 +11,6 @@ class Home extends React.Component {
     const backgrounds = [
       "url('./Assets/painting-3135875_1920.jpg')",
       "url('./Assets/pexels-ann-h-1765033.jpg')",
-      "url('./Assets/pexels-anni-roenkae-2457284.jpg')",
       "url('./Assets/pexels-madison-inouye-1831234.jpg')",
       "url('./Assets/pexels-moose-photos-1037999.jpg')",
       "url('./Assets/pexels-paula-schmidt-963486.jpg')",
@@ -44,7 +43,7 @@ class Home extends React.Component {
         style={ this.state.background }
       >
         <div className="logo">
-          <img src="./Assets/logo_V4.svg" alt="Wild Art Logo"/>
+          <img src="./Assets/WildMuseum_yellow.svg" alt="Wild Art Logo"/>
         </div>
         <div className="menu">
           <NavMenu />
