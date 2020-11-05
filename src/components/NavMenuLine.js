@@ -1,13 +1,15 @@
+// NavMenuLine.JS
+
 /* eslint-disable react/no-unknown-property */
 // eslint-disable-next-line no-unused-vars
 import React, { Component } from 'react';
-import './NavMenu.css';
+import './NavMenuLine.css';
 import { FaHome, FaPalette, FaQuestion, FaUserFriends } from 'react-icons/fa';
 import { MdContactMail } from 'react-icons/md';
 import { GiGreekTemple } from 'react-icons/gi';
 import { AiOutlinePlus } from 'react-icons/ai';
 
-class NavMenu extends Component {
+class NavMenuLine extends Component {
   state = {
     open: false
   }
@@ -19,12 +21,12 @@ class NavMenu extends Component {
     var i = document.getElementById('menu').childNodes;
     if (open === false) {
       document.getElementById('menu').style.transform = 'scale(1)';
-      i[0].style.transform = 'translateY(-80px)';
-      i[1].style.transform = 'translate(70px, -40px)';
-      i[2].style.transform = 'translate(70px, 40px)';
-      i[3].style.transform = 'translateY(80px)';
-      i[4].style.transform = 'translate(-70px,40px)';
-      i[5].style.transform = 'translate(-70px,-40px)';
+      i[3].style.transform = 'translateY(-510px)';
+      i[4].style.transform = 'translateY(-425px)';
+      i[1].style.transform = 'translateY(-340px)';
+      i[0].style.transform = 'translateY(-255px)';
+      i[5].style.transform = 'translateY(-170px)';
+      i[2].style.transform = 'translateY(-85px)';
       this.setState({ open: !open });
     } else {
       document.getElementById('menu').style.transform = 'scale(0.9)';
@@ -85,4 +87,4 @@ class NavMenu extends Component {
   }
 }
 
-export default NavMenu;
+export default NavMenuLine;
