@@ -1,23 +1,17 @@
-// NavMenuLine.JS
-
-/* eslint-disable react/no-unknown-property */
-// eslint-disable-next-line no-unused-vars
 import React, { Component } from 'react';
-import './NavMenuLine.css';
 import { FaHome, FaPalette, FaQuestion, FaUserFriends } from 'react-icons/fa';
 import { MdContactMail } from 'react-icons/md';
 import { GiGreekTemple } from 'react-icons/gi';
 import { AiOutlinePlus } from 'react-icons/ai';
+
+import './NavMenuLine.css';
 
 class NavMenuLine extends Component {
   state = {
     open: false
   }
 
-  // eslint-disable-next-line no-unused-vars
   expand (open) {
-    // eslint-disable-next-line eqeqeq
-
     var i = document.getElementById('menu').childNodes;
     if (open === false) {
       document.getElementById('menu').style.transform = 'scale(1)';
