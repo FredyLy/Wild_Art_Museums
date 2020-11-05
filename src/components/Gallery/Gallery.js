@@ -1,7 +1,8 @@
 import Axios from 'axios';
 import React, { Component } from 'react';
+import NavMenuLine from '../Location/NavMenuLine';
 
-// const century21 = '37525824';
+import './Gallery.css';
 class Gallery extends Component {
   state = {
     data: null
@@ -12,7 +13,6 @@ class Gallery extends Component {
   }
 
   harvardArtMuseums = () => {
-    // const url = `https://api.harvardartmuseums.org/century/${century21}?apikey=d9e8107d-41c3-4640-8213-62480cb2ad0c&page=3`;
     const url = 'https://api.harvardartmuseums.org/object?yearmade=2000&apikey=d9e8107d-41c3-4640-8213-62480cb2ad0c&page=3&size=300';
     Axios.get(url)
       .then(res => {
@@ -26,24 +26,17 @@ class Gallery extends Component {
   }
 
   render () {
-    console.log(this.state.data);
     const { data } = this.state;
     return (
-      <div className="Gallery">
-        { this.state.data && data.map((data) =>
-          <div key={data.id}>
-            <img src={data.images[0].baseimageurl} alt={data.title}/>
-            {/* <p>{data.culture}</p>
-            <p>{data.title}</p>
-            <p>{data.dated}</p>
-            <p>{data.dimensions}</p>
-            <p>{data.classification}</p> */}
-            {/* <p>{data.worktypes}</p> */}
-            {/* <p>{data.classification}</p> */}
-            {/* <p>{data.worktypes}</p> */}
-            {/* <p>{data.copyright}</p> */}
-          </div>
-        )}
+      <div>
+        <div className="gallery">
+          { this.state.data && data.map((data) =>
+            <div className="divImg" key={data.id}>
+              <img className="galleryImg" src={data.images[0].baseimageurl} alt={data.title}/>
+            </div>
+          )}
+        </div>
+        <NavMenuLine />
       </div>
     );
   }

@@ -1,8 +1,12 @@
-.App {
-  text-align: center;
+body {
+  background-color: var(--main-color);
+  padding: 0;
+  margin: 0;
 }
 
-code {
-  background: #eee;
-  color: #d04;
+:root {
+  --main-color: #F6F6F6;
+  --second-color: #FFFFFF;
+  --pearl-grey : #C4C4C4;
+  --black: black;
 }

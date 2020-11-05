@@ -1,8 +1,8 @@
-body {
+/* body {
     background-color: #2a3a49;
     padding: 0;
     margin: 0;
-}
+} */
 
 .container,
 .menu {
@@ -18,8 +18,14 @@ body {
 }
 
 .menu {
-    z-index: -1;
     transform: scale(0.9);
+    position: fixed;
+    z-index: 0;
+}
+
+.container {
+    position: fixed;
+    z-index: 1;
 }
 
 .toggle {
