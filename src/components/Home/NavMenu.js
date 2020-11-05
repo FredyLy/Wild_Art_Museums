@@ -2,11 +2,10 @@
 // eslint-disable-next-line no-unused-vars
 import React, { Component } from 'react';
 import './NavMenu.css';
-import { FaHome } from 'react-icons/fa';
+import { FaHome, FaPalette, FaQuestion, FaUserFriends } from 'react-icons/fa';
 import { MdContactMail } from 'react-icons/md';
-import { AiOutlineMail, AiOutlinePlus } from 'react-icons/ai';
-import { GrGallery } from 'react-icons/gr';
 import { GiGreekTemple } from 'react-icons/gi';
+import { AiOutlinePlus } from 'react-icons/ai';
 
 class NavMenu extends Component {
   state = {
@@ -18,7 +17,6 @@ class NavMenu extends Component {
     // eslint-disable-next-line eqeqeq
 
     var i = document.getElementById('menu').childNodes;
-    console.log(i);
     if (open === false) {
       document.getElementById('menu').style.transform = 'scale(1)';
       i[0].style.transform = 'translateY(-80px)';
@@ -41,12 +39,11 @@ class NavMenu extends Component {
   }
 
   render () {
-    console.log(this);
     return (
       <div>
         <div className="container" onClick={() => this.expand(this.state.open)}>
           <div className="toggle" id="toggle">
-            <i className="material-icons" id="add">
+            <i className="react-icons" id="add">
               {this.state.open === true ? <AiOutlinePlus style={ { transform: 'rotate(45deg)', transition: '1s' } } /> : <AiOutlinePlus style={ { transform: ['rotate(0deg)'], transition: ['1s'] } }/>}
                 </i>
           </div>
@@ -54,36 +51,36 @@ class NavMenu extends Component {
         <div className="menu" id="menu">
           <div className="item">
             <a href="#">
-              <i className="material-icons"><GiGreekTemple/></i>
+              <i className="react-icons" ><GiGreekTemple /></i>
             </a>
           </div>
           <div className="item">
             <a href="#">
-              <i className="material-icons"><FaHome /></i>
+              <i className="react-icons"><FaUserFriends /></i>
             </a>
           </div>
           <div className="item">
             <a href="#">
-              <i className="material-icons"><MdContactMail /></i>
+              <i className="react-icons"><FaHome /></i>
             </a>
           </div>
           <div className="item">
             <a href="#">
-              <i className="material-icons"></i>
+              <i className="react-icons"><FaQuestion /></i>
             </a>
           </div>
           <div className="item">
             <a href="#">
-              <i className="material-icons"><AiOutlineMail /></i>
+              <i className="react-icons"><MdContactMail /></i>
             </a>
           </div>
           <div className="item">
             <a href="#">
-              <i className="material-icons"><GrGallery/></i>
+              <i className="react-icons"><FaPalette /></i>
             </a>
           </div>
         </div>
-      </div>
+    </div>
     );
   }
 }
