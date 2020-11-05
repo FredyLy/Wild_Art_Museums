@@ -15,12 +15,12 @@ class NavMenuLine extends Component {
     var i = document.getElementById('menu').childNodes;
     if (open === false) {
       document.getElementById('menu').style.transform = 'scale(1)';
-      i[3].style.transform = 'translateY(-510px)';
-      i[4].style.transform = 'translateY(-425px)';
-      i[1].style.transform = 'translateY(-340px)';
-      i[0].style.transform = 'translateY(-255px)';
-      i[5].style.transform = 'translateY(-170px)';
-      i[2].style.transform = 'translateY(-85px)';
+      i[3].style.transform = 'translate(10px, -510px)';
+      i[4].style.transform = 'translate(-10px, -425px)';
+      i[1].style.transform = 'translate(10px, -340px)';
+      i[0].style.transform = 'translate(-10px, -255px)';
+      i[5].style.transform = 'translate(10px, -170px)';
+      i[2].style.transform = 'translate(-10px, -85px)';
       this.setState({ open: !open });
     } else {
       document.getElementById('menu').style.transform = 'scale(0.9)';
