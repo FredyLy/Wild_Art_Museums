@@ -1,12 +1,5 @@
 body {
-  background-color: var(--main-color);
+  background-color: #2a3a49;
   padding: 0;
   margin: 0;
-}
-
-:root {
-  --main-color: #F6F6F6;
-  --second-color: #FFFFFF;
-  --pearl-grey : #C4C4C4;
-  --black: black;
 }
