@@ -8,7 +8,6 @@ class Home extends React.Component {
   }
 
   randomBackground = () => {
-    console.log('test');
     const backgrounds = [
       "url('./Assets/painting-3135875_1920.jpg')",
       "url('./Assets/pexels-ann-h-1765033.jpg')",
@@ -39,7 +38,6 @@ class Home extends React.Component {
   }
 
   render () {
-    console.log(this.state.background);
     return (
       <div
         className="home"
