@@ -1,8 +1,7 @@
-.App {
-  text-align: center;
+body {
+  background-color:#F6F6F6;
 }
 
-code {
-  background: #eee;
-  color: #d04;
+.App {
+  text-align: center;
 }
