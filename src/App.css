@@ -9,4 +9,9 @@ body {
   --second-color: #FFFFFF;
   --pearl-grey : #C4C4C4;
   --black: black;
+  background-color:#F6F6F6;
+}
+
+.App {
+  text-align: center;
 }
