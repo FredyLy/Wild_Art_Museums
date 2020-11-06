@@ -17,11 +17,18 @@ class Home extends React.Component {
       "url('./Assets/pexels-pixabay-163811.jpg')",
       "url('./Assets/pexels-prateek-katyal-2694434.jpg')",
       "url('./Assets/pexels-santiago-pagnotta-1702624.jpg')",
-      "url('./Assets/pexels-stas-knop-2916450.jpg')",
       "url('./Assets/pexels-steve-johnson-1145720.jpg')",
       "url('./Assets/pexels-steve-johnson-1484759.jpg')",
       "url('./Assets/pexels-toa-heftiba-şinca-1194420.jpg')",
-      "url('./Assets/pexels-zaksheuskaya-1568607.jpg')"
+      "url('./Assets/pexels-zaksheuskaya-1568607.jpg')",
+      "url('./Assets/pexels-free-creative-stuff-1193743.jpg')",
+      "url('./Assets/pexels-giovanni-calia-2733337.jpg')",
+      "url('./Assets/pexels-steve-johnson-1509534.jpg')",
+      "url('./Assets/pexels-suzy-hazelwood-1629236.jpg')",
+      "url('./Assets/pexels-moose-photos-1037993.jpg')",
+      "url('./Assets/pexels-scott-webb-311458.jpg')",
+      "url('./Assets/pexels-gdtography-911738.jpg')",
+      "url('./Assets/pexels-miguel-á-padriñán-1111367.jpg')"
     ];
     const random = Math.floor(Math.random() * backgrounds.length) + 0;
 
