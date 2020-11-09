@@ -1,5 +1,6 @@
+import React, { Component, Fragment } from 'react';
 import Axios from 'axios';
-import React, { Component } from 'react';
+import Loader from '../Loader/Loader';
 
 import './Gallery.css';
 class Gallery extends Component {
@@ -20,20 +21,22 @@ class Gallery extends Component {
             return item;
           }
         });
-        this.setState({ data: [...result] });
+        setTimeout(() => {
+          this.setState({ data: [...result] });
+        }, 1000);
       });
   }
 
   render () {
     const { data } = this.state;
+    const decision = (
+      data
+        ? <div className="gallery"> {data.map((data) => <Fragment key={data.title}>{data.images.map((image) => <div className="divImg" key={image.idsid}><img className="galleryImg" src={image.baseimageurl} alt={data.title}/></div>)}</Fragment>)}
+      </div>
+        : <Loader loadingMsg={'Loading...'} styling={{ textAlign: 'center', marginTop: '20%', color: 'red' }}/>
+    );
     return (
-        <div className="gallery">
-          { this.state.data && data.map((data) =>
-            <div className="divImg" key={data.id}>
-              <img className="galleryImg" src={data.images[0].baseimageurl} alt={data.title}/>
-            </div>
-          )}
-        </div>
+      decision
     );
   }
 }
