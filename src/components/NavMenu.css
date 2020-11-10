@@ -1,5 +1,5 @@
-.container,
-.menu {
+.navmenu-container,
+.navmenu-menu {
     height: 70px;
     width: 80px;
     position: absolute;
@@ -11,18 +11,18 @@
     cursor: pointer;
 }
 
-.menu {
+.navmenu-menu {
     transform: scale(0.9);
     position: fixed;
     z-index: 0;
 }
 
-.container {
+.navmenu-container {
     position: fixed;
     z-index: 1;
 }
 
-.toggle {
+.navmenu-toggle {
     height: 0;
     width: 40px;
     border-bottom: 35px solid #8D1515;
@@ -32,7 +32,7 @@
     top: 0;
 }
 
-.toggle:before {
+.navmenu-toggle:before {
     content: '';
     height: 0;
     width: 40px;
@@ -44,7 +44,7 @@
     left: -20px;
 }
 
-.item {
+.navmenu-item {
     height: 0;
     width: 40px;
     border-bottom: 35px solid #ffffff;
@@ -55,7 +55,7 @@
     transition: 1s;
 }
 
-.item:before {
+.navmenu-item:before {
     content: '';
     height: 0;
     width: 40px;
@@ -67,7 +67,7 @@
     left: -20px;
 }
 
-#add {
+#navmenu-add {
     font-size: 50px;
     color: white;
     position: relative;
@@ -75,7 +75,7 @@
     right: 5px;
 }
 
-a>.react-icons {
+a>.navmenu-react-icons {
     color: #d2d2d2;
     font-size: 30px;
 }
@@ -83,9 +83,19 @@ a>.react-icons {
 a {
     position: relative;
     top: 20px;
+    /* left: 5px; */
 }
 
-a>.react-icons:hover {
+a>.navmenu-react-icons:hover {
     color: #8D1515;
+}
+
+.navmenu-icons-hover:hover {
+    transition: 1s;
     transform: scale(1.5);
+}
+
+.navmenu-icons-hover {
+    transition: 1s;
+    transform: scale(1);
 }
