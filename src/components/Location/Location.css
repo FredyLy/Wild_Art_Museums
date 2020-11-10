@@ -55,3 +55,30 @@
     font-size: 20px;
     transition: 1s;
 } */
+
+/*
+  .location_container {
+    border-left: 2px solid var(--dark-blue);
+    border-right: 2px solid var(--dark-blue);
+    position: fixed;
+    height: 100vh;
+    width: 120px;
+    right: 1%;
+}
+
+#location_page-title {
+    font-family: American Typewriter, Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: var(--dark-blue);
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    width: 120px;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    position: relative;
+    top: 10%;
+    font-size: 20px;
+    transition: 1s;
+}
+*/

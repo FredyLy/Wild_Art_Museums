@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import NavMenuLine from './NavMenuLine';
 
 import './Location.css';
 
@@ -23,12 +22,12 @@ class Location extends Component {
     render () {
       return (
         <div className="bloc">
-          <div className='location_container' onClick={() => this.expand(this.state.open)}>
+          <div className='location_container' >
             <div id='location_page-title'>
               <h1>{pageTitle}</h1>
-              </div>
-              {/* <Filter /> */}
-              {/* <NavMenuLine open={this.state.open} expand={this.state.expand} /> */}
+            </div>
+            <div onClick={() => this.expand(this.state.open)}>
+            </div>
           </div>
         </div>
       );
@@ -36,6 +35,3 @@ class Location extends Component {
 }
 
 export default Location;
-
-// NavMenuLine.js and css :
-// TO BE DELETED
