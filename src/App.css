@@ -10,3 +10,7 @@ body {
   --pearl-grey : #C4C4C4;
   --black: black;
 }
+
+.App {
+  text-align: center;
+}

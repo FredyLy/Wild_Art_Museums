@@ -1,14 +1,12 @@
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 80%;
     margin: auto;
     padding-top: 15px;
 }
 
 .gallery img {
-    width: 50%;
+    width: 300px;
     height: auto;
     padding-bottom: 10%;
     margin-left: auto;
@@ -33,8 +31,8 @@
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
+
 @media screen and (max-width: 600px) {
     .gallery {
         width: 100%;

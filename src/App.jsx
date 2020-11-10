@@ -1,12 +1,12 @@
-import NavMenu from './components/Home/NavMenu';
 import Gallery from './components/Gallery/Gallery';
+import NavMenuLine from './components/NavMenuLine';
 import './App.css';
 
 function App () {
   return (
     <div className="App">
-      <NavMenu />
       <Gallery />
+      <NavMenuLine />
     </div>
   );
 }
