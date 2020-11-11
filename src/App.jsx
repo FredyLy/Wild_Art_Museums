@@ -1,4 +1,4 @@
-import NavMenuLine from './components/NavMenuLine';
+import NavMenuLine from './components//NavMenuLine/NavMenuLine';
 import './App.css';
 
 function App () {

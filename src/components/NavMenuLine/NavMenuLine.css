@@ -6,7 +6,7 @@
     margin: auto;
     top: 80%;
     bottom: 0;
-    left: 90%;
+    left: 89.5%;
     right: 0;
     cursor: pointer;
 }
@@ -25,7 +25,7 @@
 .navmenuline-toggle {
     height: 0;
     width: 40px;
-    border-bottom: 35px solid #8D1515;
+    border-bottom: 35px solid var(--dark-blue);
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     position: absolute;
@@ -36,7 +36,7 @@
     content: '';
     height: 0;
     width: 40px;
-    border-top: 35px solid #8D1515;
+    border-top: 35px solid var(--dark-blue);
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     position: absolute;
@@ -47,7 +47,7 @@
 .navmenuline-item {
     height: 0;
     width: 40px;
-    border-bottom: 35px solid #ffffff;
+    border-bottom: 35px solid var(--second-color);
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     position: absolute;
@@ -59,7 +59,7 @@
     content: '';
     height: 0;
     width: 40px;
-    border-top: 35px solid #ffffff;
+    border-top: 35px solid var(--second-color);
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     position: absolute;
@@ -69,24 +69,25 @@
 
 #navmenuline-add {
     font-size: 50px;
-    color: white;
+    color: var(--second-color);
     position: relative;
     top: 10px;
     right: 5px;
 }
 
 a>.navmenuline-react-icons {
-    color: #d2d2d2;
+    color: var(--dark-blue);
     font-size: 30px;
 }
 
 a {
     position: relative;
     top: 20px;
+    left: 5px;
 }
 
 a>.navmenuline-react-icons:hover {
-    color: #8D1515;
+    color: var(--dark-blue);
 }
 
 .navmenuline-icons-hover:hover {

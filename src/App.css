@@ -1,7 +1,14 @@
 body {
-  background-color:#F6F6F6;
+  background-color: var(--main-color);
+  padding: 0;
+  margin: 0;
 }
 
-.App {
-  text-align: center;
+:root {
+  --main-color: #F6F6F6;
+  --second-color: #FFFFFF;
+
+  --pearl-grey : #C4C4C4;
+  --dark-blue : #16213e;
+  --black-color: black;
 }
