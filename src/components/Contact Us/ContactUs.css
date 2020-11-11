@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    border: 0;
+}
+
+.fullpage3 {
+    width: 28%;
+    height: 100%;
+    background-color: #E5E5E5;
+}
+
+.ContactUs {
+    float: left;
+    width: 85%;
+    background-color: #E5E5E5;
+    height: 800px;
+    margin: 100px 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Location {
+    width: 15%;
+    float: right;
+}
+
+.contact-information {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    height: 90%;
+    margin: auto;
+    text-align: left;
+}
+
+.text-justify {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-;
+    margin: auto
+}
+
+.logo {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+.network-logo {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    width: 20%;
+    margin: 10px;
+}
+
+.formulaire {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 6fr;
+    text-align: left;
+    grid-gap: 10%;
+    height: 100%;
+    
+}
+
+.formulaire-content {
+    width: 60%;
+    float: right;
+    height: 90%;
+    margin: auto;
+    border-radius: 10px;
+    max-height: 100%;
+    font-size: 20px;
+}
+
+.element-9 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.element-10 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.element-11 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: #C4C4C4;
+    border-radius: 10px;
+    height: 50px;
+    font-size: 20px;
+}
+
+label {
+    font-weight: bolder;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+input {
+    background-color: #E5E5E5;
+    border-bottom: 3px solid black;
+    height: 40px;
+    font-size: 20px;
+}
