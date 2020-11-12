@@ -1,42 +1,42 @@
-.navmenuline-container,
-.navmenuline-menu {
+.navmenu-container,
+.navmenu-menu {
     height: 70px;
     width: 80px;
     position: absolute;
     margin: auto;
-    top: 80%;
+    top: 65%;
     bottom: 0;
-    left: 89.5%;
+    left: 80%;
     right: 0;
     cursor: pointer;
 }
 
-.navmenuline-menu {
+.navmenu-menu {
     transform: scale(0.9);
     position: fixed;
     z-index: 0;
 }
 
-.navmenuline-container {
+.navmenu-container {
     position: fixed;
     z-index: 1;
 }
 
-.navmenuline-toggle {
+.navmenu-toggle {
     height: 0;
     width: 40px;
-    border-bottom: 35px solid var(--dark-blue);
+    border-bottom: 35px solid #8D1515;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     position: absolute;
     top: 0;
 }
 
-.navmenuline-toggle:before {
+.navmenu-toggle:before {
     content: '';
     height: 0;
     width: 40px;
-    border-top: 35px solid var(--dark-blue);
+    border-top: 35px solid #8D1515;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     position: absolute;
@@ -44,10 +44,10 @@
     left: -20px;
 }
 
-.navmenuline-item {
+.navmenu-item {
     height: 0;
     width: 40px;
-    border-bottom: 35px solid var(--second-color);
+    border-bottom: 35px solid #ffffff;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     position: absolute;
@@ -55,11 +55,11 @@
     transition: 1s;
 }
 
-.navmenuline-item:before {
+.navmenu-item:before {
     content: '';
     height: 0;
     width: 40px;
-    border-top: 35px solid var(--second-color);
+    border-top: 35px solid #ffffff;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     position: absolute;
@@ -67,39 +67,35 @@
     left: -20px;
 }
 
-#navmenuline-add {
+#navmenu-add {
     font-size: 50px;
-    color: var(--second-color);
+    color: white;
     position: relative;
     top: 10px;
     right: 5px;
 }
 
-a>.navmenuline-react-icons {
-    color: var(--dark-blue);
+a>.navmenu-react-icons {
+    color: #d2d2d2;
     font-size: 30px;
 }
 
 a {
     position: relative;
     top: 20px;
-<<<<<<< HEAD:src/components/NavMenuLine/NavMenuLine.css
-    left: 5px;
-=======
     /* left: 5px; */
->>>>>>> parent of 7ddd8f3... moving NavMenuLine files to new NavMenuLine branch:src/components/NavMenuLine.css
 }
 
-a>.navmenuline-react-icons:hover {
-    color: var(--dark-blue);
+a>.navmenu-react-icons:hover {
+    color: #8D1515;
 }
 
-.navmenuline-icons-hover:hover {
+.navmenu-icons-hover:hover {
     transition: 1s;
     transform: scale(1.5);
 }
 
-.navmenuline-icons-hover {
+.navmenu-icons-hover {
     transition: 1s;
     transform: scale(1);
 }
