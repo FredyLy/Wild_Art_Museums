@@ -9,6 +9,8 @@
   position: relative;
   width: 40%;
   height: auto;
-  right: 25%;
+
+  left: 2%;
+  /* right: 25%; */
   padding-top: 30px;
 }
