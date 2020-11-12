@@ -7,11 +7,9 @@ body {
 :root {
   --main-color: #F6F6F6;
   --second-color: #FFFFFF;
+  
   --pearl-grey : #C4C4C4;
-  --black: black;
-  background-color:#F6F6F6;
+  --dark-blue : #16213e;
+  --black-color: black;
 }
 
-.App {
-  text-align: center;
-}

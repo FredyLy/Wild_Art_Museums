@@ -1,5 +1,6 @@
 import Location from './components/Location/Location';
 import React, { useEffect, useState } from 'react';
+import NavMenuLine from './components//NavMenuLine/NavMenuLine';
 import Home from './components/Home/Home';
 import Loading from './components/Loading';
 import NavMenu from './components/NavMenu';
@@ -19,6 +20,7 @@ function App () {
 
   return (
     <div className="App">
+      <NavMenuLine />
       <Location />
       {screen}
     </div>
