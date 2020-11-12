@@ -1,0 +1,77 @@
+.intro{
+    text-align: justify;
+    margin: 5% 15% 2% 5%;
+}
+
+.hamlogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+}
+
+.hamfront{
+    margin-left: 5%;
+    margin-right: 2%;
+    height: 200px;
+    width: 250px;
+    float: left;
+    margin-bottom: 1%;
+}
+
+.rightimg{
+    margin-right: 15%;
+    margin-top: 0;
+    text-align: justify;
+    margin-left: 5%;
+    margin-bottom: 2em;
+}
+
+.firsttitle{
+    margin-top: 0;
+}
+
+.MuseumSelector {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+    margin-left: 5%;
+    margin-right: 15%;
+}
+  
+.MuseumSelector button {
+    border: 2px solid transparent;
+    background: white;
+    font-size: 1rem;
+    padding: 0.5rem;
+    flex-grow: 1;
+}
+  
+.MuseumSelector button {
+    border-bottom: 2px solid #eee;
+}
+
+.MuseumSelector button.active {
+    border-bottom: 2px solid #362525;
+}
+
+.MuseumSelector button:focus {
+    outline: none;
+}
+
+.socialMedia img{
+    height: 50px;
+    width: 50px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.socialMedia{
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 15%;
+    padding-bottom: 2%;
+}
+.page{
+    padding-bottom: 5em;
+}
