@@ -1,12 +1,8 @@
 * {
     margin: 0;
     border: 0;
-}
-
-.fullpage3 {
-    width: 28%;
-    height: 100%;
-    background-color: #E5E5E5;
+    font-family: American Typewriter, helvetica, sans-serif;
+    letter-spacing: .0.5rem;
 }
 
 .ContactUs {
@@ -26,10 +22,6 @@
 
 .contact-information {
     width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: space-around;
     background-color: black;
     border-radius: 10px;
     color: white;
@@ -38,33 +30,75 @@
     text-align: left;
 }
 
+.contact-information-justify {
+    height: 100px;
+}
+
+.title-justify {
+    text-align: center;
+    font-size: 30px
+}
+
 .text-justify {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-;
-    margin: auto
+    color: white;
+    font-size: 25px;
+    text-align: left;
+    border-spacing: 10px;
+}
+
+.first-text-justify {
+    text-align: center;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.list-justify {
+    list-style-type: none;
+    margin: 60px 20px;
+}
+
+.text-justify-without-logo {
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 50px;
+    font-size: 25px;
+    margin-left: 72px;
 }
 
 .logo {
     -webkit-filter: invert(100%);
     filter: invert(100%);
+    width: 30px;
+    margin-right: 15px;
+    float: left;
+}
+
+
+.align {
+    display: flex;
 }
 
 .network-logo {
     -webkit-filter: invert(100%);
     filter: invert(100%);
-    width: 20%;
     margin: 10px;
+    width: 40px;
+}
+
+.logo-bar {
+
+    width: 100%;
+    margin: auto 100px;
 }
 
 .formulaire {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 6fr;
+    grid-template-rows: 10px 10px 10px 10px 10px 4px 10px;
     text-align: left;
-    grid-gap: 10%;
+    grid-gap: 9%;
     height: 100%;
-    
+    margin-top: 10%;
 }
 
 .formulaire-content {
@@ -82,18 +116,22 @@
     grid-column-end: 3;
 }
 
-.element-10 {
-    grid-column-start: 1;
+.element-11 {
+    grid-column-start: 2;
     grid-column-end: 3;
+    text-align: right;
+    margin-top: 40px;
 }
 
-.element-11 {
+.element-12 {
     grid-column-start: 2;
     grid-column-end: 3;
     background-color: #C4C4C4;
     border-radius: 10px;
     height: 50px;
     font-size: 20px;
+    font-weight: bolder;
+    margin-top: 50px;
 }
 
 label {
@@ -107,4 +145,21 @@ input {
     border-bottom: 3px solid black;
     height: 40px;
     font-size: 20px;
+}
+
+textarea {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #e5e5e5;
+    border: 3px solid rgba(0, 0, 0, 0.021);
+    border-bottom: 3px solid black;
+    height: 40px;
+    font-size: 20px;
+    padding: 30px;
+    resize: none;
+}
+
+.first-text-justify {
+    text-align: center;
+    list-style-type: none;
 }
