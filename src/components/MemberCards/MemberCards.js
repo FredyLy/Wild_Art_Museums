@@ -5,7 +5,6 @@ import './MemberCards.css';
 
 const MemberCards = () => {
   const [members, setMembers] = useState([]);
-  console.log(members);
 
   useEffect(() => {
     const newArray = ListMembers.map((ListMember) => ListMember);
@@ -14,7 +13,9 @@ const MemberCards = () => {
 
   return (
     <div className='memberCardsDiv'>
-      <DisplayMembers />
+      {
+       members.map(member => <DisplayMembers key={member.id} avatar={member.avatar} name={member.name}/>)
+      }
     </div>
   );
 };
