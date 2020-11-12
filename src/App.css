@@ -1,15 +1,14 @@
-body {
-  background-color: #2a3a49;
-  padding: 0;
-  margin: 0;
-}
-
 :root {
   --main-color: #F6F6F6;
   --second-color: #FFFFFF;
-
+  
   --pearl-grey : #C4C4C4;
   --dark-blue : #16213e;
   --black-color: black;
   --red-color: #d31017;
+}
+
+body {
+  padding: 0;
+  margin: 0;
 }

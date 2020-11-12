@@ -1,7 +1,10 @@
+body {
+    background-color: var(--main-color);
+}
+
 .gallery {
     display: flex;
     flex-wrap:wrap;
-    position: absolute;
     padding-top: 15px;
     margin: auto;
 }

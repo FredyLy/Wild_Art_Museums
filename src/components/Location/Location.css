@@ -5,6 +5,8 @@
     height: 100vh;
     width: 120px;
     right: 1%;
+    
+    vertical-align: middle;
 }
 
 #location_page-title {

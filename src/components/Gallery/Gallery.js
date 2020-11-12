@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import Axios from 'axios';
 import Loader from '../Loader/Loader';
+import Location from '../Location/Location';
 
 import './Gallery.css';
 
@@ -38,6 +39,7 @@ class Gallery extends Component {
     );
     return (
       <div>
+        <Location />
         { decision }
       </div>
     );

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import NavMenu from '../NavMenu';
+import NavMenu from './NavMenu';
 
 class Home extends React.Component {
   state = {
