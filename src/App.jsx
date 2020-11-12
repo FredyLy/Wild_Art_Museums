@@ -1,9 +1,6 @@
-
 import React, { useEffect, useState } from 'react';
-import Home from './components/Home/Home';
+import Router from './Router';
 import Loading from './components/Home/Loading';
-import NavMenu from './components/Home/NavMenu';
-
 import './App.css';
 
 function App () {
@@ -12,8 +9,7 @@ function App () {
   useEffect(() => {
     setTimeout(() => {
       setScreen(
-      <Home/>,
-      <NavMenu />
+      <Router/>
       );
     }, 5000);
   }, []);
