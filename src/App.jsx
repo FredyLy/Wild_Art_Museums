@@ -1,5 +1,7 @@
-import Location from './components/Location/Location';
+
 import React, { useEffect, useState } from 'react';
+import Location from './components/Location/Location';
+import Gallery from './components/Gallery/Gallery';
 import NavMenuLine from './components//NavMenuLine/NavMenuLine';
 import Home from './components/Home/Home';
 import Loading from './components/Loading';
@@ -20,6 +22,7 @@ function App () {
 
   return (
     <div className="App">
+      <Gallery />
       <NavMenuLine />
       <Location />
       {screen}
