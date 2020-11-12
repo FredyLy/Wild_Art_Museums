@@ -27,5 +27,5 @@
 .addHover {
     transform: scale(1.4);
     transition-duration: 0.5s;
-    color: red;
+    position: relative;
 }
