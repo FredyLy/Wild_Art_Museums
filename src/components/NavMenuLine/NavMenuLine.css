@@ -1,5 +1,5 @@
-.navmenuline-container,
-.navmenuline-menu {
+.container,
+.menu {
     height: 70px;
     width: 80px;
     position: absolute;
@@ -11,18 +11,18 @@
     cursor: pointer;
 }
 
-.navmenuline-menu {
+.menu {
     transform: scale(0.9);
     position: fixed;
     z-index: 0;
 }
 
-.navmenuline-container {
+.container {
     position: fixed;
     z-index: 1;
 }
 
-.navmenuline-toggle {
+.toggle {
     height: 0;
     width: 40px;
     border-bottom: 35px solid var(--dark-blue);
@@ -32,7 +32,7 @@
     top: 0;
 }
 
-.navmenuline-toggle:before {
+.toggle:before {
     content: '';
     height: 0;
     width: 40px;
@@ -44,7 +44,7 @@
     left: -20px;
 }
 
-.navmenuline-item {
+.item {
     height: 0;
     width: 40px;
     border-bottom: 35px solid var(--second-color);
@@ -55,7 +55,7 @@
     transition: 1s;
 }
 
-.navmenuline-item:before {
+.item:before {
     content: '';
     height: 0;
     width: 40px;
@@ -67,7 +67,7 @@
     left: -20px;
 }
 
-#navmenuline-add {
+#add {
     font-size: 50px;
     color: var(--second-color);
     position: relative;
@@ -83,23 +83,9 @@ a>.navmenuline-react-icons {
 a {
     position: relative;
     top: 20px;
-<<<<<<< HEAD:src/components/NavMenuLine/NavMenuLine.css
     left: 5px;
-=======
-    /* left: 5px; */
->>>>>>> parent of 7ddd8f3... moving NavMenuLine files to new NavMenuLine branch:src/components/NavMenuLine.css
 }
 
 a>.navmenuline-react-icons:hover {
     color: var(--dark-blue);
-}
-
-.navmenuline-icons-hover:hover {
-    transition: 1s;
-    transform: scale(1.5);
-}
-
-.navmenuline-icons-hover {
-    transition: 1s;
-    transform: scale(1);
 }
