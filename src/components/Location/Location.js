@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import NavMenuLine from '../NavMenuLine/NavMenuLine';
 
 import './Location.css';
 
@@ -27,6 +28,7 @@ class Location extends Component {
               <h1>{pageTitle}</h1>
             </div>
             <div onClick={() => this.expand(this.state.open)}>
+              <NavMenuLine />
             </div>
           </div>
         </div>

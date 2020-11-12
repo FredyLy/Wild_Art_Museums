@@ -1,5 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
+// import React from 'react';
 // import Gallery from './components/Gallery/Gallery';
 import Home from './components/Home/Home';
 import Loading from './components/Home/Loading';
