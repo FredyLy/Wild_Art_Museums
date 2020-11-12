@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { FaHome, FaPalette, FaQuestion, FaUserFriends } from 'react-icons/fa';
 import { MdContactMail } from 'react-icons/md';
 import { GiGreekTemple } from 'react-icons/gi';
@@ -56,9 +57,9 @@ class NavMenuLine extends Component {
             </a>
           </div>
           <div className="navmenuline-item">
-            <a href="#">
-              <i className="navmenuline-react-icons"><FaHome className="navmenuline-icons-hover"/></i>
-            </a>
+            <Link to='/'>
+              <i className="navmenu-react-icons"><FaHome className="navmenu-icons-hover"/></i>
+            </Link>
           </div>
           <div className="navmenuline-item">
             <a href="#">
@@ -71,9 +72,9 @@ class NavMenuLine extends Component {
             </a>
           </div>
           <div className="navmenuline-item">
-            <a href="#">
+            <Link to='./gallery'>
               <i className="navmenuline-react-icons"><FaPalette className="navmenuline-icons-hover"/></i>
-            </a>
+            </Link>
           </div>
         </div>
     </div>
