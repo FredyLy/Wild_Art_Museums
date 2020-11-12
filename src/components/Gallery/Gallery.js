@@ -1,6 +1,5 @@
 import Axios from 'axios';
 import React, { Component } from 'react';
-import NavMenuLine from '../Location/NavMenuLine';
 
 import './Gallery.css';
 class Gallery extends Component {
@@ -28,7 +27,6 @@ class Gallery extends Component {
   render () {
     const { data } = this.state;
     return (
-      <div>
         <div className="gallery">
           { this.state.data && data.map((data) =>
             <div className="divImg" key={data.id}>
@@ -36,8 +34,6 @@ class Gallery extends Component {
             </div>
           )}
         </div>
-        <NavMenuLine />
-      </div>
     );
   }
 }
