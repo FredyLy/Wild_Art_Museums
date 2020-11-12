@@ -1,3 +1,4 @@
+import Location from './components/Location/Location';
 import React, { useEffect, useState } from 'react';
 import Home from './components/Home/Home';
 import Loading from './components/Loading';
@@ -18,6 +19,7 @@ function App () {
 
   return (
     <div className="App">
+      <Location />
       {screen}
     </div>
   );
