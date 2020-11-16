@@ -36,7 +36,7 @@ export const ListMembers = [
     name: 'Gregory',
     lastName: 'Vilar',
     github: 'https://github.com/gregvlr',
-    linkedin: '',
+    linkedin: 'https://www.linkedin.com/in/gr%C3%A9gory-vilar-28524a1b6/',
     avatar: ''
   },
   {
