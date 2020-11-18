@@ -1,17 +1,14 @@
-body {
-  background-color: var(--main-color);
-  padding: 0;
-  margin: 0;
-}
-
 :root {
   --main-color: #F6F6F6;
   --second-color: #FFFFFF;
+  
   --pearl-grey : #C4C4C4;
-  --black: black;
-  background-color:#F6F6F6;
+  --dark-blue : #16213e;
+  --black-color: black;
+  --red-color: #d31017;
 }
 
-.App {
-  text-align: center;
+body {
+  padding: 0;
+  margin: 0;
 }
