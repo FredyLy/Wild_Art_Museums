@@ -5,21 +5,21 @@ import busch from './Busch.jpg';
 
 function Busch () {
   return (
-    <div className="textandimg">
+    <div className="hamtextandimg">
         <div>
           <img className="hamfront" src={busch} />
         </div>
-        <div className="rightimg">
-          <h1 className="firsttitle">Busch–Reisinger Museum
+        <div className="hamrightimg">
+          <h1 className="hamfirsttitle">Busch–Reisinger Museum
           </h1>
           <p>Founded in 1901 as the Germanic Museum, the Busch–Reisinger Museum is the only museum in North America dedicated to the study of art from the German-speaking countries of Central and Northern Europe in all media and in all periods.
           </p>
-          <h3 className="history">Collection</h3>
+          <h3 className="hamhistory">Collection</h3>
           <p>The Busch-Reisinger Museum records include historical information related to the founding and functioning of the museum, from its inception
              in the early 20th century and extending into the early 21st century. The collection includes scrapbooks, postcards, photographs and slides,
               audiovisual materials, administrative and historical documents, and published materials.
           </p>
-          <h3 className="history">History</h3>
+          <h3 className="hamhistory">History</h3>
           <p> William James spoke at its dedication. Its holdings include significant works of Austrian Secession art, German expressionism, 1920s
               abstraction, and material related to the Bauhaus design school. Other strengths include late medieval sculpture and 18th-century art.
               The museum also holds noteworthy postwar and contemporary art from German-speaking Europe, including works by Georg Baselitz, Anselm

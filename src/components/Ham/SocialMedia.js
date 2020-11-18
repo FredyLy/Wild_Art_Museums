@@ -7,7 +7,7 @@ import './Ham.css';
 
 function SocialMedia () {
   return (
-    <div className="socialMedia">
+    <div className="hamsocialMedia">
       <a target="_blank" rel="noreferrer" href="https://www.facebook.com/harvardartmuseums">
       <img src={facebook} />
       </a>

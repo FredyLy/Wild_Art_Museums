@@ -39,7 +39,7 @@ class Ham extends Component {
   render () {
     return (
       <div>
-        <div className="page">
+        <div className="hampage">
           <Intro />
             <MuseumSelector
               active={this.state.activeId}
@@ -49,7 +49,7 @@ class Ham extends Component {
           {this.selectComponent()}
         </div>
         </div>
-        <div className="footer">
+        <div className="hamfooter">
           <SocialMedia />
         </div>
       </div>

@@ -5,16 +5,16 @@ import fogg from './Fogg.jpg';
 
 function Fogg () {
   return (
-    <div className="textandimg">
+    <div className="hamtextandimg">
     <div>
       <img className="hamfront" src={fogg} />
     </div>
-    <div className="rightimg">
-      <h1 className="firsttitle">Fogg Museum
+    <div className="hamrightimg">
+      <h1 className="hamfirsttitle">Fogg Museum
       </h1>
       <p>The Fogg Museum, opened to the public in 1896, is the oldest and largest component of the Harvard Art Museums.
       </p>
-      <h3 className="history">History</h3>
+      <h3 className="hamhistory">History</h3>
       <p>The museum was originally
       housed in an Italian Renaissance-style building designed by Richard Morris Hunt. According to Donald Preziosi, the museum was not initially
       established as a gallery for the display of original works of art, but was founded as an institution for the teaching and study of visual arts,
@@ -23,7 +23,7 @@ function Fogg () {
       designed by Coolidge, Shepley, Bulfinch, and Abbott. (The original Hunt Hall remained, underutilized until it was demolished in 1974 to make way
       for new freshman dormitories.
       </p>
-      <h3 className="collection">Collection</h3>
+      <h3 className="hamcollection">Collection</h3>
       <p>
       The Fogg Museum is renowned for its holdings of Western paintings, sculpture, decorative arts, photographs,
       prints, and drawings from the Middle Ages to the present. Particular strengths include Italian Renaissance, British Pre-Raphaelite, and French

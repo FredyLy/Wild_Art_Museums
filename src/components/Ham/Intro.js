@@ -9,7 +9,7 @@ function Intro () {
           <a target="_blank" rel="noreferrer" href="https://www.harvardartmuseums.org/">
           <img className="hamlogo" src={logo} />
           </a>
-      <p className="intro">
+      <p className="hamintro">
         The Harvard Art Museums are part of Harvard University and comprise three museums: the Fogg Museum (established in 1895),
         the Busch-Reisinger Museum (established in 1903), and the Arthur M. Sackler Museum (established in 1985) and four research centers:
         the Archaeological Exploration of Sardis (founded in 1958), the Center for the Technical Study of Modern Art (founded in 2002),the Harvard Art

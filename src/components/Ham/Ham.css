@@ -1,7 +1,8 @@
-.intro{
+.hamintro{
     text-align: justify;
     margin: 5% 15% 2% 5%;
 }
+
 
 .hamlogo{
     display: block;
@@ -19,7 +20,7 @@
     margin-bottom: 1%;
 }
 
-.rightimg{
+.hamrightimg{
     margin-right: 15%;
     margin-top: 0;
     text-align: justify;
@@ -27,11 +28,11 @@
     margin-bottom: 2em;
 }
 
-.firsttitle{
+.hamfirsttitle{
     margin-top: 0;
 }
 
-.MuseumSelector {
+.hamMuseumSelector {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2em;
@@ -39,7 +40,7 @@
     margin-right: 15%;
 }
   
-.MuseumSelector button {
+.hamMuseumSelector button {
     border: 2px solid transparent;
     background: white;
     font-size: 1rem;
@@ -47,31 +48,62 @@
     flex-grow: 1;
 }
   
-.MuseumSelector button {
+.hamMuseumSelector button {
     border-bottom: 2px solid #eee;
 }
 
-.MuseumSelector button.active {
+.hamMuseumSelector button.active {
     border-bottom: 2px solid #362525;
 }
 
-.MuseumSelector button:focus {
+.hamMuseumSelector button:focus {
     outline: none;
 }
 
-.socialMedia img{
+.hamsocialMedia img{
     height: 50px;
     width: 50px;
     margin-left: 35px;
-    margin-right: 35px;
+    margin-right: 35px;    
+    bottom: 0;
 }
 
-.socialMedia{
+.hamsocialMedia{
     text-align: center;
     margin-left: 5%;
     margin-right: 15%;
     padding-bottom: 2%;
+
 }
-.page{
-    padding-bottom: 5em;
+.hampage{
+    padding-bottom: 3em;
+}
+
+@media screen and (max-width: 440px) {
+    .hamfront{
+        margin-left: 12.5%;
+    }
+    .hamsocialMedia img{
+        height: 15px;
+        width: 15px;
+    }
+  }
+
+@media screen and (max-width: 750px) {
+    .hamsocialMedia img{
+        height: 35px;
+        width: 35px;
+    }
+}
+@media screen and (max-width: 660px) {
+    .hamsocialMedia img{
+        height: 20px;
+        width: 20px;
+        margin-left: 2%;
+        margin-right: 10%;
+    }
+    .hamintro{
+        padding-bottom: 2em;
+        padding-top: 2em;
+    }
 }

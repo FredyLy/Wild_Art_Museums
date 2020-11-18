@@ -6,7 +6,7 @@ import './Ham.css';
 class MuseumSelector extends Component {
   render () {
     return (
-        <div className="MuseumSelector">
+        <div className="hamMuseumSelector">
           <button
             id='ShowFogg'
             onClick={this.props.handleChangeTab}
