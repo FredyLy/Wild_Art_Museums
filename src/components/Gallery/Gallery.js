@@ -7,15 +7,20 @@ import './Gallery.css';
 
 class Gallery extends Component {
   state = {
-    data: null
+    data: null,
+    url: {
+      current: 'https://api.harvardartmuseums.org/object?yearmade=1986&apikey=d9e8107d-41c3-4640-8213-62480cb2ad0c&page=1&size=100',
+      prev: null,
+      next: null
+    }
   }
 
   componentDidMount () {
-    this.harvardArtMuseums();
+    this.harvardArtMuseums(this.state.url.current);
   }
 
-  harvardArtMuseums = () => {
-    const url = 'https://api.harvardartmuseums.org/object?yearmade=1986&apikey=d9e8107d-41c3-4640-8213-62480cb2ad0c&page=3&size=300';
+  harvardArtMuseums = (url) => {
+    console.log(this.state.url);
     Axios.get(url)
       .then(res => {
         const result = res.data.records.filter(item => {
@@ -23,25 +28,38 @@ class Gallery extends Component {
             return item;
           }
         });
-        setTimeout(() => {
-          this.setState({ data: [...result] });
-        }, 1000);
+        this.setState({
+          data: [...result],
+          url: {
+            prev: res.data.info.prev,
+            next: res.data.info.next
+          }
+        });
       });
   }
 
   render () {
     const { data } = this.state;
-    const decision = (
-      data
-        ? <div className="gallery"> {data.map((data) => <Fragment key={data.title}>{data.images.map((image) => <div className="gallery-divImg" key={image.idsid}><img className="galleryImg" src={image.baseimageurl} alt={data.title}/></div>)}</Fragment>)}
+    console.log(data);
+    const decision = (data
+      ? <div className="gallery"> {data.map((data) => <Fragment key={data.title}>{data.images.map((image) =>
+      <div className="gallery-divImg" key={image.idsid}>
+        <img className="galleryImg" src={image.baseimageurl} alt={data.title}/></div>)}</Fragment>)}
       </div>
-        : <Loader loadingMsg={'Loading...'} styling={{ textAlign: 'center', marginTop: '20%', color: 'red' }}/>
-    );
+      : <Loader loadingMsg={'Loading...'} styling={{ textAlign: 'center', marginTop: '20%', color: 'red' }}/>);
+
+    const displayBtnNext = !this.state.url.next;
+    const displayBtnPrev = !this.state.url.prev;
+
     return (
-      <div>
+      <Fragment>
         <Location />
         { decision }
-      </div>
+        <div className="divBouton">
+          <input className="gallery.btn round" disabled={displayBtnPrev} type='button' value='<<' onClick={() => this.harvardArtMuseums(this.state.url.prev)} />
+          <input className="gallery.btn round" disabled={displayBtnNext} type='button' value='>>' onClick={() => this.harvardArtMuseums(this.state.url.next)} />
+        </div>
+      </Fragment>
     );
   }
 }
