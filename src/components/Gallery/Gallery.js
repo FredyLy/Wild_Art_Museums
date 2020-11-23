@@ -21,8 +21,6 @@ class Gallery extends Component {
 
   componentDidMount () {
     this.harvardArtMuseums(this.state.url.current);
-    // this.showModal();
-    // this.showModal(this.state.characterInfos);
   }
 
   componentDidUpdate (prevProps, prevState) {
@@ -53,8 +51,6 @@ class Gallery extends Component {
     console.log('id', id);
     const { characterInfos } = this.state;
     this.setState({ openModal: true });
-
-    // this.setState((prevState) => ({ characterInfos: prevState.id }));
     this.setState(({ characterInfos: id }));
     this.setState(({ resultInModal: false }));
     console.log('Modal', characterInfos);
