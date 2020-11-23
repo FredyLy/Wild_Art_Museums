@@ -91,10 +91,21 @@ class Gallery extends Component {
             <h2>{characterInfos.title}</h2>
           </div>
           <div className="modalBody">
-          {/* <img src={characterInfos.images[0].baseimageurl} alt={characterInfos.title} /> */}
-            <h3>{characterInfos.division}</h3>
-            <a href={characterInfos.url}>More info</a>
+          <div className="comicImage">
+            <a href={characterInfos.primaryimageurl} target='_blank' rel="noopener noreferrer" ><img src={characterInfos.primaryimageurl} alt={characterInfos.title} /></a>
+            {/* <h3>{characterInfos.images[0].idsid}</h3> */}
           </div>
+          <div className="comicDetails">
+          <h3>Description</h3>
+            <p>{characterInfos.division}</p>
+            <p>{characterInfos.description}</p>
+            <p>{characterInfos.provenance}</p>
+            {/* <p>{characterInfos.people[0].alphasort}</p> */}
+            <h3>More info</h3>
+            <p>{characterInfos.contact}</p>
+            <a href={characterInfos.url} target='_blank' rel="noopener noreferrer" >More info</a>
+          </div>
+        </div>
       </Fragment>)
       : (
       <Fragment>
