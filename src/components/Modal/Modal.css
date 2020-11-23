@@ -90,7 +90,6 @@
   .modalBody {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     padding: 30px 10px;
     background: var(--white-color);
     height: 400px;
