@@ -54,56 +54,7 @@
     justify-content: space-around;
     align-items: center;
   }
-  
-  .comicImage {
-    flex: 0 1 40%;
-    align-self: stretch;
-  }
-  
-  .comicDetails {
-    flex: 0 1 50%;
-    align-self: stretch;
-  }
-  
-  .comicImage img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .comicImage p {
-    font-size: 14px;
-    font-style: italic;
-    color: var(--dark-grey-color);
-  }
-  
-  .comicDetails h3 {
-    padding-bottom: 10px;
-    border-bottom: 1px solid var(--light-grey-color);
-    text-transform: uppercase;
-  }
-  
-  .comicDetails p {
-    font-style: italic;
-    margin-bottom: 40px;
-    color: var(--dark-grey-color);
-  }
-  
-  .comicDetails a {
-    flex: 0 1 60%;
-    display: inline-block;
-    background-color: var(--dark-red-color);
-    padding: 10px 15px;
-    margin-right: 10px;
-    color: #ffffff;
-    text-align: center;
-    text-decoration: none;
-    transform: skew(-15deg);
-  }
-  
-  .comicDetails a:hover {
-    background-color: var(--dark-grey-color);
-  }
-  
+
   .modalFooter {
     background-color: var(--white-color);
     padding: 10px;
@@ -116,21 +67,34 @@
     border-top: 1px solid var(--light-grey-color);
   }
   
-  .modalBtn {
-    background: var(--light-grey-color);
-    padding: 9px 5px;
-    width: 90px;
-    color: var(--deep-black-color);
-    border: 0;
-    border-radius: 6px;
-    cursor: pointer;
-    border: 1px solid var(--light-grey-color);
-    margin: 0;
-    font-size: 15px;
-  }
+.modalBtn {
+  background: var(--light-grey-color);
+  padding: 9px 5px;
+  width: 90px;
+  color: var(--deep-black-color);
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid var(--light-grey-color);
+  margin: 0;
+  font-size: 15px;
+}
   
-  .modalBtn:hover {
-    background: var(--red-color);
-    color: var(--white-color);
-    border: 1px solid var(--light-grey-color);
+.modalBtn:hover {
+  background: var(--red-color);
+  color: var(--white-color);
+  border: 1px solid var(--light-grey-color);
+}
+
+@media screen and (max-width: 600px) {
+  .modalBody {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 10px;
+    background: var(--white-color);
+    height: 400px;
+    overflow: auto;
   }
+ 
+}
