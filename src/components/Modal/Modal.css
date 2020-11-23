@@ -26,6 +26,7 @@
   
   .modalContainer {
     flex: 0 1 90%;
+    height: 86%;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
     display: flex;
     flex-direction: column;
@@ -47,9 +48,7 @@
   .modalBody {
     padding: 30px 10px;
     background: var(--white-color);
-    height: 400px;
     overflow: auto;
-  
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -92,7 +91,7 @@
     flex-wrap: wrap;
     padding: 30px 10px;
     background: var(--white-color);
-    height: 400px;
+    /* height: 400px; */
     overflow: auto;
   }
  
