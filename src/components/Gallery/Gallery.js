@@ -93,14 +93,12 @@ class Gallery extends Component {
           <div className="modalBody">
           <div className="comicImage">
             <a href={characterInfos.primaryimageurl} target='_blank' rel="noopener noreferrer" ><img src={characterInfos.primaryimageurl} alt={characterInfos.title} /></a>
-            {/* <h3>{characterInfos.images[0].idsid}</h3> */}
           </div>
           <div className="comicDetails">
           <h3>Description</h3>
             <p>{characterInfos.division}</p>
             <p>{characterInfos.description}</p>
             <p>{characterInfos.provenance}</p>
-            {/* <p>{characterInfos.people[0].alphasort}</p> */}
             <h3>More info</h3>
             <p>{characterInfos.contact}</p>
             <a href={characterInfos.url} target='_blank' rel="noopener noreferrer" >More info</a>
@@ -126,17 +124,6 @@ class Gallery extends Component {
           <input className="gallery.btn round" disabled={displayBtnNext} type='button' value='>>' onClick={() => this.harvardArtMuseums(this.state.url.next)} />
         </div>
         <Modal showModal={this.state.openModal} closeModal={this.closeModal}>
-          {/* <div className="modalHeader">
-            <h2>{characterInfos.title}</h2>
-          </div>
-          <div className="modalBody"> */}
-            {/* <img src={characterInfos.images[0].baseimageurl} alt={characterInfos.title} /> */}
-            {/* <h3>{characterInfos.division}</h3> */}
-            {/* <h3>{characterInfos.id}</h3> */}
-          {/* </div>
-          <div className="modalFooter">
-            <button className="modalBtn">fermer</button>
-          </div> */}
           {resultInModal}
         </Modal>
       </Fragment>
