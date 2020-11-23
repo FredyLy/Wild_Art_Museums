@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import Axios from 'axios';
 import Loader from '../Loader/Loader';
 import Location from '../Location/Location';
+import Modal from '../Modal/Modal';
 
 import './Gallery.css';
 
@@ -12,15 +13,25 @@ class Gallery extends Component {
       current: 'https://api.harvardartmuseums.org/object?yearmade=1986&apikey=d9e8107d-41c3-4640-8213-62480cb2ad0c&page=1&size=100',
       prev: null,
       next: null
-    }
+    },
+    openModal: false,
+    characterInfos: [],
+    resultInModal: true
   }
 
   componentDidMount () {
     this.harvardArtMuseums(this.state.url.current);
+    // this.showModal();
+    // this.showModal(this.state.characterInfos);
+  }
+
+  componentDidUpdate (prevProps, prevState) {
+    if (this.state.characterInfos !== prevState.characterInfos) {
+      this.showModal(this.state.characterInfos);
+    }
   }
 
   harvardArtMuseums = (url) => {
-    console.log(this.state.url);
     Axios.get(url)
       .then(res => {
         const result = res.data.records.filter(item => {
@@ -38,18 +49,62 @@ class Gallery extends Component {
       });
   }
 
+  showModal = id => {
+    console.log('id', id);
+    const { characterInfos } = this.state;
+    this.setState({ openModal: true });
+
+    // this.setState((prevState) => ({ characterInfos: prevState.id }));
+    this.setState(({ characterInfos: id }));
+    this.setState(({ resultInModal: false }));
+    console.log('Modal', characterInfos);
+  }
+
+  closeModal = () => {
+    this.setState({ openModal: false });
+    this.setState(({ resultInModal: false }));
+  }
+
   render () {
     const { data } = this.state;
-    console.log(data);
     const decision = (data
-      ? <div className="gallery"> {data.map((data) => <Fragment key={data.title}>{data.images.map((image) =>
-      <div className="gallery-divImg" key={image.idsid}>
-        <img className="galleryImg" src={image.baseimageurl} alt={data.title}/></div>)}</Fragment>)}
+      ? <div className="gallery"> {data.map((data) =>
+      <Fragment key={data.title}>
+        {data.images.map((image) =>
+          <div onClick={() => this.showModal(data)} className="gallery-divImg" key={image.idsid}>
+            <img className="galleryImg" src={image.baseimageurl} alt={data.title}/>
+          </div>)
+        }
+      </Fragment>)}
       </div>
       : <Loader loadingMsg={'Loading...'} styling={{ textAlign: 'center', marginTop: '20%', color: 'red' }}/>);
 
     const displayBtnNext = !this.state.url.next;
     const displayBtnPrev = !this.state.url.prev;
+
+    const { characterInfos, loadingModal } = this.state;
+
+    const resultInModal = !loadingModal
+      ? (
+      <Fragment>
+        <div className="modalHeader">
+            <h2>{characterInfos.title}</h2>
+          </div>
+          <div className="modalBody">
+          {/* <img src={characterInfos.images[0].baseimageurl} alt={characterInfos.title} /> */}
+            <h3>{characterInfos.division}</h3>
+            <a href={characterInfos.url}>More info</a>
+          </div>
+      </Fragment>)
+      : (
+      <Fragment>
+        <div className="modalHeader">
+            <h2>Chargement</h2>
+          </div>
+          <div className="modalBody">
+            <Loader loadingMsg={'Loading...'} styling={{ textAlign: 'center', marginTop: '20%', color: 'red' }}/>
+          </div>
+      </Fragment>);
 
     return (
       <Fragment>
@@ -59,6 +114,20 @@ class Gallery extends Component {
           <input className="gallery.btn round" disabled={displayBtnPrev} type='button' value='<<' onClick={() => this.harvardArtMuseums(this.state.url.prev)} />
           <input className="gallery.btn round" disabled={displayBtnNext} type='button' value='>>' onClick={() => this.harvardArtMuseums(this.state.url.next)} />
         </div>
+        <Modal showModal={this.state.openModal} closeModal={this.closeModal}>
+          {/* <div className="modalHeader">
+            <h2>{characterInfos.title}</h2>
+          </div>
+          <div className="modalBody"> */}
+            {/* <img src={characterInfos.images[0].baseimageurl} alt={characterInfos.title} /> */}
+            {/* <h3>{characterInfos.division}</h3> */}
+            {/* <h3>{characterInfos.id}</h3> */}
+          {/* </div>
+          <div className="modalFooter">
+            <button className="modalBtn">fermer</button>
+          </div> */}
+          {resultInModal}
+        </Modal>
       </Fragment>
     );
   }
