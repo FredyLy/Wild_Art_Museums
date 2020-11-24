@@ -1,36 +1,21 @@
 import React from 'react';
+import { AiFillLinkedin } from 'react-icons/ai';
+import { FaGithub } from 'react-icons/fa';
 import { PropTypes } from 'prop-types';
 import './DisplayMembers.css';
-const DisplayMembers = ({ avatar, name }) => {
-  // const [isShown, setIsShown] = useState(false);
-  // console.log(isShown);
-  // const hoverImg = useRef(null);
-  // console.log(hoverImg);
 
-  // const addHoverImg = () => {
-  //   hoverImg.current.classNameList.add('addHover');
-  // };
-
-  // const clearImg = () => {
-  //   if (hoverImg.current.classNameList.contains('addHover')) {
-  //     hoverImg.current.classNameList.remove('addHover');
-  //   }
-  // };
-
-  // <div ref={hoverImg} classNameName="diplayMembers">
-  //   <div onMouseOver={addHoverImg} onMouseOut={clearImg} >
-  //     <img src={avatar} alt={name} />
-  //   </div>
-  // </div>
+const DisplayMembers = ({ avatar, name, linkedin, github }) => {
   return (
       <div className="diplayMembersContainer">
         <div className="content">
             <div className="content-overlay"></div>
-            <img src={avatar} alt={name} />
-            <div className="content-details fadeIn-top fadeIn-right">
-              <h3>This is a title</h3>
-              <p>This is a short description</p>
-            </div>
+              <img src={avatar} alt={name} />
+              <div className="content-details fadeIn-top fadeIn-right">
+                <a href={linkedin} target="_blank" rel="noopener noreferrer"><AiFillLinkedin size={45}/></a>
+                <br/>
+                <br/>
+                <a href={github} target="_blank" rel="noopener noreferrer"><FaGithub size={45}/></a>
+              </div>
         </div>
       </div>
   );
@@ -38,7 +23,9 @@ const DisplayMembers = ({ avatar, name }) => {
 
 DisplayMembers.propTypes = {
   avatar: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired
+  name: PropTypes.string.isRequired,
+  linkedin: PropTypes.string.isRequired,
+  github: PropTypes.string.isRequired
 };
 
 export default DisplayMembers;
