@@ -1,7 +1,8 @@
 import React, { useContext } from 'react';
+import ThemeSwitch from './ThemeSwitch';
+
 import { theme } from './Theme';
 import { ThemeContext } from '../../contexts/ThemeContext';
-import ThemeSwitch from './ThemeSwitch';
 
 const getStyles = (mode) => ({
   app: {
