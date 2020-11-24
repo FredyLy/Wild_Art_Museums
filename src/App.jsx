@@ -1,5 +1,5 @@
-import './App.css';
 import ContactUs from './components/Contact Us/ContactUs';
+import './App.css';
 
 function App () {
   return (

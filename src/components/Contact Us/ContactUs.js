@@ -70,7 +70,7 @@ class ContactUs extends Component {
                     <div className="contact-information">
                       <ul className="text-justify">
                         <li className="title-justify list-justify">Contact Information</li>
-                        <li className="first-text-justify">Fill up the formand our Team will get back to you within 24 hours.</li>
+                        <li className="first-text-justify">Fill up the form and our Team will get back to you within 24 hours.</li>
                 <li className="list-justify"><img className="logo " src={logoMap} />44 rue Alphonse Penaud,<br />75020 Paris</li>
                 <li className="list-justify"><img className="logo" src={logoEmail} />paris@wildcodeschool.com</li>
                 <li className="list-justify"><img className="logo" src={logoPhone} />+33 (0)7 84 39 08 74</li>
