@@ -16,12 +16,12 @@ class NavMenu extends Component {
     var i = document.getElementById('navmenu-menu').childNodes;
     if (open === false) {
       document.getElementById('navmenu-menu').style.transform = 'scale(1)';
-      i[0].style.transform = 'translateY(-80px)';
-      i[1].style.transform = 'translate(70px, -40px)';
-      i[2].style.transform = 'translate(70px, 40px)';
-      i[3].style.transform = 'translateY(80px)';
-      i[4].style.transform = 'translate(-70px,40px)';
-      i[5].style.transform = 'translate(-70px,-40px)';
+      i[0].style.transform = 'translateY(-120px)';
+      i[1].style.transform = 'translate(105px, -60px)';
+      i[2].style.transform = 'translate(105px, 60px)';
+      i[3].style.transform = 'translateY(120px)';
+      i[4].style.transform = 'translate(-105px,60px)';
+      i[5].style.transform = 'translate(-105px,-60px)';
       this.setState({ open: !open });
     } else {
       document.getElementById('navmenu-menu').style.transform = 'scale(0.9)';
