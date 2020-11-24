@@ -1,0 +1,101 @@
+.navmenuline-container,
+.navmenuline-menu {
+    height: 70px;
+    width: 80px;
+    position: absolute;
+    margin: auto;
+    top: 80%;
+    bottom: 0;
+    left: 89.5%;
+    right: 0;
+    cursor: pointer;
+}
+
+.navmenuline-menu {
+    transform: scale(0.9);
+    position: fixed;
+    z-index: 0;
+}
+
+.navmenuline-container {
+    position: fixed;
+    z-index: 1;
+}
+
+.navmenuline-toggle {
+    height: 0;
+    width: 40px;
+    border-bottom: 35px solid var(--dark-blue);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position: absolute;
+    top: 0;
+}
+
+.navmenuline-toggle:before {
+    content: '';
+    height: 0;
+    width: 40px;
+    border-top: 35px solid var(--dark-blue);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position: absolute;
+    top: 35px;
+    left: -20px;
+}
+
+.navmenuline-item {
+    height: 0;
+    width: 40px;
+    border-bottom: 35px solid var(--second-color);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position: absolute;
+    top: 0;
+    transition: 1s;
+}
+
+.navmenuline-item:before {
+    content: '';
+    height: 0;
+    width: 40px;
+    border-top: 35px solid var(--second-color);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position: absolute;
+    top: 35px;
+    left: -20px;
+}
+
+#navmenuline-add {
+    font-size: 50px;
+    color: var(--second-color);
+    position: relative;
+    top: 10px;
+    right: 5px;
+}
+
+a>.navmenuline-react-icons {
+    color: var(--dark-blue);
+    font-size: 30px;
+}
+
+a {
+    position: relative;
+    top: 20px;
+    left: 5px;
+}
+
+a>.navmenuline-react-icons:hover {
+    color: var(--dark-blue);
+}
+
+.navmenuline-icons-hover:hover {
+    transition: 1s;
+    transform: scale(1.5);
+}
+
+.navmenuline-icons-hover {
+    transition: 1s;
+    transform: scale(1);
+}
