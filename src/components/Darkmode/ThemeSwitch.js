@@ -11,8 +11,8 @@ const getStyles = (mode) => ({
     justifyContent: 'center',
     alignItems: 'center',
     height: '100%',
-    fontSize: 35,
-    paddingLeft: mode === 'dark' ? 30 : 10
+    fontSize: 25,
+    paddingLeft: mode === 'dark' ? 12 : 2
   }
 });
 
@@ -23,10 +23,9 @@ const ThemeSwitch = () => {
     <Switch
       // eslint-disable-next-line no-unneeded-ternary
       checked={mode === 'light' ? true : false}
-      height={50}
-      width={120}
       offColor='#1d1f2f'
       onColor='#FDB813'
+      handleDiameter={10}
       checkedIcon={
         <IoMdSunny style={styles.switch} color='white' className='light' />
       }

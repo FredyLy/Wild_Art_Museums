@@ -4,7 +4,6 @@ import Loading from './components/Home/Loading';
 import { theme } from './components/Darkmode/Theme';
 import { ThemeContext } from './contexts/ThemeContext';
 import './App.css';
-import ThemeSwitch from './components/Darkmode/ThemeSwitch';
 
 const getStyles = (mode) => ({
   app: {
@@ -26,15 +25,12 @@ function App () {
       setScreen(
       <Router/>
       );
-    }, 5000);
+    }, 3000);
   }, []);
 
   return (
     <div className='App' style={styles.app}>
       {screen}
-      <div>
-      <ThemeSwitch />
-      </div>
     </div>
   );
 }
