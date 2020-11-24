@@ -2,14 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Modal.css';
 
-const Modal = ({ showModal, children, closeModal }) => {
+const Modal = ({ showModal, children }) => {
   return (
     showModal && (
-      <div onClick={closeModal} className="modalBackground">
-      <div className="modalContainer">
-        {children}
+      <div className="modalBackground close-modal-btn">
+        <div className="modalContainer">
+          {children}
+        </div>
       </div>
-    </div>
     )
   );
 };

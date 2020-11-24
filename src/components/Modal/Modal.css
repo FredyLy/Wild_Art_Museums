@@ -9,6 +9,7 @@
     --dark-grey-color: #363636;
     --black-color: #333030;
     --deep-black-color: #000000;
+    --dark-blue : #16213e;
 }
 
 .modalBackground {
@@ -33,16 +34,19 @@
   }
   
   .modalHeader {
-    background-color: var(--dark-red-color);
+    background-color: var(--dark-blue);
     padding: 15px;
     color: var(--white-color);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    display: flex;
+    justify-content: flex-end;
   }
   
   .modalHeader h2 {
-    margin: 0;
     color: var(--white-color);
+    padding-right: 5px;
+    margin: 0;
   }
   
   .modalBody {
@@ -80,7 +84,7 @@
 }
   
 .modalBtn:hover {
-  background: var(--red-color);
+  background: var(--dark-blue);
   color: var(--white-color);
   border: 1px solid var(--light-grey-color);
 }

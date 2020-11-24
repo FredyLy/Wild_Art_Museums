@@ -121,20 +121,21 @@ input[disabled]:hover {
     color: var(--dark-grey-color);
   }
   
+  
+  .comicDetails a:hover {
+    background-color: var(--dark-grey-color);
+  }
+
   .comicDetails a {
     flex: 0 1 60%;
     display: inline-block;
-    background-color: var(--dark-red-color);
+    background-color: var(--dark-blue);
     padding: 10px 15px;
     margin-right: 10px;
     color: #ffffff;
     text-align: center;
     text-decoration: none;
-    transform: skew(-15deg);
-  }
-  
-  .comicDetails a:hover {
-    background-color: var(--dark-grey-color);
+    border-radius: 10px;
   }
 
 
