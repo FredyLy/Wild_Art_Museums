@@ -21,8 +21,7 @@ const ThemeSwitch = () => {
   const styles = getStyles(mode);
   return (
     <Switch
-      // eslint-disable-next-line no-unneeded-ternary
-      checked={mode === 'light' ? true : false}
+      checked={mode === 'light' && true }
       offColor='#1d1f2f'
       onColor='#FDB813'
       handleDiameter={10}
