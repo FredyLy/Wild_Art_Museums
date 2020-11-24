@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import NavmenuTheme from '../Darkmode/NavmenuTheme';
 import { Link } from 'react-router-dom';
+import { FaHome, FaPalette, FaUserFriends } from 'react-icons/fa';
 import PropTypes from 'prop-types';
-import { FaHome, FaPalette, FaQuestion, FaUserFriends } from 'react-icons/fa';
 import { MdContactMail } from 'react-icons/md';
 import { GiGreekTemple } from 'react-icons/gi';
 import { AiOutlinePlus } from 'react-icons/ai';
@@ -68,7 +69,7 @@ class NavMenuLine extends Component {
           </div>
           <div className="navmenuline-item">
             <a href="#">
-              <i className="navmenuline-react-icons"><FaQuestion className="navmenuline-icons-hover"/></i>
+              <i className="navmenuline-react-icons"><NavmenuTheme className="navmenuline-icons-hover"/></i>
             </a>
           </div>
           <div className="navmenuline-item">
