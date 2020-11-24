@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { FaHome, FaPalette, FaQuestion, FaUserFriends } from 'react-icons/fa';
@@ -9,10 +10,11 @@ import './NavMenuLine.css';
 
 class NavMenuLine extends Component {
   state = {
-    open: false
+    open: this.props.open
   }
 
-  expand (open) {
+  expandNavMenuLine (open) {
+    console.log('expandNavMenuLine');
     var i = document.getElementById('navmenuline-menu').childNodes;
     if (open === false) {
       document.getElementById('navmenuline-menu').style.transform = 'scale(1)';
@@ -23,6 +25,8 @@ class NavMenuLine extends Component {
       i[5].style.transform = 'translate(10px, -170px)';
       i[2].style.transform = 'translate(-10px, -85px)';
       this.setState({ open: !open });
+      console.log('open === false', !this.state.open);
+      this.props.expandLoc(!this.state.open);
     } else {
       document.getElementById('navmenuline-menu').style.transform = 'scale(0.9)';
       i[0].style.transform = 'translateY(0)';
@@ -32,17 +36,21 @@ class NavMenuLine extends Component {
       i[4].style.transform = 'translate(0)';
       i[5].style.transform = 'translate(0)';
       this.setState({ open: !open });
+      console.log('else', !this.state.open);
+      this.props.expandLoc(!this.state.open);
     }
   }
 
   render () {
     return (
       <div>
-        <div className="navmenuline-container" onClick={() => this.expand(this.state.open)}>
+        <div className="navmenuline-container" onClick={() => this.expandNavMenuLine(this.state.open)}>
           <div className="navmenuline-toggle" id="navmenuline-toggle">
             <i className="navmenuline-react-icons" id="navmenuline-add">
-              {this.state.open === true ? <AiOutlinePlus style={ { transform: 'rotate(45deg)', transition: '1s' } } /> : <AiOutlinePlus style={ { transform: ['rotate(0deg)'], transition: ['1s'] } }/>}
-                </i>
+              {this.state.open === true
+                ? <AiOutlinePlus style={ { transform: 'rotate(45deg)', transition: '1s' } } />
+                : <AiOutlinePlus style={ { transform: 'rotate(0deg)', transition: '1s' } }/>}
+            </i>
           </div>
         </div>
         <div className="navmenuline-menu" id="navmenuline-menu">
@@ -72,7 +80,7 @@ class NavMenuLine extends Component {
             </a>
           </div>
           <div className="navmenuline-item">
-            <Link to='./gallery'>
+            <Link to='/gallery'>
               <i className="navmenuline-react-icons"><FaPalette className="navmenuline-icons-hover"/></i>
             </Link>
           </div>
