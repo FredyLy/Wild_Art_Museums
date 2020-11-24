@@ -1,6 +1,6 @@
-/* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import { FaHome, FaPalette, FaQuestion, FaUserFriends } from 'react-icons/fa';
 import { MdContactMail } from 'react-icons/md';
 import { GiGreekTemple } from 'react-icons/gi';
@@ -14,7 +14,6 @@ class NavMenuLine extends Component {
   }
 
   expandNavMenuLine (open) {
-    console.log('expandNavMenuLine');
     var i = document.getElementById('navmenuline-menu').childNodes;
     if (open === false) {
       document.getElementById('navmenuline-menu').style.transform = 'scale(1)';
@@ -25,7 +24,6 @@ class NavMenuLine extends Component {
       i[5].style.transform = 'translate(10px, -170px)';
       i[2].style.transform = 'translate(-10px, -85px)';
       this.setState({ open: !open });
-      console.log('open === false', !this.state.open);
       this.props.expandLoc(!this.state.open);
     } else {
       document.getElementById('navmenuline-menu').style.transform = 'scale(0.9)';
@@ -36,7 +34,6 @@ class NavMenuLine extends Component {
       i[4].style.transform = 'translate(0)';
       i[5].style.transform = 'translate(0)';
       this.setState({ open: !open });
-      console.log('else', !this.state.open);
       this.props.expandLoc(!this.state.open);
     }
   }
@@ -89,5 +86,10 @@ class NavMenuLine extends Component {
     );
   }
 }
+
+NavMenuLine.propTypes = {
+  expandLoc: PropTypes.string,
+  open: PropTypes.bool
+};
 
 export default NavMenuLine;
