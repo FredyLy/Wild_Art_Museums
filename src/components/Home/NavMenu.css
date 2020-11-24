@@ -1,0 +1,103 @@
+.navmenu-container,
+.navmenu-menu {
+    height: 70px;
+    width: 80px;
+    position: absolute;
+    margin: auto;
+    top: 45%;
+    bottom: 0;
+    left: 60%;
+    right: 0;
+    cursor: pointer;
+}
+
+.navmenu-menu {
+    transform: scale(0.9);
+    position: fixed;
+    z-index: 0;
+}
+
+.navmenu-container {
+    position: fixed;
+    z-index: 1;
+}
+
+.navmenu-toggle {
+    height: 0;
+    width: 60px;
+    border-bottom: 52px solid var(--dark-blue);
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    top: 0;
+}
+
+.navmenu-toggle:before {
+    content: '';
+    height: 0;
+    width: 60px;
+    border-top: 52px solid var(--dark-blue);
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    top: 52px;
+    left: -30px;
+}
+
+.navmenu-item {
+    height: 0;
+    width: 60px;
+    border-bottom: 52px solid var(--second-color);
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    top: 0;
+    transition: 1s;
+}
+
+.navmenu-item:before {
+    content: '';
+    height: 0;
+    width: 60px;
+    border-top: 52px solid var(--second-color);
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    top: 52px;
+    left: -30px;
+}
+
+#navmenu-add {
+    font-size: 70px;
+    color: var(--second-color);
+    position: relative;
+    top: 17px;
+    right: 5px;
+}
+
+a>.navmenu-react-icons {
+    color: var(--dark-blue);
+    font-size: 40px;
+    position: relative;
+    top: 12px;
+    left: 4px;
+}
+
+a {
+    position: relative;
+    top: 20px;
+}
+
+a>.navmenu-react-icons:hover {
+    color: var(--dark-blue);
+}
+
+.navmenu-icons-hover:hover {
+    transition: 1s;
+    transform: scale(1.5);
+}
+
+.navmenu-icons-hover {
+    transition: 1s;
+    transform: scale(1);
+}

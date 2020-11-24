@@ -1,0 +1,60 @@
+body {
+    background-color: var(--main-color);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap:wrap;
+    padding-top: 15px;
+    margin: auto;
+}
+
+.gallery img {
+    padding-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 325px;
+    transition: 0.5s;
+}
+
+.gallery-divImg {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.gallery-divImg:hover img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all .5s ease;
+    overflow: hidden;
+}
+
+.gallery div:hover img{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
+    .gallery {
+        width: 100%;
+    }
+    .gallery-divImg {
+        width: 30%;
+    }
+    .gallery img {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .gallery-divImg {
+        width: 100%;
+    }
+    .gallery img {
+        width: 60%;
+    }
+}
