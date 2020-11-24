@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import MemberCards from './components/MemberCards/MemberCards';
 
 function App () {
