@@ -3,6 +3,7 @@ import Router from './Router';
 import Loading from './components/Home/Loading';
 import { theme } from './components/Darkmode/Theme';
 import { ThemeContext } from './contexts/ThemeContext';
+
 import './App.css';
 
 const getStyles = (mode) => ({

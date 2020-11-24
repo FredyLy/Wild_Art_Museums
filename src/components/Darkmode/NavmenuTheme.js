@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import ThemeSwitch from './ThemeSwitch';
-
 import { theme } from './Theme';
 import { ThemeContext } from '../../contexts/ThemeContext';
 
