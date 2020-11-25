@@ -3,11 +3,10 @@
     height: 70px;
     width: 80px;
     position: absolute;
-    margin: auto;
-    top: 80%;
-    bottom: 0;
-    left: 89.5%;
-    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 85%;
+    right: 40px;
     cursor: pointer;
 }
 
@@ -78,6 +77,15 @@
 a>.navmenuline-react-icons {
     color: var(--dark-blue);
     font-size: 30px;
+    position: relative;
+    left: 5px;
+}
+
+a>.navmenuline-react-icons-navmenu-theme {
+    color: var(--dark-blue);
+    font-size: 30px;
+    position: relative;
+    left: -7px;
 }
 
 a>.navmenuline-react-icons:hover {

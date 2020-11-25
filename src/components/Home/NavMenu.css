@@ -80,7 +80,14 @@ a>.navmenu-react-icons {
     font-size: 40px;
     position: relative;
     top: 12px;
-    left: 4px;
+    left: 10px;
+}
+
+a>.navmenu-react-icons-navmenu-theme {
+    color: var(--dark-blue);
+    font-size: 40px;
+    position: relative;
+    top: 12px;
 }
 
 a {
