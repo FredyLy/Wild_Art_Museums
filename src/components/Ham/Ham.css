@@ -37,6 +37,7 @@
 }
 
 .hamfirsttitle {
+    color: var(--dark-blue);
     margin-bottom: 0.8em;
 }
 
