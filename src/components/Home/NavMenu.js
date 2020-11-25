@@ -49,14 +49,14 @@ class NavMenu extends Component {
         </div>
         <div className="navmenu-menu" id="navmenu-menu">
           <div className="navmenu-item">
-            <a href="#">
+              <Link to='/ham'>
               <i className="navmenu-react-icons" ><GiGreekTemple className="navmenu-icons-hover"/></i>
-            </a>
+              </Link>
           </div>
           <div className="navmenu-item">
-            <a href="#">
+            <Link to='/aboutus'>
               <i className="navmenu-react-icons"><FaUserFriends className="navmenu-icons-hover"/></i>
-            </a>
+            </Link>
           </div>
           <div className="navmenu-item">
             <Link to='/'>
@@ -65,13 +65,13 @@ class NavMenu extends Component {
           </div>
           <div className="navmenu-item">
             <a href="#">
-              <i className="navmenu-react-icons"><NavmenuTheme className="navmenu-icons-hover"/></i>
+              <i className="navmenu-react-icons-navmenu-theme"><NavmenuTheme /></i>
             </a>
           </div>
           <div className="navmenu-item">
-            <a href="#">
+            <Link to='/contact'>
               <i className="navmenu-react-icons"><MdContactMail className="navmenu-icons-hover"/></i>
-            </a>
+            </Link>
           </div>
           <div className="navmenu-item">
             <Link to='/gallery'>

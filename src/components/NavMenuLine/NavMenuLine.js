@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import NavmenuTheme from '../Darkmode/NavmenuTheme';
 import { Link } from 'react-router-dom';
-import { FaHome, FaPalette, FaUserFriends } from 'react-icons/fa';
+import NavmenuTheme from '../Darkmode/NavmenuTheme';
 import PropTypes from 'prop-types';
+import { FaHome, FaPalette, FaUserFriends } from 'react-icons/fa';
 import { MdContactMail } from 'react-icons/md';
 import { GiGreekTemple } from 'react-icons/gi';
 import { AiOutlinePlus } from 'react-icons/ai';
@@ -53,29 +53,29 @@ class NavMenuLine extends Component {
         </div>
         <div className="navmenuline-menu" id="navmenuline-menu">
           <div className="navmenuline-item">
-            <a href="#">
+            <Link to='/ham'>
               <i className="navmenuline-react-icons" ><GiGreekTemple className="navmenuline-icons-hover"/></i>
-            </a>
+            </Link>
           </div>
           <div className="navmenuline-item">
-            <a href="#">
+            <Link to='/aboutus'>
               <i className="navmenuline-react-icons"><FaUserFriends className="navmenuline-icons-hover"/></i>
-            </a>
+            </Link>
           </div>
           <div className="navmenuline-item">
             <Link to='/'>
-              <i className="navmenu-react-icons"><FaHome className="navmenu-icons-hover"/></i>
+              <i className="navmenuline-react-icons"><FaHome className="navmenuline-icons-hover"/></i>
             </Link>
           </div>
           <div className="navmenuline-item">
             <a href="#">
-              <i className="navmenuline-react-icons"><NavmenuTheme className="navmenuline-icons-hover"/></i>
+              <i className="navmenuline-react-icons-navmenu-theme"><NavmenuTheme /></i>
             </a>
           </div>
           <div className="navmenuline-item">
-            <a href="#">
+            <Link to='/contact'>
               <i className="navmenuline-react-icons"><MdContactMail className="navmenuline-icons-hover"/></i>
-            </a>
+            </Link>
           </div>
           <div className="navmenuline-item">
             <Link to='/gallery'>

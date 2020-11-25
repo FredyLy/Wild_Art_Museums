@@ -141,7 +141,7 @@ class Gallery extends Component {
 
     return (
       <Fragment>
-        <Location />
+        <Location title="GALLERY" />
         { decision }
         <div className="divBouton">
           <input className="gallery.btn round" disabled={displayBtnPrev} type='button' value='<<' onClick={() => this.harvardArtMuseums(this.state.url.prev)} />

@@ -5,6 +5,7 @@ import Busch from './Busch';
 import Sackler from './Sackler';
 import Intro from './Intro';
 import MuseumSelector from './MuseumSelector';
+import Location from '../Location/Location';
 
 import './Ham.css';
 import SocialMedia from './SocialMedia';
@@ -31,15 +32,14 @@ class Ham extends Component {
         return <Busch />;
       case 'ShowSackler':
         return <Sackler />;
-      default:
-        console.log('error');
     }
   }
 
   render () {
     return (
       <div>
-        <div className="hampage">
+        <div className="ham-page">
+          <div className="hampage">
           <Intro />
             <MuseumSelector
               active={this.state.activeId}
@@ -52,6 +52,10 @@ class Ham extends Component {
         <div className="hamfooter">
           <SocialMedia />
         </div>
+      </div>
+      <div className="ham-location">
+      <Location title="HARVARD ART MUSEUMS" />
+      </div>
       </div>
     );
   }

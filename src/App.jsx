@@ -10,7 +10,6 @@ const getStyles = (mode) => ({
   app: {
     height: '100%',
     width: '100%',
-    padding: 16,
     backgroundColor: theme[mode].backgroundColor,
     color: theme[mode].color
   }
