@@ -13,12 +13,26 @@ const MemberCards = () => {
   }, []);
 
   return (
-    <div className="MemberCards">
+    <div>
+      <div className="aboutus-bloc">
+        <div className="aboutus-intro">
+          <h1>Our team members</h1>
+          <p>
+            We are students from the Wild Code School Paris Campus and are proud to present you our vision of the Harvard Art Museums.
+            Simplicity and aesthetic were the main objectives in our project to provide a refine website.
+            We hope you&apos;ll browse the Wild Art Museums website with great pleasure.
+          </p>
+        </div>
+        <div>
         {
           members.map(member => <DisplayMembers key={member.id} avatar={member.avatar} name={member.name}
             lastname={member.lastName} linkedin={member.linkedin} github={member.github} />)
           }
+        </div>
+      </div>
+      <div className="aboutUs-location">
         <Location title="ABOUT US" />
+      </div>
     </div>
   );
 };
