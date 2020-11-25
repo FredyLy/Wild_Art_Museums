@@ -1,5 +1,4 @@
 import React from 'react';
-// import App from './App';
 import Home from './components/Home/Home.js';
 import {
   Switch,
@@ -8,7 +7,7 @@ import {
 import Gallery from './components/Gallery/Gallery';
 import Ham from './components/Ham/Ham';
 import ContactUs from './components/Contact Us/ContactUs';
-import AboutUs from './components/MemberCards/MemberCards';
+import AboutUs from './components/DisplayMembers/MemberCards';
 
 const RouterWebSite = () => {
   return (
