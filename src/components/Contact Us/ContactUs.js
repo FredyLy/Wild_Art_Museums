@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './ContactUs.css';
 import Location from '../Location/Location';
 import logoTwitter from './assets/twitter.png';
 import logoFacebook from './assets/facebook.png';
@@ -8,6 +7,7 @@ import logoInstagram from './assets/instagram.png';
 import logoMap from './assets/map.png';
 import logoEmail from './assets/email.png';
 import logoPhone from './assets/telephone.png';
+import './ContactUs.css';
 
 const MAX_LENGTH = 150;
 class ContactUs extends Component {

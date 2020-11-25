@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import NavMenuLine from '../NavMenuLine/NavMenuLine';
+import { PropTypes } from 'prop-types';
 
 import './Location.css';
 
-const pageTitle = 'GALLERY';
-
-const Location = () => {
+const Location = ({ title }) => {
   const [open, setOpen] = useState(false);
 
   const expandLocation = (open) => {
@@ -21,17 +20,20 @@ const Location = () => {
   }, [open]);
 
   return (
-            <div className="bloc">
-              <div className='location_container' >
-                <div id='location_page-title'>
-                  <h1>{pageTitle}</h1>
-                </div>
-                <div>
-                  <NavMenuLine expandLoc={expandLocation} open={open}/>
-                </div>
-              </div>
-            </div>
+    <div className="bloc">
+      <div className='location_container' >
+        <div id='location_page-title'>
+          <h1>{title} </h1>
+        </div>
+        <div>
+          <NavMenuLine expandLoc={expandLocation} open={open}/>
+        </div>
+      </div>
+    </div>
   );
 };
 
+Location.propTypes = {
+  title: PropTypes.string.isRequired
+};
 export default Location;
