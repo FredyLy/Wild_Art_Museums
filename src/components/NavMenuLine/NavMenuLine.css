@@ -78,6 +78,15 @@
 a>.navmenuline-react-icons {
     color: var(--dark-blue);
     font-size: 30px;
+    position: relative;
+    left: 5px;
+}
+
+a>.navmenuline-react-icons-navmenu-theme {
+    color: var(--dark-blue);
+    font-size: 30px;
+    position: relative;
+    left: -7px;
 }
 
 a>.navmenuline-react-icons:hover {
