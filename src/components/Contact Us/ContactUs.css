@@ -6,12 +6,13 @@
 }
 
 .cu-fullpage1 {
-width: 100%;
+    width: 100%;
 }
 
 .cu-ContactUs {
     float: left;
     width: 85%;
+    max-width: 85%;
     background-color: #E5E5E5;
     height: 800px;
     margin: 100px 50px;
@@ -21,15 +22,17 @@ width: 100%;
 
 .cu-Location {
     width: 15%;
+    min-width: 15%;
     float: right;
 }
 
 .cu-contact-information {
     width: 30%;
+    max-width: 30%;
     background-color: black;
     border-radius: 10px;
     color: white;
-    height: 90%;
+    height: 100%;
     margin: auto;
     text-align: left;
 }
@@ -90,6 +93,7 @@ width: 100%;
 
 .cu-logo-bar {
     width: 100%;
+    max-width: 100%;
     margin: auto 100px;
 }
 
@@ -105,6 +109,7 @@ width: 100%;
 
 .cu-formulaire-content {
     width: 60%;
+    max-width: 60%;
     float: right;
     height: 90%;
     margin: auto;
@@ -164,4 +169,56 @@ textarea {
 .cu-first-text-justify {
     text-align: center;
     list-style-type: none;
+}
+
+@media screen and (max-width: 1678px) {
+    .cu-ContactUs {
+        display: flex;
+        flex-direction: column;
+        height: 95%;
+        width: 85%;
+        max-width: 850%;
+        position: fixed;
+        margin: 35px;
+    }
+    .cu-contact-information {
+        width: 85%;
+        max-width: 85%;
+        margin-top: 5%;
+        height: 50%;
+    }
+    .cu-formulaire-content {
+        height: 40%;
+        margin: auto;
+        width: 85%;
+        max-width: 85%;
+    }
+    .cu-list-justify {
+        text-align: center;
+        margin: 40px 0px;
+    }
+    .cu-contactUs-logo {
+        float: none;
+    }
+    .cu-logo-bar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+    .cu-formulaire {
+        margin-top: 0;
+        margin-left: 50px;
+        width: 100%;
+        grid-template-columns: 42% 42%;
+    }
+    .element-11 {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .cu-ContactUs {
+        width: 80%;
+    }
 }
