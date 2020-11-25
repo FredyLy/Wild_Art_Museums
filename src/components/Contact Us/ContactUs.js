@@ -118,7 +118,7 @@ class ContactUs extends Component {
             </div>
             <div className="cu-Location">
             </div>
-            <Location />
+            <Location title="CONTACT US" />
             </div>
     );
   }

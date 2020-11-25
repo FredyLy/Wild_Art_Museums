@@ -13,7 +13,7 @@ const Location = ({ title }) => {
 
   useEffect(() => {
     if (open === true) {
-      document.getElementById('location_page-title').style.transform = 'translateY(-400px)';
+      document.getElementById('location_page-title').style.transform = 'translateY(-800px)';
     } else {
       document.getElementById('location_page-title').style.transform = 'translateY(0px)';
     }

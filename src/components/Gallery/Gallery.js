@@ -39,7 +39,7 @@ class Gallery extends Component {
     );
     return (
       <div>
-        <Location />
+        <Location title="GALLERY" />
         { decision }
       </div>
     );
