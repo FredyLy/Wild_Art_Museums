@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import NavmenuTheme from '../Darkmode/NavmenuTheme';
 import { Link } from 'react-router-dom';
-import { FaHome, FaPalette, FaUserFriends } from 'react-icons/fa';
+import NavmenuTheme from '../Darkmode/NavmenuTheme';
 import PropTypes from 'prop-types';
+import { FaHome, FaPalette, FaUserFriends } from 'react-icons/fa';
 import { MdContactMail } from 'react-icons/md';
 import { GiGreekTemple } from 'react-icons/gi';
 import { AiOutlinePlus } from 'react-icons/ai';

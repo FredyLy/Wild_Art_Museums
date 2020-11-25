@@ -1,7 +1,7 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
 import { AiFillLinkedin } from 'react-icons/ai';
 import { FaGithub } from 'react-icons/fa';
-import { PropTypes } from 'prop-types';
 import './DisplayMembers.css';
 
 const DisplayMembers = ({ avatar, name, linkedin, github, lastname }) => {
