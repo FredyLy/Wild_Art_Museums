@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './ContactUs.css';
+import Location from '../Location/Location';
 import logoTwitter from './assets/twitter.png';
 import logoFacebook from './assets/facebook.png';
 import logoLinkedin from './assets/linkedin.png';
@@ -117,6 +118,7 @@ class ContactUs extends Component {
             </div>
             <div className="Location">
             </div>
+            <Location />
             </div>
     );
   }

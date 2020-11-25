@@ -5,6 +5,7 @@ import Busch from './Busch';
 import Sackler from './Sackler';
 import Intro from './Intro';
 import MuseumSelector from './MuseumSelector';
+import Location from '../Location/Location';
 
 import './Ham.css';
 import SocialMedia from './SocialMedia';
@@ -52,6 +53,7 @@ class Ham extends Component {
         <div className="hamfooter">
           <SocialMedia />
         </div>
+        <Location />
       </div>
     );
   }

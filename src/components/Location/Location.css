@@ -14,7 +14,7 @@
     text-orientation: sideways;
     color: var(--dark-blue);
     letter-spacing: 1px;
-    position: relative;
+    position: fixed;
     display: flex;
     align-items: center;
     font-size: 20px;
