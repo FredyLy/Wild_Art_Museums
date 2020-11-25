@@ -15,10 +15,10 @@ const DisplayMembers = ({ avatar, name, linkedin, github, lastname }) => {
                 <br/>
                 <br/>
         <a href={github} target="_blank" rel="noopener noreferrer"><FaGithub style={{ color: 'black' }} size={45}/></a>
-                <h3 className="aboutUsCardName">{lastname}</h3>
-                <h3 className="aboutUsCardLastName">{name}</h3>
             </div>
         </div>
+                <h3 className="aboutUsCardName">{name}</h3>
+                <h3 className="aboutUsCardLastName">{lastname}</h3>
       </div>
   );
 };
