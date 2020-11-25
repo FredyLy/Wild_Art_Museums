@@ -20,7 +20,7 @@ function Fogg () {
       established as a gallery for the display of original works of art, but was founded as an institution for the teaching and study of visual arts,
       and the original building contained classrooms equipped with magic lanterns, a library, an archive of slides and photographs of art works,
       and exhibition space for reproductions of works of art. In 1925, the building was replaced by a Georgian Revival-style structure on Quincy Street,
-      designed by Coolidge, Shepley, Bulfinch, and Abbott. (The original Hunt Hall remained, underutilized until it was demolished in 1974 to make way
+      designed by Coolidge, Shepley, Bulfinch, and Abbott. The original Hunt Hall remained, underutilized until it was demolished in 1974 to make way
       for new freshman dormitories.
       </p>
       <h3 className="hamcollection">Collection</h3>

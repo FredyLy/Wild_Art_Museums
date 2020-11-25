@@ -10,8 +10,7 @@ function Sackler () {
           <img className="hamfront" src={sackler} />
         </div>
         <div className="hamrightimg">
-          <h1 className="hamfirsttitle">Arthur M. Sackler Museum
-          </h1>
+          <h1 className="hamfirsttitle">Arthur M. Sackler Museum</h1>
           <p>The Arthur M. Sackler Museum opened in 1985. The museum building, which was designed by British architect James Stirling,
             was named for the major donor, Arthur M. Sackler, a psychiatrist, entrepreneur, and philanthropist. The museum also housed
             offices for the History of Art and Architecture faculty, as well as the Digital Images and Slides Collection of the Fine Arts Library.

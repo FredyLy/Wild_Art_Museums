@@ -12,7 +12,6 @@
     margin: 5% 0% 2% 5%;
 }
 
-
 .hamlogo{
     display: block;
     margin-left: auto;
@@ -37,8 +36,18 @@
     margin-bottom: 2em;
 }
 
-.hamfirsttitle{
-    margin-top: 0;
+.hamfirsttitle {
+    margin-bottom: 0.8em;
+}
+
+.hamhistory {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.hamcollection {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .hamMuseumSelector {
@@ -46,7 +55,7 @@
     justify-content: space-between;
     margin-bottom: 2em;
     margin-left: 5%;
-    margin-right: 15%;
+    margin-top: 2em;
 }
   
 .hamMuseumSelector button {
@@ -80,11 +89,7 @@
 .hamsocialMedia{
     text-align: center;
     margin-left: 5%;
-    padding-bottom: 2%;
-
-}
-.hampage{
-    padding-bottom: 3em;
+    margin-bottom: 2%;
 }
 
 @media screen and (max-width: 440px) {
@@ -94,6 +99,9 @@
     .hamsocialMedia img{
         height: 15px;
         width: 15px;
+    }
+    .hamfirsttitle {
+        margin-top: 1em;
     }
   }
 
