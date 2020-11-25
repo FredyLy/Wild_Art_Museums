@@ -64,7 +64,7 @@ class NavMenuLine extends Component {
           </div>
           <div className="navmenuline-item">
             <Link to='/'>
-              <i className="navmenu-react-icons"><FaHome className="navmenu-icons-hover"/></i>
+              <i className="navmenuline-react-icons"><FaHome className="navmenuline-icons-hover"/></i>
             </Link>
           </div>
           <div className="navmenuline-item">
