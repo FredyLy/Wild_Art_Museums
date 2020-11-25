@@ -7,10 +7,10 @@ import './DisplayMembers.css';
 const DisplayMembers = ({ avatar, name, linkedin, github }) => {
   return (
       <div className="diplayMembersContainer">
-        <div className="content">
-            <div className="content-overlay"></div>
+        <div className="aboutUsContent">
+            <div className="aboutUsContent-overlay"></div>
               <img src={avatar} alt={name} />
-              <div className="content-details fadeIn-top fadeIn-right">
+              <div className="aboutUsContent-details fadeIn-top fadeIn-right">
                 <a href={linkedin} target="_blank" rel="noopener noreferrer"><AiFillLinkedin size={45}/></a>
                 <br/>
                 <br/>

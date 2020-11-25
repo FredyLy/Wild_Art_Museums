@@ -5,7 +5,7 @@ export const ListMembers = [
     name: 'Helder',
     github: 'https://github.com/helder-hanka',
     linkedin: 'https://www.linkedin.com/in/helder-fernandes-soares/',
-    avatar: 'https://media-exp1.licdn.com/dms/image/C4D35AQENtbe78VkrxA/profile-framedphoto-shrink_200_200/0/1604426346422?e=1606298400&v=beta&t=XvMmN4njqmKRS7GmoSrEzDgR8JLwmBbIhN2KK-AZq-k'
+    avatar: 'https://media-exp1.licdn.com/dms/image/C4D35AQENtbe78VkrxA/profile-framedphoto-shrink_200_200/0/1604426346422?e=1606395600&v=beta&t=RsMUkU-nTiAm-U61KVGcE-BvKuOpRyGB6xDObQMTYtI'
   },
   {
     id: 1,
@@ -37,7 +37,7 @@ export const ListMembers = [
     name: 'Gregory',
     github: 'https://github.com/gregvlr',
     linkedin: 'https://www.linkedin.com/in/gr%C3%A9gory-vilar-28524a1b6/',
-    avatar: 'https://media-exp1.licdn.com/dms/image/C4E35AQFVhIawEBZSnA/profile-framedphoto-shrink_200_200/0?e=1606294800&v=beta&t=3oDJgVMhEdnqkcwmCSKi8QPT_HHQKd6X9jaXq9PNAHg'
+    avatar: 'https://media-exp1.licdn.com/dms/image/C4E35AQFVhIawEBZSnA/profile-framedphoto-shrink_200_200/0?e=1606395600&v=beta&t=0Lj3F6CvQJKWBD54oL9_8GAh8rKleroBw2frY9OcFRk'
   },
   {
     id: 5,
