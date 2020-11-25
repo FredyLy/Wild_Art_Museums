@@ -65,34 +65,34 @@ class ContactUs extends Component {
     const numRemaining = MAX_LENGTH - this.state.character.length;
 
     return (
-            <div className="fullpage1">
+            <div className="cu-fullpage1">
             <div>
-                <div className="ContactUs">
-                    <div className="contact-information">
-                      <ul className="text-justify">
-                        <li className="title-justify list-justify">Contact Information</li>
-                        <li className="first-text-justify">Fill up the form and our Team will get back to you within 24 hours.</li>
-                <li className="list-justify"><img className="contactUs-logo " src={logoMap} />44 rue Alphonse Penaud,<br />75020 Paris</li>
-                <li className="list-justify"><img className="contactUs-logo" src={logoEmail} />paris@wildcodeschool.com</li>
-                <li className="list-justify"><img className="contactUs-logo" src={logoPhone} />+33 (0)7 84 39 08 74</li>
+                <div className="cu-ContactUs">
+                    <div className="cu-contact-information">
+                      <ul className="cu-text-justify">
+                        <li className="cu-title-justify cu-list-justify">Contact Information</li>
+                <li className="cu-first-text-justify">Fill up the form and our Team will get back to you within 24 hours.</li>
+                <li className="cu-list-justify"><img className="cu-contactUs-logo " src={logoMap} />44 rue Alphonse Penaud,<br />75020 Paris</li>
+                <li className="cu-list-justify"><img className="cu-contactUs-logo" src={logoEmail} />paris@wildcodeschool.com</li>
+                        <li className="cu-list-justify"><img className="cu-contactUs-logo" src={logoPhone} />+33 (0)7 84 39 08 74</li>
                       </ul>
-                <div className="logo-bar">
+                <div className="cu-logo-bar">
                 <a href="https://twitter.com/WildCodeSchool?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" rel="noreferrer" alt="Twitter Wild Code School">
-                  <img className="network-logo" src={logoTwitter} alt="logo twitter" />
+                  <img className="cu-network-logo" src={logoTwitter} alt="logo twitter" />
                   </a>
                 <a href="https://fr-fr.facebook.com/WildCodeSchool/" rel="noreferrer" target="_blank" alt="Facebook Wild Code School">
-                  <img className="network-logo" src={logoFacebook} alt="logo Facebook" />
+                  <img className="cu-network-logo" src={logoFacebook} alt="logo Facebook" />
                   </a>
                 <a href="https://www.linkedin.com/school/wild-code-school/" rel="noreferrer" target="_blank" alt="Linkedin Wild Code School">
-                  <img className="network-logo" src={logoLinkedin} alt="logo Linkedin" />
+                  <img className="cu-network-logo" src={logoLinkedin} alt="logo Linkedin" />
                 </a>
                 <a href="https://www.instagram.com/wildcodeschoolofficial/?hl=fr" rel="noreferrer" target="_blank" alt="Instagram Wild Code School">
-                  <img className="network-logo" src={logoInstagram} alt="logo Instagram" />
+                  <img className="cu-network-logo" src={logoInstagram} alt="logo Instagram" />
                 </a>
                     </div>
                     </div>
-                    <div className="formulaire-content">
-                    <form className="formulaire">
+                    <div className="cu-formulaire-content">
+                    <form className="cu-formulaire">
                         <label className="row1" htmlFor="FirstName">First Name</label>
                         <label className="row1" htmlFor="LastName" >Last Name</label>
                         <input autoComplete="off" id="First Name" type="text" value={this.state.FirstName} onChange={this.handleChangeFirstName} />
@@ -116,7 +116,7 @@ class ContactUs extends Component {
                     </div>
             </div>
             </div>
-            <div className="Location">
+            <div className="cu-Location">
             </div>
             <Location />
             </div>
