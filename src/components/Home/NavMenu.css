@@ -4,9 +4,9 @@
     width: 80px;
     position: absolute;
     margin: auto;
-    top: 65%;
+    top: 45%;
     bottom: 0;
-    left: 80%;
+    left: 60%;
     right: 0;
     cursor: pointer;
 }
@@ -24,10 +24,10 @@
 
 .navmenu-toggle {
     height: 0;
-    width: 40px;
-    border-bottom: 35px solid var(--dark-blue);
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
+    width: 60px;
+    border-bottom: 52px solid var(--dark-blue);
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
     position: absolute;
     top: 0;
 }
@@ -35,21 +35,21 @@
 .navmenu-toggle:before {
     content: '';
     height: 0;
-    width: 40px;
-    border-top: 35px solid var(--dark-blue);
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
+    width: 60px;
+    border-top: 52px solid var(--dark-blue);
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
     position: absolute;
-    top: 35px;
-    left: -20px;
+    top: 52px;
+    left: -30px;
 }
 
 .navmenu-item {
     height: 0;
-    width: 40px;
-    border-bottom: 35px solid var(--second-color);
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
+    width: 60px;
+    border-bottom: 52px solid var(--second-color);
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
     position: absolute;
     top: 0;
     transition: 1s;
@@ -58,32 +58,34 @@
 .navmenu-item:before {
     content: '';
     height: 0;
-    width: 40px;
-    border-top: 35px solid var(--second-color);
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
+    width: 60px;
+    border-top: 52px solid var(--second-color);
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
     position: absolute;
-    top: 35px;
-    left: -20px;
+    top: 52px;
+    left: -30px;
 }
 
 #navmenu-add {
-    font-size: 50px;
+    font-size: 70px;
     color: var(--second-color);
     position: relative;
-    top: 10px;
+    top: 17px;
     right: 5px;
 }
 
 a>.navmenu-react-icons {
     color: var(--dark-blue);
-    font-size: 30px;
+    font-size: 40px;
+    position: relative;
+    top: 12px;
+    left: 4px;
 }
 
 a {
     position: relative;
     top: 20px;
-    left: 5px;
 }
 
 a>.navmenu-react-icons:hover {
