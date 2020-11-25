@@ -56,7 +56,7 @@ class Ham extends Component {
         </div>
       </div>
       <div className="ham-location">
-        <Location />
+      <Location title="HARVARD ART MUSEUMS" />
       </div>
       </div>
     );
