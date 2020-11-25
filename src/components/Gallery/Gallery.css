@@ -110,7 +110,6 @@ input[disabled]:hover {
   align-self: stretch;
   overflow: scroll;
   flex: 0 1 50%;
-  /* width: 50%; */
 }
   
 .comicDetails h3 {

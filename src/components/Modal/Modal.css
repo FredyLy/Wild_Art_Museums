@@ -50,12 +50,8 @@
   }
   
   .modalBody {
-    /* padding: 30px 10px; */
     background: var(--white-color);
     overflow: auto;
-    /* display: flex;
-    justify-content: space-around;
-    align-items: center; */
   }
 
   .modalFooter {
@@ -95,7 +91,6 @@
     flex-wrap: wrap;
     padding: 30px 10px;
     background: var(--white-color);
-    /* height: 400px; */
     overflow: auto;
   }
  

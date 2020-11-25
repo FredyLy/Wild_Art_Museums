@@ -48,12 +48,9 @@ class Gallery extends Component {
   }
 
   showModal = id => {
-    console.log('id', id);
-    const { characterInfos } = this.state;
     this.setState({ openModal: true });
     this.setState(({ characterInfos: id }));
     this.setState(({ resultInModal: false }));
-    console.log('Modal', characterInfos);
   }
 
   closeModal = () => {
