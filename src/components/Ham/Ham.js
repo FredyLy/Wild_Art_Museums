@@ -40,7 +40,8 @@ class Ham extends Component {
   render () {
     return (
       <div>
-        <div className="hampage">
+        <div className="ham-page">
+          <div className="hampage">
           <Intro />
             <MuseumSelector
               active={this.state.activeId}
@@ -53,7 +54,10 @@ class Ham extends Component {
         <div className="hamfooter">
           <SocialMedia />
         </div>
+      </div>
+      <div className="ham-location">
         <Location />
+      </div>
       </div>
     );
   }
