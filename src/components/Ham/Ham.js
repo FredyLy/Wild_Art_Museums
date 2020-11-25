@@ -32,8 +32,6 @@ class Ham extends Component {
         return <Busch />;
       case 'ShowSackler':
         return <Sackler />;
-      default:
-        console.log('error');
     }
   }
 
