@@ -32,8 +32,6 @@ class Ham extends Component {
         return <Busch />;
       case 'ShowSackler':
         return <Sackler />;
-      default:
-        console.log('error');
     }
   }
 
@@ -56,7 +54,7 @@ class Ham extends Component {
         </div>
       </div>
       <div className="ham-location">
-        <Location />
+      <Location title="HARVARD ART MUSEUMS" />
       </div>
       </div>
     );
