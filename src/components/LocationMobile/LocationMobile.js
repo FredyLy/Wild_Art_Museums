@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import NavMenuLineMobile from '../NavMenuLineMobile/NavMenuLineMobile';
+
 import { PropTypes } from 'prop-types';
 
 import './LocationMobile.css';
