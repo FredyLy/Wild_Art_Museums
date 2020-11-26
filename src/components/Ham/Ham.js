@@ -56,7 +56,6 @@ class Ham extends Component {
         </div>
       </div>
       <div className="ham-location">
-        <Location title="HARVARD ART MUSEUMS" />
       <Location title={this.state.title} />
       </div>
       <div className="ham-locationMobile">
