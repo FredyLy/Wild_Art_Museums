@@ -117,7 +117,7 @@ input[disabled]:hover {
 .comicDetails a {
   flex: 0 1 60%;
   display: inline-block;
-  background-color: #0f3460;
+  background-color: var(--light-blue);
   padding: 10px 15px;
   margin-right: 10px;
   color: var(--second-color);

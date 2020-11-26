@@ -44,11 +44,13 @@
 .hamhistory {
     margin-top: 1em;
     margin-bottom: 1em;
+    color: var(--light-blue);
 }
 
 .hamcollection {
     margin-top: 1em;
     margin-bottom: 1em;
+    color: var(--light-blue);
 }
 
 .hamMuseumSelector {
