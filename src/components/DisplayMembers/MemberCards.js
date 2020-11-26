@@ -6,6 +6,7 @@ import './MemberCards.css';
 
 const MemberCards = () => {
   const [members, setMembers] = useState([]);
+  const [title] = useState('ABOUT US');
 
   useEffect(() => {
     const newArray = ListMembers.map((ListMember) => ListMember);
@@ -31,7 +32,7 @@ const MemberCards = () => {
         </div>
       </div>
       <div className="aboutUs-location">
-        <Location title="ABOUT US" />
+        <Location title={title} />
       </div>
     </div>
   );

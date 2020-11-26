@@ -16,7 +16,8 @@ class Gallery extends Component {
     },
     openModal: false,
     characterInfos: [],
-    resultInModal: true
+    resultInModal: true,
+    title: 'GALLERY'
   }
 
   componentDidMount () {
@@ -141,7 +142,7 @@ class Gallery extends Component {
 
     return (
       <Fragment>
-        <Location title="GALLERY" />
+        <Location title={this.state.title} />
         { decision }
         <div className="divBouton">
           <input className="gallery.btn round" disabled={displayBtnPrev} type='button' value='<<' onClick={() => this.harvardArtMuseums(this.state.url.prev)} />

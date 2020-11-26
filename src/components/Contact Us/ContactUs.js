@@ -19,7 +19,8 @@ class ContactUs extends Component {
       Mail: '',
       Phone: '',
       Message: '',
-      character: ''
+      character: '',
+      title: 'CONTACT US'
     };
 
     this.handleChangeFirstName = this.handleChangeFirstName.bind(this);
@@ -117,7 +118,7 @@ class ContactUs extends Component {
               </div>
             </div>
               <div className="cu-Location"></div>
-              <Location title="CONTACT US" />
+              <Location title={this.state.title} />
       </div>
     );
   }
