@@ -92,8 +92,10 @@ a>.navmenulinemobile-react-icons {
     transition: 1s;
 }
 
-.react-switch-bg{
-    transform: scale(0.6);
+@media screen and (min-width: 375px){
+    .react-switch-bg{
+        transform: scale(0.6);
+    }
 }
 
 a>.navmenulinemobile-react-icons-navmenu-theme {
