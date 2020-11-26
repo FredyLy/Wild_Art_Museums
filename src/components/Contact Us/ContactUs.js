@@ -73,7 +73,7 @@ class ContactUs extends Component {
                     <ul className="cu-text-justify">
                       <li className="cu-title-justify cu-list-justify">Contact Information</li>
                       <li className="cu-first-text-justify">Fill up the form and our Team will get back to you within 24 hours.</li>
-                      <li className="cu-list-justify"><img className="cu-contactUs-logo " src={logoMap} />44 rue Alphonse Penaud,<br />75020 Paris</li>
+                      <li className="cu-list-justify"><img className="cu-contactUs-logo " src={logoMap} />44 rue Alphonse Penaud, Paris</li>
                       <li className="cu-list-justify"><img className="cu-contactUs-logo" src={logoEmail} />paris@wildcodeschool.com</li>
                       <li className="cu-list-justify"><img className="cu-contactUs-logo" src={logoPhone} />+33 (0)7 84 39 08 74</li>
                     </ul>
@@ -99,10 +99,10 @@ class ContactUs extends Component {
                     <input className="element-2" autoComplete="off" id="First Name" type="text" value={this.state.FirstName} onChange={this.handleChangeFirstName} />
                     <input autoComplete="off" id="Last Name" type="text" className="element-4" value={this.state.LastName} onChange={this.handleChangeLastName} />
                     <label htmlFor="Mail" className="element-5">Mail</label>
-                    <label htmlFor="Phone" className="element-6">Phone : </label>
+                    <label htmlFor="Phone" className="element-6">Phone</label>
                     <input autoComplete="off" id="Mail" type="text" className="element-7" value={this.state.Mail} onChange={this.handleChangeMail} />
                     <input autoComplete="off" id="Phone" type="text" className="element-8" value={this.state.Phone} onChange={this.handleChangePhone} />
-                    <label htmlFor="Message" className="element-9">Message : </label>
+                    <label htmlFor="Message" className="element-9">Message</label>
                         <textarea
                         className={maximumReached ? 'length-maximum-reached' : 'length-ok'}
                         id="Message"
