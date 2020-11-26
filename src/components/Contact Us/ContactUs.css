@@ -3,13 +3,14 @@
 }
 
 .cu-ContactUs {
-    float: left;
-    width: 85%;
     background-color: var(--light-grey);
-    height: 800px;
-    margin: 100px 50px;
     display: flex;
     justify-content: space-around;
+    margin: 20px;
+    height: 800px;
+    width: 85%;
+    float: left;
+    border-radius: 10px;
 }
 
 .cu-Location {
@@ -19,14 +20,23 @@
 }
 
 .cu-contact-information {
-    width: 30%;
-    background-color: var(--black-color);
-    border-radius: 10px;
+    background-color: var(--dark-blue);
     color: var(--second-color);
-    height: 100%;
-    margin: auto;
+    border-radius: 10px;
     text-align: left;
+    width: 32%;
+    height: 90%;
+    margin: auto;
 }
+
+.cu-text-justify {
+    padding: 10px;
+}
+
+.cu-contact-information ul {
+    margin: auto;
+}
+
 
 .cu-contact-information-justify {
     height: 100px;
@@ -39,7 +49,7 @@
 
 .cu-text-justify {
     color: var(--second-color);
-    font-size: 25px;
+    font-size: 22px;
     text-align: left;
     border-spacing: 10px;
 }
@@ -47,7 +57,6 @@
 .cu-first-text-justify {
     text-align: center;
     list-style-type: none;
-    margin-right: 20px;
 }
 
 .cu-list-justify {
@@ -78,14 +87,13 @@
 .cu-network-logo {
     -webkit-filter: invert(100%);
     filter: invert(100%);
+    border-radius: 10px;
     margin: 10px;
     width: 40px;
 }
 
 .cu-logo-bar {
-    width: 100%;
-    max-width: 100%;
-    margin: auto 100px;
+    text-align: center;
 }
 
 .cu-formulaire {
@@ -121,9 +129,10 @@
 }
 
 .element-12 {
+    background-color: var(--dark-blue);
+    color: var(--second-color);
     grid-column-start: 2;
     grid-column-end: 3;
-    background-color: var(--pearl-grey);
     border-radius: 10px;
     height: 50px;
     font-size: 20px;
@@ -138,8 +147,9 @@ label {
 }
 
 input {
+    border: 3px solid rgba(0, 0, 0, 0.021);
+    border-bottom: 3px solid var(--dark-blue);
     background-color: var(--light-grey);
-    border-bottom: 3px solid var(--black-color);
     height: 40px;
     font-size: 20px;
 }
@@ -149,7 +159,7 @@ textarea {
     grid-column-end: 3;
     background-color: var(--light-grey);
     border: 3px solid rgba(0, 0, 0, 0.021);
-    border-bottom: 3px solid var(--black-color);
+    border-bottom: 3px solid var(--dark-blue);
     height: 40px;
     font-size: 20px;
     padding: 30px;
@@ -161,7 +171,15 @@ textarea {
     list-style-type: none;
 }
 
-@media screen and (max-width: 1678px) {
+.cu-ContactUs ul li {
+    font-size: 1em;
+}
+
+.element-1, .element-3, .element-5, .element-6, .element-9 {
+    color: var(--dark-blue);
+}
+
+@media screen and (max-width: 1200px) {
     .cu-ContactUs {
         display: flex;
         flex-direction: column;
@@ -186,10 +204,13 @@ textarea {
     .cu-list-justify {
         text-align: center;
         margin: 40px 0px;
+        font-size : 15px;
     }
+    
     .cu-contactUs-logo {
         float: none;
     }
+
     .cu-logo-bar {
         width: 100%;
         display: flex;
@@ -202,34 +223,13 @@ textarea {
         width: 100%;
         grid-template-columns: 42% 42%;
     }
-    .element-11 {
-        margin-top: 60px;
+    
+    .cu-ContactUs ul li {
+        font-size: 1em;
     }
 }
 
-@media screen and (max-width: 1300px) {
-    .cu-ContactUs {
-        width: 80%;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .cu-formulaire-content {
-        margin-left: initial;
-        width: 95%;
-    }
-    .cu-ContactUs {
-        width: 73%;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .cu-ContactUs {
-        width: 90%;
-    }
-}
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
     .cu-title-justify {
         font-size: 20px;
         margin: 30px 0px;
