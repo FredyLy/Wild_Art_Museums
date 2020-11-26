@@ -6,17 +6,11 @@
     background-color: var(--light-grey);
     display: flex;
     justify-content: space-around;
-    margin: 20px;
-    height: 800px;
+    margin: 30px;
+    height: 700px;
     width: 85%;
     float: left;
     border-radius: 10px;
-}
-
-.cu-Location {
-    width: 15%;
-    min-width: 15%;
-    float: right;
 }
 
 @media screen and (max-width: 375px) {
@@ -136,7 +130,7 @@
     grid-column-start: 2;
     grid-column-end: 3;
     text-align: right;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .element-12 {
