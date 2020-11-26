@@ -120,7 +120,6 @@ class ContactUs extends Component {
             </div>
             <Location title="CONTACT US" />
             </div>
-            </div>
     );
   }
 }
