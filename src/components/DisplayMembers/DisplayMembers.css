@@ -8,16 +8,17 @@
     float: left;
     width: 50%;
   }
-  @media screen and (max-width: 640px){
+  
+  @media screen and (min-width: 985px){
+    .diplayMembersContainer{
+      width: 33.33333%;
+    }
+  }
+
+  @media screen and (max-width: 728px){
     .diplayMembersContainer{
       display: block;
       width: 100%;
-    }
-  }
-  
-  @media screen and (min-width: 900px){
-    .diplayMembersContainer{
-      width: 33.33333%;
     }
   }
   

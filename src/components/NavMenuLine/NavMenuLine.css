@@ -5,10 +5,46 @@
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    top: 85%;
+    bottom: 5%;
     right: 40px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 1500px) {
+    .navmenuline-container,
+    .navmenuline-menu {
+        right: 35px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .navmenuline-container,
+    .navmenuline-menu {
+        right: 25px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .navmenuline-container,
+    .navmenuline-menu {
+        right: 17px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navmenuline-container,
+    .navmenuline-menu {
+        right: 9px;
+    }
+}
+
+/* @media screen and (max-width: 375px) {
+    .navmenuline-container,
+    .navmenuline-menu {
+        right: 9px;
+        bottom: 0.4%;
+    }
+} */
 
 .navmenuline-menu {
     transform: scale(0.9);
