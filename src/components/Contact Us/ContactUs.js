@@ -93,9 +93,9 @@ class ContactUs extends Component {
                     </div>
                     <div className="cu-formulaire-content">
                     <form className="cu-formulaire">
-                        <label className="row1" htmlFor="FirstName">First Name</label>
-                        <label className="row1" htmlFor="LastName" >Last Name</label>
-                        <input autoComplete="off" id="First Name" type="text" value={this.state.FirstName} onChange={this.handleChangeFirstName} />
+                        <label className="element-1" htmlFor="FirstName">First Name</label>
+                        <label className="element-3" htmlFor="LastName" >Last Name</label>
+                        <input className="element-2" autoComplete="off" id="First Name" type="text" value={this.state.FirstName} onChange={this.handleChangeFirstName} />
                         <input autoComplete="off" id="Last Name" type="text" className="element-4" value={this.state.LastName} onChange={this.handleChangeLastName} />
                         <label htmlFor="Mail" className="element-5">Mail</label>
                         <label htmlFor="Phone" className="element-6">Phone : </label>
@@ -119,6 +119,7 @@ class ContactUs extends Component {
             <div className="cu-Location">
             </div>
             <Location title="CONTACT US" />
+            </div>
             </div>
     );
   }
