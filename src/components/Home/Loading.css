@@ -1,5 +1,5 @@
 body {
-  background:whitesmoke;
+  background: var(--whitesmoke-color);
 }
 
 #load {
@@ -31,7 +31,7 @@ body {
   -o-transform:rotate(180deg);
   -moz-transform:rotate(180deg);
   -webkit-transform:rotate(180deg);
-  color: black;
+  color: var(--black-color);
 }
 
 #load div:nth-child(2) {

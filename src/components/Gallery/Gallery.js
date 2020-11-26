@@ -125,7 +125,7 @@ class Gallery extends Component {
 
             <p>This record was created from historic documentation and may not have been reviewed by a curator; it may be inaccurate or incomplete. Our records are frequently revised and enhanced.
               For more information please contact the {characterInfos.division} at am_asianmediterranean@harvard.edu</p>
-            <button className ="gallery-button" href={characterInfos.url} target='_blank' rel="noopener noreferrer">More info</button>
+            <a href={characterInfos.url} target='_blank' rel="noopener noreferrer">More Info</a>
           </div>
         </div>
       </Fragment>)
