@@ -10,14 +10,6 @@
     cursor: pointer;
 }
 
-/* @media screen and (max-width: 375px) {
-    .navmenulinemobile-container,
-    .navmenulinemobile-menu {
-        right: 9px;
-        bottom: 0.4%;
-    }
-} */
-
 .navmenulinemobile-menu {
     transform: scale(0.9);
     position: fixed;
@@ -92,9 +84,9 @@ a>.navmenulinemobile-react-icons {
 
 .backgd-navmobile {
     width:500px;
-    height: 34px;
+    height: 40px;
     background-color: var(--pearl-grey);
-    z-index: -20;
+    z-index: -5;
     position: relative;
     left: 60px;
     transition: 1s;

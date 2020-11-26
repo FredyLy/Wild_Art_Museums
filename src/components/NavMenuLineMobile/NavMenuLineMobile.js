@@ -18,26 +18,24 @@ class NavMenuLineMobile extends Component {
     var i = document.getElementById('navmenulinemobile-menu').childNodes;
     if (open === false) {
       document.getElementById('navmenulinemobile-menu').style.transform = 'scale(1)';
-      document.getElementById('mob').style.display = '';
       i[3].style.transform = 'translate(-250px)';
       i[4].style.transform = 'translate(-200px)';
       i[1].style.transform = 'translate(-160px)';
       i[0].style.transform = 'translate(-120px)';
       i[5].style.transform = 'translate(-80px)';
       i[2].style.transform = 'translate(-40px)';
-      i[6].style.transform = 'translate(-450px)';
+      i[6].style.transform = 'translate(-450px, -3px)';
       this.setState({ open: !open });
       this.props.expandLoc(!this.state.open);
     } else {
       document.getElementById('navmenulinemobile-menu').style.transform = 'scale(0.9)';
-      document.getElementById('mob').style.display = 'none';
       i[0].style.transform = 'translateY(0)';
       i[1].style.transform = 'translate(0)';
       i[2].style.transform = 'translate(0)';
       i[3].style.transform = 'translateY(0)';
       i[4].style.transform = 'translate(0)';
       i[5].style.transform = 'translate(0)';
-      i[6].style.transform = 'translate(0)';
+      i[6].style.transform = 'translate(0px, -3px)';
       this.setState({ open: !open });
       this.props.expandLoc(!this.state.open);
     }
