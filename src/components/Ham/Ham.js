@@ -37,24 +37,24 @@ class Ham extends Component {
 
   render () {
     return (
-      <div>
+      <div className="overflow">
         <div className="ham-page">
           <div className="hampage">
-          <Intro />
-            <MuseumSelector
-              active={this.state.activeId}
-              handleChangeTab={this.handleChangeTab}
-            />
-        <div>
-          {this.selectComponent()}
-        </div>
-        </div>
+            <Intro />
+              <MuseumSelector
+                active={this.state.activeId}
+                handleChangeTab={this.handleChangeTab}
+              />
+            <div>
+              {this.selectComponent()}
+            </div>
+          </div>
         <div className="hamfooter">
           <SocialMedia />
         </div>
       </div>
       <div className="ham-location">
-      <Location title="HARVARD ART MUSEUMS" />
+        <Location title="HARVARD ART MUSEUMS" />
       </div>
       </div>
     );

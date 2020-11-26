@@ -1,12 +1,10 @@
 export const theme = {
   light: {
     color: 'black',
-    backgroundColor: '#ffffff',
-    highlight: '#fdb813'
+    backgroundColor: '#F6F6F6'
   },
   dark: {
     color: 'white',
-    backgroundColor: '#121212',
-    highlight: '#ffffff'
+    backgroundColor: '#121212'
   }
 };

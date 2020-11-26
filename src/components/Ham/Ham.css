@@ -1,3 +1,8 @@
+.overflow{
+    overflow: hidden;
+    height: 100vh;
+}
+
 .ham-page {
     width: 85%;
     float:left;
