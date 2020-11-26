@@ -1,7 +1,3 @@
-body {
-  background: var(--whitesmoke-color);
-}
-
 #load {
   position:absolute;
   width:600px;

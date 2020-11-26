@@ -12,7 +12,7 @@ const getStyles = (mode) => ({
     alignItems: 'center',
     height: '100%',
     fontSize: 25,
-    paddingLeft: mode === 'dark' ? 12 : 2
+    paddingLeft: mode === 'dark' ? 2 : 2
   }
 });
 
@@ -24,7 +24,7 @@ const ThemeSwitch = () => {
       checked={mode === 'light' && true }
       offColor='#1d1f2f'
       onColor='#FDB813'
-      handleDiameter={10}
+      handleDiameter={30}
       checkedIcon={
         <IoMdSunny style={styles.switch} color='white' className='light' />
       }

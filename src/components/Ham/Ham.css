@@ -1,3 +1,8 @@
+.overflow{
+    overflow: hidden;
+    height: 100vh;
+}
+
 .ham-page {
     width: 85%;
     float:left;
@@ -30,6 +35,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 1em;
+    padding-left: 5%;
 }
 
 .hamfront{

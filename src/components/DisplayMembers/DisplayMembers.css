@@ -7,6 +7,7 @@
     padding: 1em 0;
     float: left;
     width: 50%;
+    overflow: hidden;
   }
   
   @media screen and (min-width: 985px){
@@ -66,7 +67,7 @@
   .aboutUsContent:hover .aboutUsContent-overlay{
     opacity: 1;
   }
-    
+
   .aboutUsContent-details {
     position: absolute;
     text-align: center;
@@ -97,16 +98,12 @@
 .fadeIn-right{
   left: 80%;
 }
-
 .aboutUsCardName{
   margin-top: 40px;
   text-align: center;
 
 }
-
 .aboutUsCardLastName{
   text-align: center;
   margin-bottom: 20px;
 }
-
-
