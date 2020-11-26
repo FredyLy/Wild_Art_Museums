@@ -5,7 +5,8 @@ import Busch from './Busch';
 import Sackler from './Sackler';
 import Intro from './Intro';
 import MuseumSelector from './MuseumSelector';
-import Location from '../Location/Location';
+import LocationMobile from '../LocationMobile/LocationMobile';
+// import Location from '../Location/Location';
 
 import './Ham.css';
 import SocialMedia from './SocialMedia';
@@ -55,7 +56,10 @@ class Ham extends Component {
         </div>
       </div>
       <div className="ham-location">
-      <Location title={this.state.title} />
+      {/* <Location title={this.state.title} /> */}
+      </div>
+      <div className="ham-locationMobile">
+      <LocationMobile />
       </div>
       </div>
     );
