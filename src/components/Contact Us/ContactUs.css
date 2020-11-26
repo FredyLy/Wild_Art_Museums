@@ -20,7 +20,7 @@
 }
 
 .cu-contact-information {
-    background-color: var(--dark-blue);
+    background-color: var(--black-color);
     color: var(--second-color);
     border-radius: 10px;
     text-align: left;
@@ -129,7 +129,7 @@
 }
 
 .element-12 {
-    background-color: var(--dark-blue);
+    background-color: var(--black-color);
     color: var(--second-color);
     grid-column-start: 2;
     grid-column-end: 3;
@@ -148,7 +148,7 @@ label {
 
 input {
     border: 3px solid rgba(0, 0, 0, 0.021);
-    border-bottom: 3px solid var(--dark-blue);
+    border-bottom: 3px solid var(--black-color);
     background-color: var(--light-grey);
     height: 40px;
     font-size: 20px;
@@ -159,7 +159,7 @@ textarea {
     grid-column-end: 3;
     background-color: var(--light-grey);
     border: 3px solid rgba(0, 0, 0, 0.021);
-    border-bottom: 3px solid var(--dark-blue);
+    border-bottom: 3px solid var(--black-color);
     height: 40px;
     font-size: 20px;
     padding: 30px;
@@ -176,7 +176,7 @@ textarea {
 }
 
 .element-1, .element-3, .element-5, .element-6, .element-9 {
-    color: var(--dark-blue);
+    color: var(--black-color);
 }
 
 @media screen and (max-width: 1200px) {
