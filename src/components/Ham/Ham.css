@@ -7,6 +7,19 @@
     width : 15%;
 }
 
+@media screen and (max-width: 375px) {
+    .ham-location {
+      display: none;
+    }
+  
+  }
+  
+  @media screen and (min-width: 376px) {
+    .ham-locationMobile {
+      display: none;
+    }
+  }
+
 .hamintro{
     text-align: justify;
     margin: 5% 0% 2% 5%;

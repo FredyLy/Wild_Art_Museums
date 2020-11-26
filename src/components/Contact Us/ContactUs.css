@@ -19,6 +19,18 @@
     float: right;
 }
 
+@media screen and (max-width: 375px) {
+    .cu-Location {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 376px) {
+    .cu-LocationMobile {
+      display: none;
+    }
+  }
+
 .cu-contact-information {
     background-color: var(--black-color);
     color: var(--second-color);
@@ -36,7 +48,6 @@
 .cu-contact-information ul {
     margin: auto;
 }
-
 
 .cu-contact-information-justify {
     height: 100px;

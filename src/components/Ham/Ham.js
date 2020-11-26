@@ -5,7 +5,7 @@ import Busch from './Busch';
 import Sackler from './Sackler';
 import Intro from './Intro';
 import MuseumSelector from './MuseumSelector';
-// import LocationMobile from '../LocationMobile/LocationMobile';
+import LocationMobile from '../LocationMobile/LocationMobile';
 import Location from '../Location/Location';
 
 import './Ham.css';
@@ -59,7 +59,7 @@ class Ham extends Component {
       <Location title={this.state.title} />
       </div>
       <div className="ham-locationMobile">
-      {/* <LocationMobile /> */}
+      <LocationMobile />
       </div>
       </div>
     );
