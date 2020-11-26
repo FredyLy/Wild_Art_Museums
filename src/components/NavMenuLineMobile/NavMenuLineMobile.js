@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import NavmenuTheme from '../Darkmode/NavmenuTheme';
 import PropTypes from 'prop-types';
 import { FaHome, FaPalette, FaUserFriends } from 'react-icons/fa';
 import { MdContactMail } from 'react-icons/md';
@@ -19,12 +18,12 @@ class NavMenuLineMobile extends Component {
     if (open === false) {
       document.getElementById('navmenulinemobile-menu').style.transform = 'scale(1)';
       i[3].style.transform = 'translate(-240px)';
-      i[4].style.transform = 'translate(-200px)';
-      i[1].style.transform = 'translate(-160px)';
-      i[0].style.transform = 'translate(-120px)';
-      i[5].style.transform = 'translate(-80px)';
-      i[2].style.transform = 'translate(-40px)';
-      i[6].style.transform = 'translate(-450px, -3px)';
+      i[4].style.transform = 'translate(-300px)';
+      i[1].style.transform = 'translate(-240px)';
+      i[0].style.transform = 'translate(-180px)';
+      i[5].style.transform = 'translate(-120px)';
+      i[2].style.transform = 'translate(-60px)';
+      i[6].style.transform = 'translate(-450px, -10px)';
       this.setState({ open: !open });
       this.props.expandLoc(!this.state.open);
     } else {
@@ -35,7 +34,7 @@ class NavMenuLineMobile extends Component {
       i[3].style.transform = 'translateY(0)';
       i[4].style.transform = 'translate(0)';
       i[5].style.transform = 'translate(0)';
-      i[6].style.transform = 'translate(0px, -3px)';
+      i[6].style.transform = 'translate(0px, -10px)';
       this.setState({ open: !open });
       this.props.expandLoc(!this.state.open);
     }
@@ -69,9 +68,8 @@ class NavMenuLineMobile extends Component {
               <i className="navmenulinemobile-react-icons"><FaHome className="navmenulinemobile-icons-hover"/></i>
             </Link>
           </div>
-          <div className="navmenulinemobile-item">
+          <div>
             <a href="#">
-              <i className="navmenulinemobile-react-icons-navmenu-theme" id="mob"><NavmenuTheme /></i>
             </a>
           </div>
           <div className="navmenulinemobile-item">
