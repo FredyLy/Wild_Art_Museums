@@ -1,0 +1,25 @@
+.locationmobile_container {
+    /* border-top: 2px solid var(--dark-blue); */
+    /* border-bottom: 2px solid var(--dark-blue); */
+    position: fixed;
+    height: 99vh;
+    width: 120px;
+    right: 1%;
+    vertical-align: middle;
+}
+
+#locationmobile_page-title {
+    font-family: 'American Typewriter', sans-serif;
+    /* writing-mode: vertical-rl; */
+    /* text-orientation: sideways; */
+    color: var(--dark-blue);
+    letter-spacing: 1px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    font-size: 6px;
+    width: 120px;
+    /* border: green 2px dotted; */
+    transition: 1s;
+    top: 8%;
+}

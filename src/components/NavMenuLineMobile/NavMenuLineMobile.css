@@ -1,0 +1,124 @@
+.navmenulinemobile-container,
+.navmenulinemobile-menu {
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+    right: -25px;
+    cursor: pointer;
+}
+
+/* @media screen and (max-width: 375px) {
+    .navmenulinemobile-container,
+    .navmenulinemobile-menu {
+        right: 9px;
+        bottom: 0.4%;
+    }
+} */
+
+.navmenulinemobile-menu {
+    transform: scale(0.9);
+    position: fixed;
+    z-index: 0;
+}
+
+.navmenulinemobile-container {
+    position: fixed;
+    z-index: 1;
+}
+
+.navmenulinemobile-toggle {
+    height: 0;
+    width: 20px;
+    border-bottom: 17.5px solid var(--dark-blue);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    top: 0;
+}
+
+.navmenulinemobile-toggle:before {
+    content: '';
+    height: 0;
+    width: 20px;
+    border-top: 17.5px solid var(--dark-blue);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    top: 17px;
+    left: -10px;
+}
+
+.navmenulinemobile-item {
+    height: 0;
+    width: 20px;
+    border-bottom: 17.5px solid var(--second-color);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    top: 0;
+    transition: 1s;
+}
+
+.navmenulinemobile-item:before {
+    content: '';
+    height: 0;
+    width: 20px;
+    border-top: 17.5px solid var(--second-color);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    top: 17px;
+    left: -10px;
+}
+
+#navmenulinemobile-add {
+    font-size: 25px;
+    color: var(--second-color);
+    position: relative;
+    top: 5px;
+    right: 3px;
+}
+
+a>.navmenulinemobile-react-icons {
+    color: var(--dark-blue);
+    font-size: 27px;
+    position: relative;
+    left: -4px;
+    bottom: 16px;
+}
+
+.backgd-navmobile {
+    width:500px;
+    height: 34px;
+    background-color: var(--pearl-grey);
+    z-index: -20;
+    position: relative;
+    left: 60px;
+    transition: 1s;
+}
+
+a>.navmenulinemobile-react-icons-navmenu-theme {
+    color: var(--dark-blue);
+    font-size: 30px;
+    position: relative;
+    left: -18px;
+    bottom: 16px;
+    /* display: none; */
+}
+
+a>.navmenulinemobile-react-icons:hover {
+    color: var(--dark-blue);
+}
+
+.navmenulinemobile-icons-hover:hover {
+    transition: 1s;
+    transform: scale(1.5);
+}
+
+.navmenulinemobile-icons-hover {
+    transition: 1s;
+    transform: scale(1);
+}
