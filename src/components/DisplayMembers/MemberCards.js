@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ListMembers } from './ListMembers';
 import DisplayMembers from './DisplayMembers';
 import Location from '../Location/Location';
+// import LocationMobile from '../LocationMobile/LocationMobile';
 import './MemberCards.css';
 
 const MemberCards = () => {
@@ -34,6 +35,7 @@ const MemberCards = () => {
       <div className="aboutUs-location">
         <Location title={title} />
       </div>
+      {/* <LocationMobile /> */}
     </div>
   );
 };

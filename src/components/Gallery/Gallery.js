@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import Axios from 'axios';
 import Location from '../Location/Location';
+// import LocationMobile from '../LocationMobile/LocationMobile';
 import Modal from '../Modal/Modal';
 import Loading from '../Home/Loading';
 
@@ -150,6 +151,7 @@ class Gallery extends Component {
     return (
       <Fragment>
         <Location title={this.state.title} />
+        {/* <LocationMobile /> */}
         { decision }
         <div className="divBouton">
           <input className="gallery.btn round" disabled={displayBtnPrev} type='button' value='<<' onClick={() => this.harvardArtMuseums(this.state.url.prev)} />

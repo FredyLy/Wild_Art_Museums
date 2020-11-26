@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Location from '../Location/Location';
+// import LocationMobile from '../LocationMobile/LocationMobile';
 import './ContactUs.css';
 import logoTwitter from './assets/twitter.png';
 import logoFacebook from './assets/facebook.png';
@@ -119,6 +120,7 @@ class ContactUs extends Component {
             </div>
               <div className="cu-Location"></div>
               <Location title={this.state.title} />
+              {/* <LocationMobile /> */}
       </div>
     );
   }
