@@ -89,18 +89,25 @@ class Gallery extends Component {
             </div>
           <div className="comicDetails">
           <h3>Identification and Creation</h3>
-            <p>People : {characterInfos.people && characterInfos.people.map((people, i) => {
-              return (
-                <span key={i}>{people.name}</span>
-              );
-            })}</p>
+            {characterInfos.people &&
+              <p>People : {characterInfos.people.map((people, i) => {
+                return (
+                  <span key={i}>{people.name}</span>
+                );
+              })}
+              </p>
+            }
             {characterInfos.title && <p>Title : {characterInfos.title}</p>}
             {characterInfos.classification && <p>Classification : {characterInfos.classification}</p>}
-            <p>Work Type : {characterInfos.worktypes && characterInfos.worktypes.map((worktype, i) => {
-              return (
-                <span key={i}>{worktype.worktype}</span>
-              );
-            })}</p>
+
+            {characterInfos.worktypes &&
+              <p>Work Type : {characterInfos.worktypes.map((worktype, i) => {
+                return (
+                  <span key={i}>{worktype.worktype}</span>
+                );
+              })}
+              </p>
+            }
             {characterInfos.dated && <p>Date : {characterInfos.dated}</p>}
             {characterInfos.period && <p>Period : {characterInfos.period}</p>}
             {characterInfos.culture && <p>Culture : {characterInfos.culture}</p>}
