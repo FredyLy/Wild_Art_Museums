@@ -6,9 +6,9 @@ import Sackler from './Sackler';
 import Intro from './Intro';
 import MuseumSelector from './MuseumSelector';
 import Location from '../Location/Location';
+import SocialMedia from './SocialMedia';
 
 import './Ham.css';
-import SocialMedia from './SocialMedia';
 
 class Ham extends Component {
   constructor (props) {
