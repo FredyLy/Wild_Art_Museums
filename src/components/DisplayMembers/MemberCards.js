@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { ListMembers } from './ListMembers';
 import DisplayMembers from './DisplayMembers';
 import Location from '../Location/Location';
+import LocationMobile from '../LocationMobile/LocationMobile';
 import './MemberCards.css';
 
 const MemberCards = () => {
   const [members, setMembers] = useState([]);
+  const [title] = useState('ABOUT US');
 
   useEffect(() => {
     const newArray = ListMembers.map((ListMember) => ListMember);
@@ -31,7 +33,10 @@ const MemberCards = () => {
         </div>
       </div>
       <div className="aboutUs-location">
-        <Location title="ABOUT US" />
+        <Location title={title} />
+      </div>
+      <div className="aboutUs-locationMob">
+        <LocationMobile />
       </div>
     </div>
   );

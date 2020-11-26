@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import Axios from 'axios';
 import Location from '../Location/Location';
+import LocationMobile from '../LocationMobile/LocationMobile';
 import Modal from '../Modal/Modal';
 import Loading from '../Home/Loading';
 
@@ -16,7 +17,8 @@ class Gallery extends Component {
     },
     openModal: false,
     characterInfos: [],
-    resultInModal: true
+    resultInModal: true,
+    title: 'GALLERY'
   }
 
   componentDidMount () {
@@ -89,18 +91,25 @@ class Gallery extends Component {
             </div>
           <div className="comicDetails">
           <h3>Identification and Creation</h3>
-            <p>People : {characterInfos.people && characterInfos.people.map((people, i) => {
-              return (
-                <span key={i}>{people.name}</span>
-              );
-            })}</p>
+            {characterInfos.people &&
+              <p>People : {characterInfos.people.map((people, i) => {
+                return (
+                  <span key={i}>{people.name}</span>
+                );
+              })}
+              </p>
+            }
             {characterInfos.title && <p>Title : {characterInfos.title}</p>}
             {characterInfos.classification && <p>Classification : {characterInfos.classification}</p>}
-            <p>Work Type : {characterInfos.worktypes && characterInfos.worktypes.map((worktype, i) => {
-              return (
-                <span key={i}>{worktype.worktype}</span>
-              );
-            })}</p>
+
+            {characterInfos.worktypes &&
+              <p>Work Type : {characterInfos.worktypes.map((worktype, i) => {
+                return (
+                  <span key={i}>{worktype.worktype}</span>
+                );
+              })}
+              </p>
+            }
             {characterInfos.dated && <p>Date : {characterInfos.dated}</p>}
             {characterInfos.period && <p>Period : {characterInfos.period}</p>}
             {characterInfos.culture && <p>Culture : {characterInfos.culture}</p>}
@@ -141,7 +150,12 @@ class Gallery extends Component {
 
     return (
       <Fragment>
-        <Location title="GALLERY" />
+        <div className="gallery-media-location">
+          <Location title={this.state.title} />
+        </div>
+        <div className="gallery-media-locationMob">
+        <LocationMobile />
+        </div>
         { decision }
         <div className="divBouton">
           <input className="gallery.btn round" disabled={displayBtnPrev} type='button' value='<<' onClick={() => this.harvardArtMuseums(this.state.url.prev)} />

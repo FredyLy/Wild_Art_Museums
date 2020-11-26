@@ -149,4 +149,15 @@ input[disabled]:hover {
   .container-gallery {
     column-count: 1;
   }
+
+  .gallery-media-location {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 376px) {
+  .gallery-media-locationMob {
+    display: none;
+  }
 }

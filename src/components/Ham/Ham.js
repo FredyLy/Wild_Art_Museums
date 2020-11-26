@@ -5,6 +5,7 @@ import Busch from './Busch';
 import Sackler from './Sackler';
 import Intro from './Intro';
 import MuseumSelector from './MuseumSelector';
+import LocationMobile from '../LocationMobile/LocationMobile';
 import Location from '../Location/Location';
 import SocialMedia from './SocialMedia';
 
@@ -14,7 +15,8 @@ class Ham extends Component {
   constructor (props) {
     super(props);
     this.state = {
-      activeId: 'ShowFogg'
+      activeId: 'ShowFogg',
+      title: 'HARVARD ART MUSEUMS'
     };
     this.handleChangeTab = this.handleChangeTab.bind(this);
   }
@@ -55,6 +57,10 @@ class Ham extends Component {
       </div>
       <div className="ham-location">
         <Location title="HARVARD ART MUSEUMS" />
+      <Location title={this.state.title} />
+      </div>
+      <div className="ham-locationMobile">
+      <LocationMobile />
       </div>
       </div>
     );
