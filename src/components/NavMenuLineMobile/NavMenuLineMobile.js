@@ -18,7 +18,7 @@ class NavMenuLineMobile extends Component {
     var i = document.getElementById('navmenulinemobile-menu').childNodes;
     if (open === false) {
       document.getElementById('navmenulinemobile-menu').style.transform = 'scale(1)';
-      i[3].style.transform = 'translate(-250px)';
+      i[3].style.transform = 'translate(-240px)';
       i[4].style.transform = 'translate(-200px)';
       i[1].style.transform = 'translate(-160px)';
       i[0].style.transform = 'translate(-120px)';
