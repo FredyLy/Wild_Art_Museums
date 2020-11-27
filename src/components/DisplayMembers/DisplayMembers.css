@@ -1,0 +1,108 @@
+.diplayMembersContainer img {
+    width: 216px;
+    height: 270px;
+  }
+  
+  .diplayMembersContainer{
+    padding: 1em 0;
+    float: left;
+    width: 50%;
+  }
+  
+  @media screen and (min-width: 985px){
+    .diplayMembersContainer{
+      width: 33.33333%;
+    }
+  }
+
+  @media screen and (max-width: 728px){
+    .diplayMembersContainer{
+      display: block;
+      width: 100%;
+    }
+  }
+  
+  .aboutUsContent {
+    position: relative;
+    width: 216px;
+    height: 270px;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .aboutUsContent::before{
+    position: absolute;
+    content: '';
+    right: -25px;
+    top: 25px;
+    border: 10px solid #16213e;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    opacity: 0.6;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
+  }
+  
+  .aboutUsContent .aboutUsContent-overlay {
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    height: 270px;
+    width: 216px;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  
+  .aboutUsContent:hover .aboutUsContent-overlay{
+    opacity: 1;
+  }
+
+  .aboutUsContent-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  .aboutUsContent:hover .aboutUsContent-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
+  
+.fadeIn-top{
+  top: 20%;
+}
+
+.fadeIn-right{
+  left: 80%;
+}
+.aboutUsCardName{
+  margin-top: 40px;
+  text-align: center;
+
+}
+.aboutUsCardLastName{
+  text-align: center;
+  margin-bottom: 20px;
+}

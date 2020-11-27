@@ -1,60 +1,173 @@
-body {
-    background-color: var(--main-color);
+.container-gallery {
+  position: relative;
+  column-count: 3;
+  padding: 10px;
+  width: 90%;
 }
 
-.gallery {
-    display: flex;
-    flex-wrap:wrap;
-    padding-top: 15px;
-    margin: auto;
+.gallery-img {
+  display: inline-block;
+  margin-bottom: 10px;
+  overflow: hidden;
+  margin: 20px;
 }
 
-.gallery img {
-    padding-bottom: 10%;
+.gallery-img img {
+  transition: 0.5s;
+  width: 100%;
+  height: auto;
+}
+
+.gallery-img img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: all .5s ease;
+  overflow: hidden;
+}
+
+.container-gallery div img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.divBouton {
+  padding: 0;
+  width: 15%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 96px;
+}
+
+.divBouton input {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 15px;
+  box-shadow: 0 9px var(--dark-grey);
+  background-color: var(--black-color);
+  color: var(--second-color);
+}
+
+input:disabled, input[displayBtnNext], input[displayBtnPrev], input:disabled:hover, input[disabled]:hover {
+  border: 1px solid var(--grey-color);
+  background-color: var(--grey-color);
+  color: var(--dark-grey-color);
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.divBouton input:hover {
+  background-color: #ddd;
+  color: var(--black-color);
+}
+
+.modalBody {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 10px;
+  overflow: auto;
+}
+
+.comicImage {
+  text-align: center;
+  width: 275px;
+  margin: auto;
+}
+
+.comicImage img {
+  width: 350px;
+  width: 100%;
+  height: auto;
+}
+
+.comicDetails {
+  align-self: stretch;
+  overflow: scroll;
+  flex: 0 1 50%;
+  margin-right: 10px;
+}
+
+.comicDetails h3 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--light-grey-color);
+  text-transform: uppercase;
+  color: #0f3460;
+}
+
+.comicDetails p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: var(--dark-grey-color);
+}
+
+.comicDetails a:hover {
+  background-color: var(--dark-grey-color);
+}
+
+.comicDetails a {
+  flex: 0 1 60%;
+  display: inline-block;
+  background-color: var(--light-blue);
+  padding: 10px 15px;
+  margin-right: 10px;
+  color: var(--second-color);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container-gallery {
+    column-count: 2;
+    width: 90%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-gallery {
+    column-count: 2;
+    padding: 0;
+  }
+  .comicDetails {
+    text-align: center;
+    padding-top: 10px;
+  }
+  .gallery-img img {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .container-gallery {
+    column-count: 1;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container-gallery {
+    column-count: 1;
+    width: 85%;
     margin-left: auto;
-    margin-right: auto;
-    width: 325px;
-    transition: 0.5s;
-}
-
-.gallery-divImg {
-    width: 30%;
     display: flex;
-    justify-content: space-around;
-    
+    margin-right: auto;
+    flex-direction: column;
+    position: inherit;
+  }
+  .gallery-media-location {
+    display: none;
+  }
+  .gallery-img img {
+    width: 100%;
+  }
 }
 
-.gallery-divImg:hover img {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    transition: all .5s ease;
-    overflow: hidden;
-}
-
-.gallery div:hover img{
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
-@media screen and (max-width: 600px) {
-    .gallery {
-        width: 100%;
-    }
-    .gallery-divImg {
-        width: 30%;
-    }
-    .gallery img {
-        width: 60%;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .gallery-divImg {
-        width: 100%;
-    }
-    .gallery img {
-        width: 60%;
-    }
+@media screen and (min-width: 376px) {
+  .gallery-media-locationMob {
+    display: none;
+  }
 }

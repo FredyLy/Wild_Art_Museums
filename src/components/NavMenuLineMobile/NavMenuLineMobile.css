@@ -1,0 +1,107 @@
+.navmenulinemobile-container,
+.navmenulinemobile-menu {
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 10px;
+    right: -13px;
+    cursor: pointer;
+}
+
+.navmenulinemobile-menu {
+    transform: scale(0.9);
+    position: fixed;
+    z-index: 0;
+}
+
+.navmenulinemobile-container {
+    position: fixed;
+    z-index: 1;
+}
+
+.navmenulinemobile-toggle {
+    height: 0;
+    width: 30px;
+    border-bottom: 27px solid var(--dark-blue);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    position: absolute;
+    top: 0;
+}
+
+.navmenulinemobile-toggle:before {
+    content: '';
+    height: 0;
+    width: 30px;
+    border-top: 27px solid var(--dark-blue);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    position: absolute;
+    top: 26px;
+    left: -15px;
+}
+
+.navmenulinemobile-item {
+    height: 0;
+    width: 30px;
+    border-bottom: 27px solid var(--second-color);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    position: absolute;
+    top: 0;
+    transition: 1s;
+}
+
+.navmenulinemobile-item:before {
+    content: '';
+    height: 0;
+    width: 30px;
+    border-top: 27px solid var(--second-color);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    position: absolute;
+    top: 26px;
+    left: -15px;
+}
+
+#navmenulinemobile-add {
+    font-size: 35px;
+    color: var(--second-color);
+    position: relative;
+    top: 9px;
+    right: 2px;
+}
+
+a>.navmenulinemobile-react-icons {
+    color: var(--dark-blue);
+    font-size: 35px;
+    position: relative;
+    left: -3px;
+    bottom: 10px;
+}
+
+.backgd-navmobile {
+    width:500px;
+    height: 90px;
+    background-color: var(--pearl-grey);
+    z-index: -5;
+    position: relative;
+    left: 80px;
+    transition: 1s;
+}
+
+a>.navmenulinemobile-react-icons:hover {
+    color: var(--dark-blue);
+}
+
+.navmenulinemobile-icons-hover:hover {
+    transition: 1s;
+    transform: scale(1.5);
+}
+
+.navmenulinemobile-icons-hover {
+    transition: 1s;
+    transform: scale(1);
+}

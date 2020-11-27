@@ -1,6 +1,8 @@
 import React from 'react';
-import './Home.css';
 import NavMenu from './NavMenu';
+import LocationMobile from '../LocationMobile/LocationMobile';
+
+import './Home.css';
 
 class Home extends React.Component {
   state = {
@@ -50,11 +52,14 @@ class Home extends React.Component {
         style={ this.state.background }
       >
         <div className="logo">
-          <img src="./Assets/WildMuseum_yellow.svg" alt="Wild Art Logo"/>
+          <img src="./Assets/Wild_Art_Museums_logo.svg" alt="Wild Art Logo"/>
         </div>
         <div className="menu">
           <NavMenu />
         </div>
+        <div className="home-locationMob">
+        <LocationMobile />
+      </div>
       </div>
     );
   }

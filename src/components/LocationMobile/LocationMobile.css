@@ -1,0 +1,7 @@
+.locationmobile_container {
+    position: fixed;
+    height: 99vh;
+    width: 120px;
+    right: 1%;
+    vertical-align: middle;
+}

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import NavmenuTheme from '../Darkmode/NavmenuTheme';
+
 import { Link } from 'react-router-dom';
-import { FaHome, FaPalette, FaQuestion, FaUserFriends } from 'react-icons/fa';
+import { FaHome, FaPalette, FaUserFriends } from 'react-icons/fa';
 import { MdContactMail } from 'react-icons/md';
 import { GiGreekTemple } from 'react-icons/gi';
 import { AiOutlinePlus } from 'react-icons/ai';
@@ -16,12 +18,12 @@ class NavMenu extends Component {
     var i = document.getElementById('navmenu-menu').childNodes;
     if (open === false) {
       document.getElementById('navmenu-menu').style.transform = 'scale(1)';
-      i[0].style.transform = 'translateY(-80px)';
-      i[1].style.transform = 'translate(70px, -40px)';
-      i[2].style.transform = 'translate(70px, 40px)';
-      i[3].style.transform = 'translateY(80px)';
-      i[4].style.transform = 'translate(-70px,40px)';
-      i[5].style.transform = 'translate(-70px,-40px)';
+      i[0].style.transform = 'translateY(-120px)';
+      i[1].style.transform = 'translate(105px, -60px)';
+      i[2].style.transform = 'translate(105px, 60px)';
+      i[3].style.transform = 'translateY(120px)';
+      i[4].style.transform = 'translate(-105px,60px)';
+      i[5].style.transform = 'translate(-105px,-60px)';
       this.setState({ open: !open });
     } else {
       document.getElementById('navmenu-menu').style.transform = 'scale(0.9)';
@@ -47,14 +49,14 @@ class NavMenu extends Component {
         </div>
         <div className="navmenu-menu" id="navmenu-menu">
           <div className="navmenu-item">
-            <a href="#">
+              <Link to='/ham'>
               <i className="navmenu-react-icons" ><GiGreekTemple className="navmenu-icons-hover"/></i>
-            </a>
+              </Link>
           </div>
           <div className="navmenu-item">
-            <a href="#">
+            <Link to='/aboutus'>
               <i className="navmenu-react-icons"><FaUserFriends className="navmenu-icons-hover"/></i>
-            </a>
+            </Link>
           </div>
           <div className="navmenu-item">
             <Link to='/'>
@@ -63,13 +65,13 @@ class NavMenu extends Component {
           </div>
           <div className="navmenu-item">
             <a href="#">
-              <i className="navmenu-react-icons"><FaQuestion className="navmenu-icons-hover"/></i>
+              <i className="navmenu-react-icons-navmenu-theme"><NavmenuTheme /></i>
             </a>
           </div>
           <div className="navmenu-item">
-            <a href="#">
+            <Link to='/contact'>
               <i className="navmenu-react-icons"><MdContactMail className="navmenu-icons-hover"/></i>
-            </a>
+            </Link>
           </div>
           <div className="navmenu-item">
             <Link to='/gallery'>

@@ -1,39 +1,39 @@
-import React, { Component } from 'react';
+import React, { useEffect, useState } from 'react';
 import NavMenuLine from '../NavMenuLine/NavMenuLine';
+import { PropTypes } from 'prop-types';
 
 import './Location.css';
 
-const pageTitle = 'GALLERY';
+const Location = ({ title }) => {
+  const [open, setOpen] = useState(false);
 
-class Location extends Component {
-    state = {
-      open: false
+  const expandLocation = (open) => {
+    setOpen(open);
+  };
+
+  useEffect(() => {
+    if (open === true) {
+      document.getElementById('location_page-title').style.transform = 'translateY(-800px)';
+    } else {
+      document.getElementById('location_page-title').style.transform = 'translateY(0px)';
     }
+  }, [open]);
 
-    expand (open) {
-      if (open === false) {
-        document.getElementById('location_page-title').style.transform = 'translateY(-400px)';
-        this.setState({ open: !open });
-      } else {
-        document.getElementById('location_page-title').style.transform = 'translateY(0px)';
-        this.setState({ open: !open });
-      }
-    }
-
-    render () {
-      return (
-        <div className="bloc">
-          <div className='location_container' >
-            <div id='location_page-title'>
-              <h1>{pageTitle}</h1>
-            </div>
-            <div onClick={() => this.expand(this.state.open)}>
-              <NavMenuLine />
-            </div>
-          </div>
+  return (
+    <div className="bloc">
+      <div className='location_container' >
+        <div id='location_page-title'>
+          <h1>{title} </h1>
         </div>
-      );
-    }
-}
+        <div>
+          <NavMenuLine expandLoc={expandLocation} open={open}/>
+        </div>
+      </div>
+    </div>
+  );
+};
 
+Location.propTypes = {
+  title: PropTypes.string.isRequired
+};
 export default Location;
