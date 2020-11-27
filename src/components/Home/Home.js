@@ -1,5 +1,6 @@
 import React from 'react';
 import NavMenu from './NavMenu';
+import LocationMobile from '../LocationMobile/LocationMobile';
 
 import './Home.css';
 
@@ -56,6 +57,9 @@ class Home extends React.Component {
         <div className="menu">
           <NavMenu />
         </div>
+        <div className="home-locationMob">
+        <LocationMobile />
+      </div>
       </div>
     );
   }
