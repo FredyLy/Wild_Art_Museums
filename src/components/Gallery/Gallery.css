@@ -14,7 +14,7 @@
 
 .gallery-img img {
   transition: 0.5s;
-  width: 350px;
+  width: 100%;
   height: auto;
 }
 
@@ -32,12 +32,13 @@
   transform: scale(1.1);
 }
 
-.divBouton{
-  padding: 20px;
+.divBouton {
+  padding: 0;
   width: 15%;
   margin: auto;
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 96px;
 }
 
 .divBouton input {
@@ -48,13 +49,9 @@
   box-shadow: 0 9px var(--dark-grey);
   background-color: var(--black-color);
   color: var(--second-color);
-} 
+}
 
-input:disabled,
-input[displayBtnNext],
-input[displayBtnPrev],
-input:disabled:hover,
-input[disabled]:hover {
+input:disabled, input[displayBtnNext], input[displayBtnPrev], input:disabled:hover, input[disabled]:hover {
   border: 1px solid var(--grey-color);
   background-color: var(--grey-color);
   color: var(--dark-grey-color);
@@ -92,20 +89,20 @@ input[disabled]:hover {
   flex: 0 1 50%;
   margin-right: 10px;
 }
-  
+
 .comicDetails h3 {
   padding-bottom: 10px;
   border-bottom: 1px solid var(--light-grey-color);
   text-transform: uppercase;
   color: #0f3460;
 }
-  
+
 .comicDetails p {
   margin-top: 30px;
   margin-bottom: 30px;
   color: var(--dark-grey-color);
 }
-  
+
 .comicDetails a:hover {
   background-color: var(--dark-grey-color);
 }
@@ -126,16 +123,22 @@ input[disabled]:hover {
 @media screen and (max-width: 1024px) {
   .container-gallery {
     column-count: 2;
+    width: 90%;
+    padding: 0;
+  }
 }
-} 
 
 @media screen and (max-width: 768px) {
   .container-gallery {
     column-count: 2;
+    padding: 0;
   }
-    .comicDetails {
+  .comicDetails {
     text-align: center;
     padding-top: 10px;
+  }
+  .gallery-img img {
+    width: 85%;
   }
 }
 
@@ -148,12 +151,19 @@ input[disabled]:hover {
 @media screen and (max-width: 375px) {
   .container-gallery {
     column-count: 1;
+    width: 85%;
+    margin-left: auto;
+    display: flex;
+    margin-right: auto;
+    flex-direction: column;
+    position: inherit;
   }
-
   .gallery-media-location {
     display: none;
   }
-
+  .gallery-img img {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 376px) {
