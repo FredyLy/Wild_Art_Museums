@@ -87,5 +87,7 @@
     background: var(--white-color);
     overflow: auto;
   }
- 
+  .modalBackground{
+    background-color: var(--second-color);
+  }
 }
