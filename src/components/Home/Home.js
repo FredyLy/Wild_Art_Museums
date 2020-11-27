@@ -51,7 +51,7 @@ class Home extends React.Component {
         style={ this.state.background }
       >
         <div className="logo">
-          <img src="./Assets/WildMuseum_yellow.svg" alt="Wild Art Logo"/>
+          <img src="./Assets/Wild_Art_Museums_logo.svg" alt="Wild Art Logo"/>
         </div>
         <div className="menu">
           <NavMenu />
