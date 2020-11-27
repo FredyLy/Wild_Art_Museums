@@ -5,7 +5,7 @@ export const ListMembers = [
     name: 'Helder',
     github: 'https://github.com/helder-hanka',
     linkedin: 'https://www.linkedin.com/in/helder-fernandes-soares/',
-    avatar: 'https://media-exp1.licdn.com/dms/image/C4D35AQENtbe78VkrxA/profile-framedphoto-shrink_200_200/0/1604426346422?e=1606395600&v=beta&t=RsMUkU-nTiAm-U61KVGcE-BvKuOpRyGB6xDObQMTYtI'
+    avatar: './Assets/IMG_20201127_093458.jpg'
   },
   {
     id: 1,
@@ -37,7 +37,7 @@ export const ListMembers = [
     name: 'Gregory',
     github: 'https://github.com/gregvlr',
     linkedin: 'https://www.linkedin.com/in/gr%C3%A9gory-vilar-28524a1b6/',
-    avatar: 'https://media-exp1.licdn.com/dms/image/C4E35AQFVhIawEBZSnA/profile-framedphoto-shrink_200_200/0?e=1606395600&v=beta&t=0Lj3F6CvQJKWBD54oL9_8GAh8rKleroBw2frY9OcFRk'
+    avatar: './Assets/IMG_2432.jpg'
   },
   {
     id: 5,

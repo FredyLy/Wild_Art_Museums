@@ -92,12 +92,6 @@ a>.navmenulinemobile-react-icons {
     transition: 1s;
 }
 
-@media screen and (min-width: 375px){
-    .react-switch-bg{
-        transform: scale(0.6);
-    }
-}
-
 a>.navmenulinemobile-react-icons:hover {
     color: var(--dark-blue);
 }
