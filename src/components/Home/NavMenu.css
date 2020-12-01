@@ -4,10 +4,10 @@
     width: 80px;
     position: absolute;
     margin: auto;
-    top: 45%;
+    top: 80%;
     bottom: 0;
-    left: 60%;
-    right: 0;
+    left: 0;
+    right: 3%;
     cursor: pointer;
 }
 
