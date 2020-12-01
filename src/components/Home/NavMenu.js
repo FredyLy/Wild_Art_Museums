@@ -47,28 +47,28 @@ class NavMenu extends Component {
         </div>
         <div className="navmenu-menu" id="navmenu-menu">
         <div className="navmenu-item">
-            <Link to='/gallery'>
-              <i className="navmenu-react-icons"><FaPalette className="navmenu-icons-hover"/></i>
-            </Link>
-          </div>
-          <div className="navmenu-item">
             <Link to='/'>
               <i className="navmenu-react-icons"><FaHome className="navmenu-icons-hover"/></i>
             </Link>
-          </div>
-          <div>
-            <a href="#"></a>
-          </div>
-          <div>
-            <a href="#"></a>
-          </div>
-          <div>
-            <a href="#"></a>
           </div>
           <div className="navmenu-item">
               <Link to='/ham'>
               <i className="navmenu-react-icons" ><GiGreekTemple className="navmenu-icons-hover"/></i>
               </Link>
+          </div>
+          <div>
+            <a href="#"></a>
+          </div>
+          <div>
+            <a href="#"></a>
+          </div>
+          <div>
+            <a href="#"></a>
+          </div>
+          <div className="navmenu-item">
+            <Link to='/gallery'>
+              <i className="navmenu-react-icons"><FaPalette className="navmenu-icons-hover"/></i>
+            </Link>
           </div>
         </div>
     </div>
