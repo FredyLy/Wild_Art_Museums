@@ -6,6 +6,7 @@
     width: 120px;
     right: 1%;
     vertical-align: middle;
+    background-color: var(--main-color);
 }
 
 #location_page-title {

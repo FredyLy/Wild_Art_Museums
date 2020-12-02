@@ -5,6 +5,6 @@ export const theme = {
   },
   dark: {
     color: 'white',
-    backgroundColor: '#121212'
+    backgroundColor: '#0d2b50'
   }
 };
