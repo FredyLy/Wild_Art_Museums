@@ -1,8 +1,8 @@
-import facebook from './facebook.png';
-import instagram from './instagram.png';
-import github from './github.png';
-import twitter from './twitter.png';
-import map from './map.png';
+import facebook from './imgHam/facebook.png';
+import instagram from './imgHam/instagram.png';
+import github from './imgHam/github.png';
+import twitter from './imgHam/twitter.png';
+import map from './imgHam/map.png';
 import './Ham.css';
 
 function SocialMedia () {
