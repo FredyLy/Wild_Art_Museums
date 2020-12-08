@@ -1,10 +1,12 @@
-:root {
+/* :root {
   --second-color: #ffffff;
   --light-grey-color: #EAE8E8;
   --dark-grey-color: #363636;
   --black-color: #000000;
   --dark-blue : #16213e;
-}
+} */
+
+/* var(--main-color) */
 
 .modalBackground {
   background-color: rgba(0, 0, 0, 0.5);
@@ -17,6 +19,8 @@
   z-index: 1;
   left: 0;
   top: 0;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
 }
   
 .modalContainer {
@@ -29,26 +33,36 @@
   
 .modalHeader {
   background-color: var(--dark-blue);
-  color: var(--second-color);
+  /* color: var(--second-color); */
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   display: flex;
   justify-content: flex-end;
   padding: 15px;
 }
-  
-.modalHeader h2 {
-  color: var(--second-color);
-  padding-right: 5px;
-  margin: 0;
-}
-  
+
 .modalBody {
-  background: var(--second-color);
+  background-color: var(--main-color);
   overflow: auto;
+  display: flex;
+  /* justify-content: space-around; */
+  padding: 30px 10px;
 }
 
-.modalFooter {
+.modal-span {
+  font-size: 1.2em;
+  text-decoration: underline;
+  font-weight: bold;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.modal-copy {
+  font-size: 0.8em;
+  margin-top: 50px;
+}
+
+/* .modalFooter {
   background-color: var(--second-color);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -58,7 +72,7 @@
   text-align: center;
   justify-content: flex-end;
   border-top: 1px solid var(--light-grey-color);
-}
+} */
   
 .modalBtn {
   border: 1px solid var(--light-grey-color);
@@ -77,6 +91,11 @@
   background: var(--dark-blue);
   color: var(--second-color);
   border: 1px solid var(--light-grey-color);
+}
+
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
 }
 
 @media screen and (max-width: 600px) {
