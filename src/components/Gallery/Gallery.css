@@ -64,13 +64,6 @@ input:disabled, input[displayBtnNext], input[displayBtnPrev], input:disabled:hov
   color: var(--black-color);
 }
 
-.modalBody {
-  display: flex;
-  justify-content: space-around;
-  padding: 30px 10px;
-  overflow: auto;
-}
-
 .comicImage {
   text-align: center;
   width: 275px;
@@ -84,40 +77,46 @@ input:disabled, input[displayBtnNext], input[displayBtnPrev], input:disabled:hov
 }
 
 .comicDetails {
+  border: 2px green dashed;
   align-self: stretch;
-  overflow: scroll;
+  overflow: auto;
   flex: 0 1 50%;
   margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 
 .comicDetails h3 {
   padding-bottom: 10px;
-  border-bottom: 1px solid var(--light-grey-color);
+  padding-top: 0px;
   text-transform: uppercase;
   color: #0f3460;
+  border-bottom: 2px solid var(--dark-blue)
 }
 
-.comicDetails p {
+/* .comicDetails p {
   margin-top: 30px;
   margin-bottom: 30px;
   color: var(--dark-grey-color);
-}
+} */
 
 .comicDetails a:hover {
-  background-color: var(--dark-grey-color);
+  background-color: var(--light-blue);
 }
 
 .comicDetails a {
-  flex: 0 1 60%;
-  display: inline-block;
-  background-color: var(--light-blue);
-  padding: 10px 15px;
-  margin-right: 10px;
-  color: var(--second-color);
+  display: flex;
+  justify-content:center ;
   text-align: center;
+  background-color: var(--dark-blue);
+  padding: 10px 15px;
+  color: var(--second-color);
   text-decoration: none;
   border-radius: 10px;
-  margin-left: 10px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 5em;
 }
 
 @media screen and (max-width: 1024px) {
