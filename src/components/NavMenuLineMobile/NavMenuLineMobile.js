@@ -27,7 +27,7 @@ class NavMenuLineMobile extends Component {
       this.setState({ open: !open });
       this.props.expandLoc(!this.state.open);
     } else {
-      document.getElementById('navmenulinemobile-menu').style.transform = 'scale(0.9)';
+      document.getElementById('navmenulinemobile-menu').style.transform = 'scale(0.99)';
       i[0].style.transform = 'translateY(0)';
       i[1].style.transform = 'translate(0)';
       i[2].style.transform = 'translate(0)';
