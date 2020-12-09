@@ -60,7 +60,7 @@ class NavMenuLineMobile extends Component {
           </div>
           <div className="navmenulinemobile-item">
             <a href="#">
-              <i className="navmenuline-react-icons-navmenu-theme"><NavmenuTheme/></i>
+              <i className="navmenulinemobile-react-icons-navmenu-theme"><NavmenuTheme/></i>
             </a>
           </div>
           <div className="navmenulinemobile-item">

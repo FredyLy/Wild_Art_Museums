@@ -82,13 +82,10 @@ a>.navmenulinemobile-react-icons {
     bottom: 10px;
 }
 
-a>.navmenuline-react-icons-navmenu-theme {
-    /* color: var(--dark-blue); */
-    /* font-size: 30px; */
+.navmenulinemobile-react-icons-navmenu-theme {
     position: relative;
-    bottom: 8px;
-    left: -20px;
-    /* left: -7px; */
+    bottom: 6px;
+    left: -7px;
 }
 
 .backgd-navmobile {
