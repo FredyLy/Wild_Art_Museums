@@ -95,9 +95,11 @@ input:disabled, input[displayBtnNext], input[displayBtnPrev], input:disabled:hov
 }
 
 .description-content {
+  color: black;
   font-family: sans-serif;
   font-size: 0.9em;
   text-align: justify;
+  text-align-last: center;
 }
 
 /* .comicDetails p {
@@ -145,11 +147,19 @@ input:disabled, input[displayBtnNext], input[displayBtnPrev], input:disabled:hov
   .gallery-img img {
     width: 85%;
   }
+  .description-content {
+    text-align: justify;
+    text-align-last: center;
+  }
 }
 
 @media screen and (max-width: 424px) {
   .container-gallery {
     column-count: 1;
+  }
+  .description-content {
+    text-align: justify;
+    text-align-last: center;
   }
 }
 

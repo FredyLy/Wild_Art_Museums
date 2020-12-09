@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
+import NavmenuTheme from '../Darkmode/NavmenuTheme';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { FaHome, FaPalette, FaUserFriends } from 'react-icons/fa';
-import { MdContactMail } from 'react-icons/md';
+import { FaHome, FaPalette } from 'react-icons/fa';
 import { GiGreekTemple } from 'react-icons/gi';
 import { AiOutlinePlus } from 'react-icons/ai';
 
@@ -59,9 +59,9 @@ class NavMenuLineMobile extends Component {
             </Link>
           </div>
           <div className="navmenulinemobile-item">
-            <Link to='/aboutus'>
-              <i className="navmenulinemobile-react-icons"><FaUserFriends className="navmenulinemobile-icons-hover"/></i>
-            </Link>
+            <a href="#">
+              <i className="navmenuline-react-icons-navmenu-theme"><NavmenuTheme/></i>
+            </a>
           </div>
           <div className="navmenulinemobile-item">
             <Link to='/'>
@@ -72,10 +72,9 @@ class NavMenuLineMobile extends Component {
             <a href="#">
             </a>
           </div>
-          <div className="navmenulinemobile-item">
-            <Link to='/contact'>
-              <i className="navmenulinemobile-react-icons"><MdContactMail className="navmenulinemobile-icons-hover"/></i>
-            </Link>
+          <div>
+          <a href="#">
+            </a>
           </div>
           <div className="navmenulinemobile-item">
             <Link to='/gallery'>
