@@ -24,12 +24,12 @@ class Home extends React.Component {
       "url('./Assets/pexels-gdtography-911738.jpg')",
       "url('./Assets/pexels-miguel-á-padriñán-1111367.jpg')"
     ];
+
     const random = Math.floor(Math.random() * backgrounds.length) + 0;
 
     const style = {
       backgroundImage: backgrounds[random]
     };
-
     this.setState({ background: style });
   }
 
@@ -42,7 +42,7 @@ class Home extends React.Component {
       <div
         className="home"
         style={ this.state.background }
-      >
+        >
         <div className="logo">
           <img src="./Assets/Wild_Art_Museums_logo.svg" alt="Wild Art Logo"/>
         </div>
@@ -50,8 +50,8 @@ class Home extends React.Component {
           <NavMenu />
         </div>
         <div className="home-locationMob">
-        <LocationMobile />
-      </div>
+          <LocationMobile />
+        </div>
       </div>
     );
   }

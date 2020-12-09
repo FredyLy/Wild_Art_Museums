@@ -1,13 +1,3 @@
-/* :root {
-  --second-color: #ffffff;
-  --light-grey-color: #EAE8E8;
-  --dark-grey-color: #363636;
-  --black-color: #000000;
-  --dark-blue : #16213e;
-} */
-
-/* var(--main-color) */
-
 .modalBackground {
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
@@ -31,10 +21,8 @@
   flex-direction: column;
 }
 
-
 .modalHeader {
   background-color: var(--dark-blue);
-  /* color: var(--second-color); */
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   display: flex;
@@ -66,18 +54,6 @@
   text-align: justify;
   margin-top: 50px;
 }
-
-/* .modalFooter {
-  background-color: var(--second-color);
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  color: var(--second-color);
-  padding: 10px;
-  display: flex;
-  text-align: center;
-  justify-content: flex-end;
-  border-top: 1px solid var(--light-grey-color);
-} */
   
 .modalBtn {
   border: 1px solid var(--light-grey-color);
@@ -108,7 +84,6 @@
     display: flex;
     flex-wrap: wrap;
     padding: 30px 10px;
-    /* background-color: var(--white-color); */
     overflow: auto;
   }
 }

@@ -26,4 +26,5 @@ const LocationMobile = ({ title }) => {
 LocationMobile.propTypes = {
   title: PropTypes.string.isRequired
 };
+
 export default LocationMobile;

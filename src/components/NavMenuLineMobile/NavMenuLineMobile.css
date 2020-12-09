@@ -93,7 +93,7 @@ a>.navmenulinemobile-react-icons {
     opacity: 0.8;
     border-radius: 20px;
     width:500px;
-    height: 90px;
+    height: 100px;
     position: relative;
     left: 80px;
     transition: 1.4s;
@@ -115,8 +115,6 @@ a>.navmenulinemobile-react-icons:hover {
 }
 
 .react-switch-bg {
-    /* position: relative; */
-    /* right: 10px; */
     left: -6px;
     transform: scale(0.8);
 }

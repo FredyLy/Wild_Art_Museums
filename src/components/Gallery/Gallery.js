@@ -64,13 +64,13 @@ class Gallery extends Component {
     const { data } = this.state;
     const decision = (data
       ? <div className="container-gallery"> {data.map((data) =>
-      <Fragment key={data.title}>
-        {data.images.map((image) =>
-          <div onClick={() => this.showModal(data)} className="gallery-img" key={image.idsid}>
-            <img src={image.baseimageurl} alt={data.title}/>
-          </div>)
-        }
-      </Fragment>)}
+        <Fragment key={data.title}>
+          {data.images.map((image) =>
+            <div onClick={() => this.showModal(data)} className="gallery-img" key={image.idsid}>
+              <img src={image.baseimageurl} alt={data.title}/>
+            </div>)
+          }
+        </Fragment>)}
       </div>
       : <Loading />);
 
@@ -97,13 +97,11 @@ class Gallery extends Component {
               <h3>Identification and Creation</h3>
 
                 {characterInfos.people &&
-                  <p>
-                    <div className="modal-span">People</div> {characterInfos.people.map((people, i) => {
-                      return (
-                        <div className="description-content" key={i}>{people.name}</div>
-                      );
-                    })}
-                  </p>
+                  <p><div className="modal-span">People</div>{characterInfos.people.map((people, i) => {
+                    return (
+                      <div className="description-content" key={i}>{people.name}</div>
+                    );
+                  })}</p>
                 }
 
                 {characterInfos.title && <p><div className="modal-span">Title</div><div className="description-content">{characterInfos.title}</div></p>}
@@ -116,8 +114,7 @@ class Gallery extends Component {
                       <span key={i}>{worktype.worktype}</span>
                     );
                   })}
-                  </div>
-                  </p>
+                  </div></p>
                 }
 
                 {characterInfos.dated && <p><div className="modal-span">Date</div><div className="description-content"> {characterInfos.dated}</div></p>}
@@ -129,11 +126,11 @@ class Gallery extends Component {
               <br/>
               <h3>Physical Descriptions</h3>
 
-                {characterInfos.medium && <p><div className="modal-span">Medium</div> <div className="description-content">{characterInfos.medium}</div></p>}
+                {characterInfos.medium && <p><div className="modal-span">Medium</div><div className="description-content">{characterInfos.medium}</div></p>}
 
-                {characterInfos.technique && <p><div className="modal-span">Technique</div> <div className="description-content">{characterInfos.technique}</div></p>}
+                {characterInfos.technique && <p><div className="modal-span">Technique</div><div className="description-content">{characterInfos.technique}</div></p>}
 
-                {characterInfos.dimensions && <p><div className="modal-span">Dimension</div> <div className="description-content">{characterInfos.dimensions}</div></p>}
+                {characterInfos.dimensions && <p><div className="modal-span">Dimension</div><div className="description-content">{characterInfos.dimensions}</div></p>}
 
               <br/>
               <h3>Provenance </h3>
@@ -153,25 +150,29 @@ class Gallery extends Component {
 
                 {characterInfos.contact && <p><div className="modal-span">Contact</div> <div className="description-content">{characterInfos.contact}</div></p>}
 
-                <p className="modal-copy">The Harvard Art Museums encourage the use of images found on this website for personal, noncommercial use, including educational and scholarly purposes.
-                To request a higher resolution file of this image, please submit an online request.
-                <br/>
-                This record was created from historic documentation and may not have been reviewed by a curator; it may be inaccurate or incomplete. Our records are frequently revised and enhanced.
-                For more information please contact the {characterInfos.division} at: am_asianmediterranean@harvard.edu</p>
+                <p className="modal-copy">
+                  The Harvard Art Museums encourage the use of images found on this website for personal, noncommercial use, including educational and scholarly purposes.
+                  To request a higher resolution file of this image, please submit an online request.
+                  <br/>
+                  This record was created from historic documentation and may not have been reviewed by a curator; it may be inaccurate or incomplete. Our records are frequently revised and enhanced.
+                  For more information please contact the {characterInfos.division} at: am_asianmediterranean@harvard.edu
+                </p>
 
                 <a href={characterInfos.url} target='_blank' rel="noopener noreferrer">More Info</a>
           </div>
         </div>
       </Fragment>)
+
       : (
       <Fragment>
         <div className="modalHeader">
-            <h2>Chargement</h2>
-          </div>
-          <div className="modalBody">
-            <Loading />
-          </div>
-      </Fragment>);
+          <h2>Chargement</h2>
+        </div>
+        <div className="modalBody">
+          <Loading />
+        </div>
+      </Fragment>
+        );
 
     return (
       <Fragment>
@@ -184,10 +185,10 @@ class Gallery extends Component {
         { decision }
         <div className="divBouton">
           <a className="scrolltop" href="#top">
-          <input className="gallery.btn round" disabled={displayBtnPrev} type='button' value='<<' onClick={() => this.harvardArtMuseums(this.state.url.prev)} />
+            <input className="gallery.btn round" disabled={displayBtnPrev} type='button' value='<<' onClick={() => this.harvardArtMuseums(this.state.url.prev)} />
           </a>
           <a className="scrolltop" href="#top">
-          <input className="gallery.btn round" disabled={displayBtnNext} type='button' value='>>' onClick={() => this.harvardArtMuseums(this.state.url.next)} />
+            <input className="gallery.btn round" disabled={displayBtnNext} type='button' value='>>' onClick={() => this.harvardArtMuseums(this.state.url.next)} />
           </a>
         </div>
         <Modal showModal={this.state.openModal} closeModal={this.closeModal}>

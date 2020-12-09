@@ -10,14 +10,6 @@
     cursor: pointer;
 }
 
-/* @media screen and (max-width: 375px) {
-    .navmenuline-container,
-    .navmenuline-menu {
-        right: 9px;
-        bottom: 0.4%;
-    }
-} */
-
 .navmenuline-menu {
     transform: scale(0.9);
     position: fixed;
