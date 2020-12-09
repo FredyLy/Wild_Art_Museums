@@ -18,7 +18,7 @@
     position: fixed;
     display: flex;
     align-items: center;
-    font-size: 17px;
+    font-size: 19px;
     width: 125px;
     transition: 1s;
     top: 8%;
@@ -31,7 +31,6 @@
 
     #location_page-title {
         width: 100px;
-        font-size: 15px;
     }
 }
 
@@ -51,7 +50,7 @@
     }
 
     #location_page-title {
-        font-size: 20px;
+        font-size: 17px;
         width: 100px;
     }
 }
