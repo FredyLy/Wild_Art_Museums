@@ -47,12 +47,12 @@
 
 @media screen and (max-width: 768px) {
     .location_container {
-        width: 80px;
+        width: 100px;
     }
 
     #location_page-title {
-        font-size: 13px;
-        width: 80px;
+        font-size: 20px;
+        width: 100px;
     }
 }
 
