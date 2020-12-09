@@ -1,35 +1,37 @@
-.overflow{
+.overflow {
     height: 100vh;
 }
 
 .ham-page {
-    width: 85%;
+    width: 90%;
     float:left;
 }
 
 .ham-location {
-    width : 15%;
+    width : 10%;
 }
 
 @media screen and (max-width: 375px) {
     .ham-location {
       display: none;
     }
-  
-  }
-  
-  @media screen and (min-width: 376px) {
+}
+
+@media screen and (min-width: 376px) {
     .ham-locationMobile {
       display: none;
     }
-  }
-
-.hamintro{
+}
+  
+.hamintro {
+    font-family: sans-serif;
+    font-size: 0.9em;
     text-align: justify;
-    margin: 5% 0% 2% 5%;
+    margin: 5% 5% 2% 5%;
 }
 
-.hamlogo{
+.hamlogo {
+    width: 30%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -41,7 +43,7 @@
     background-color: var(--main-color);
 }
 
-.hamfront{
+.hamfront {
     margin-left: 5%;
     margin-right: 2%;
     height: 200px;
@@ -51,7 +53,7 @@
     border: 3px solid rgba(161, 160, 160, 0.39);
 }
 
-.hamrightimg{
+.hamrightimg {
     margin-right:0%;
     margin-top: 0;
     text-align: justify;
@@ -59,18 +61,23 @@
     margin-bottom: 2em;
 }
 
+.hamrightimg p {
+    font-family: sans-serif;
+    margin-right: 5%;
+    font-size: 0.9em;
+}
+
 .hamfirsttitle {
-    margin-bottom: 0.8em;
+    font-family: sans-serif;
+    font-size: 1.5em;
 }
 
 .hamMuseumSelector {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2em;
-    margin-left: 5%;
-    margin-top: 2em;
+    margin: 3% 5% 0% 5%;
 }
-  
+
 .hamMuseumSelector button {
     border: 2px solid transparent;
     background: var(--second-color);
@@ -78,7 +85,7 @@
     padding: 0.5rem;
     flex-grow: 1;
 }
-  
+
 .hamMuseumSelector button {
     border-bottom: 2px solid #eee;
 }
@@ -92,8 +99,9 @@
 }
 
 .ham-source {
+    font-family: sans-serif;
+    font-size: 0.7em;
     margin-left: 5%;
-    font-size: 0.8em;
 }
 
 .hamsocialMedia .hamimg{
@@ -130,7 +138,7 @@
     .hamfirsttitle {
         margin-top: 1em;
     }
-  }
+}
 
 @media screen and (max-width: 750px) {
     .hamsocialMedia .hamimg{
@@ -138,6 +146,7 @@
         width: 35px;
     }
 }
+
 @media screen and (max-width: 660px) {
     .hamsocialMedia .hamimg{
         height: 18px;
