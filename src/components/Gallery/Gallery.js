@@ -67,7 +67,7 @@ class Gallery extends Component {
       <Fragment key={data.title}>
         {data.images.map((image) =>
           <div onClick={() => this.showModal(data)} className="gallery-img" key={image.idsid}>
-            <img className="galleryImg" src={image.baseimageurl} alt={data.title}/>
+            <img src={image.baseimageurl} alt={data.title}/>
           </div>)
         }
       </Fragment>)}
