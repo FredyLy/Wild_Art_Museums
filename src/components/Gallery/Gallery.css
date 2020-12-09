@@ -77,7 +77,6 @@ input:disabled, input[displayBtnNext], input[displayBtnPrev], input:disabled:hov
 }
 
 .comicDetails {
-  border: 2px green dashed;
   align-self: stretch;
   overflow: auto;
   flex: 0 1 50%;
@@ -87,11 +86,18 @@ input:disabled, input[displayBtnNext], input[displayBtnPrev], input:disabled:hov
 }
 
 .comicDetails h3 {
+  font-family: var(--location-title), serif;
   padding-bottom: 10px;
   padding-top: 0px;
   text-transform: uppercase;
-  color: #0f3460;
+  color: var(--dark-blue);
   border-bottom: 2px solid var(--dark-blue)
+}
+
+.description-content {
+  font-family: sans-serif;
+  font-size: 0.9em;
+  text-align: justify;
 }
 
 /* .comicDetails p {
@@ -162,6 +168,13 @@ input:disabled, input[displayBtnNext], input[displayBtnPrev], input:disabled:hov
   }
   .gallery-img img {
     width: 100%;
+  }
+  .comicDetails {
+    flex: 0 1 85%;
+  }
+  .description-content {
+    text-align: justify;
+    text-align-last: center;
   }
 }
 

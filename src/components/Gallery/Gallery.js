@@ -95,50 +95,69 @@ class Gallery extends Component {
 
           <div className="comicDetails">
               <h3>Identification and Creation</h3>
+
                 {characterInfos.people &&
                   <p>
                     <div className="modal-span">People</div> {characterInfos.people.map((people, i) => {
                       return (
-                        <span key={i}>{people.name}</span>
+                        <div className="description-content" key={i}>{people.name}</div>
                       );
                     })}
                   </p>
                 }
-                {characterInfos.title && <p><div className="modal-span">Title</div>{characterInfos.title}</p>}
-                {characterInfos.classification && <p><div className="modal-span">Classification</div> {characterInfos.classification}</p>}
+
+                {characterInfos.title && <p><div className="modal-span">Title</div><div className="description-content">{characterInfos.title}</div></p>}
+
+                {characterInfos.classification && <p><div className="modal-span">Classification</div><div className="description-content">{characterInfos.classification}</div></p>}
 
                 {characterInfos.worktypes &&
-                  <p><div className="modal-span">Work Type</div> {characterInfos.worktypes.map((worktype, i) => {
+                  <p><div className="modal-span">Work Type</div><div className="description-content">{characterInfos.worktypes.map((worktype, i) => {
                     return (
                       <span key={i}>{worktype.worktype}</span>
                     );
                   })}
+                  </div>
                   </p>
                 }
-                {characterInfos.dated && <p><div className="modal-span">Date</div> {characterInfos.dated}</p>}
-                {characterInfos.period && <p><div className="modal-span">Period</div> {characterInfos.period}</p>}
-                {characterInfos.culture && <p><div className="modal-span">Culture</div> {characterInfos.culture}</p>}
 
+                {characterInfos.dated && <p><div className="modal-span">Date</div><div className="description-content"> {characterInfos.dated}</div></p>}
+
+                {characterInfos.period && <p><div className="modal-span">Period</div> <div className="description-content">{characterInfos.period}</div></p>}
+
+                {characterInfos.culture && <p><div className="modal-span">Culture</div> <div className="description-content">{characterInfos.culture}</div></p>}
+
+              <br/>
               <h3>Physical Descriptions</h3>
-                {characterInfos.medium && <p><div className="modal-span">Medium</div> {characterInfos.medium}</p>}
-                {characterInfos.technique && <p><div className="modal-span">Technique</div> {characterInfos.technique}</p>}
-                {characterInfos.dimensions && <p><div className="modal-span">Dimension</div> {characterInfos.dimensions}</p>}
 
+                {characterInfos.medium && <p><div className="modal-span">Medium</div> <div className="description-content">{characterInfos.medium}</div></p>}
+
+                {characterInfos.technique && <p><div className="modal-span">Technique</div> <div className="description-content">{characterInfos.technique}</div></p>}
+
+                {characterInfos.dimensions && <p><div className="modal-span">Dimension</div> <div className="description-content">{characterInfos.dimensions}</div></p>}
+
+              <br/>
               <h3>Provenance </h3>
-                {characterInfos.provenance && <p>{characterInfos.provenance}</p>}
 
+                {characterInfos.provenance && <p><div className="description-content">{characterInfos.provenance}</div></p>}
+
+              <br/>
               <h3>Acquisition and rights</h3>
-                {characterInfos.creditline && <p><div className="modal-span">Credit Line</div> {characterInfos.creditline}</p>}
-                {characterInfos.accessionyear && <p><div className="modal-span">Accession Year</div> {characterInfos.accessionyear}</p>}
-                {characterInfos.objectnumber && <p><div className="modal-span">Object Number</div> {characterInfos.objectnumber}</p>}
-                {characterInfos.division && <p><div className="modal-span">Division</div> {characterInfos.division}</p>}
-                {characterInfos.contact && <p><div className="modal-span">Contact</div> {characterInfos.contact}</p>}
+
+                {characterInfos.creditline && <p><div className="modal-span">Credit Line</div> <div className="description-content">{characterInfos.creditline}</div></p>}
+
+                {characterInfos.accessionyear && <p><div className="modal-span">Accession Year</div> <div className="description-content">{characterInfos.accessionyear}</div></p>}
+
+                {characterInfos.objectnumber && <p><div className="modal-span">Object Number</div> <div className="description-content">{characterInfos.objectnumber}</div></p>}
+
+                {characterInfos.division && <p><div className="modal-span">Division</div> <div className="description-content">{characterInfos.division}</div></p>}
+
+                {characterInfos.contact && <p><div className="modal-span">Contact</div> <div className="description-content">{characterInfos.contact}</div></p>}
 
                 <p className="modal-copy">The Harvard Art Museums encourage the use of images found on this website for personal, noncommercial use, including educational and scholarly purposes.
                 To request a higher resolution file of this image, please submit an online request.
                 <br/>
                 This record was created from historic documentation and may not have been reviewed by a curator; it may be inaccurate or incomplete. Our records are frequently revised and enhanced.
-                For more information please contact the {characterInfos.division} at am_asianmediterranean@harvard.edu</p>
+                For more information please contact the {characterInfos.division} at: am_asianmediterranean@harvard.edu</p>
 
                 <a href={characterInfos.url} target='_blank' rel="noopener noreferrer">More Info</a>
           </div>
