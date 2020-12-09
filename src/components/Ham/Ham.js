@@ -43,24 +43,23 @@ class Ham extends Component {
         <div className="ham-page">
           <div className="hampage">
             <Intro />
-              <MuseumSelector
-                active={this.state.activeId}
-                handleChangeTab={this.handleChangeTab}
-              />
-            <div>
-              {this.selectComponent()}
-            </div>
+            <MuseumSelector
+              active={this.state.activeId}
+              handleChangeTab={this.handleChangeTab}
+            />
+            <div>{this.selectComponent()}</div>
           </div>
-        <div className="hamfooter">
-          <SocialMedia />
+          <div className="hamfooter">
+            <p className="ham-source">Source: harvardartmuseums.org/about/history-and-the-three-museums</p>
+            <SocialMedia />
+          </div>
         </div>
-      </div>
-      <div className="ham-location">
-      <Location title={this.state.title} />
-      </div>
-      <div className="ham-locationMobile">
-      <LocationMobile />
-      </div>
+        <div className="ham-location">
+          <Location title={this.state.title} />
+        </div>
+        <div className="ham-locationMobile">
+          <LocationMobile />
+        </div>
       </div>
     );
   }

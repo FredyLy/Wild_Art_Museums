@@ -23,7 +23,7 @@ function App () {
   useEffect(() => {
     setTimeout(() => {
       setScreen(
-      <Router/>
+        <Router/>
       );
     }, 3000);
   }, []);

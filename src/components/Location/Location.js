@@ -36,4 +36,5 @@ const Location = ({ title }) => {
 Location.propTypes = {
   title: PropTypes.string.isRequired
 };
+
 export default Location;

@@ -82,14 +82,22 @@ a>.navmenulinemobile-react-icons {
     bottom: 10px;
 }
 
+.navmenulinemobile-react-icons-navmenu-theme {
+    position: relative;
+    bottom: 6px;
+    left: -7px;
+}
+
 .backgd-navmobile {
+    background-color: var(--verydark-grey);
+    opacity: 0.8;
+    border-radius: 20px;
     width:500px;
-    height: 90px;
-    background-color: var(--pearl-grey);
-    z-index: -5;
+    height: 100px;
     position: relative;
     left: 80px;
-    transition: 1s;
+    transition: 1.4s;
+    z-index: -5;
 }
 
 a>.navmenulinemobile-react-icons:hover {
@@ -104,4 +112,13 @@ a>.navmenulinemobile-react-icons:hover {
 .navmenulinemobile-icons-hover {
     transition: 1s;
     transform: scale(1);
+}
+
+.react-switch-bg {
+    left: -6px;
+    transform: scale(0.8);
+}
+
+.react-switch-handle {
+    left: -7px;
 }

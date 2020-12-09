@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import NavmenuTheme from '../Darkmode/NavmenuTheme';
 import PropTypes from 'prop-types';
-import { FaHome, FaPalette, FaUserFriends } from 'react-icons/fa';
-import { MdContactMail } from 'react-icons/md';
+import { FaHome, FaPalette } from 'react-icons/fa';
 import { GiGreekTemple } from 'react-icons/gi';
 import { AiOutlinePlus } from 'react-icons/ai';
 
@@ -58,24 +57,20 @@ class NavMenuLine extends Component {
             </Link>
           </div>
           <div className="navmenuline-item">
-            <Link to='/aboutus'>
-              <i className="navmenuline-react-icons"><FaUserFriends className="navmenuline-icons-hover"/></i>
-            </Link>
+            <a href="#">
+              <i className="navmenuline-react-icons-navmenu-theme"><NavmenuTheme /></i>
+            </a>
           </div>
           <div className="navmenuline-item">
             <Link to='/'>
               <i className="navmenuline-react-icons"><FaHome className="navmenuline-icons-hover"/></i>
             </Link>
           </div>
-          <div className="navmenuline-item">
-            <a href="#">
-              <i className="navmenuline-react-icons-navmenu-theme"><NavmenuTheme /></i>
-            </a>
+          <div>
+            <a href="#"></a>
           </div>
-          <div className="navmenuline-item">
-            <Link to='/contact'>
-              <i className="navmenuline-react-icons"><MdContactMail className="navmenuline-icons-hover"/></i>
-            </Link>
+          <div>
+            <a href="#"></a>
           </div>
           <div className="navmenuline-item">
             <Link to='/gallery'>
@@ -83,7 +78,7 @@ class NavMenuLine extends Component {
             </Link>
           </div>
         </div>
-    </div>
+      </div>
     );
   }
 }

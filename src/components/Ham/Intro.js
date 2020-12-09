@@ -1,24 +1,25 @@
 import React from 'react';
 
 import './Ham.css';
-import logo from './Logo_Harvard.svg';
+import logo from './imgHam/Logo_Harvard.svg';
 
 function Intro () {
   return (
-        <div>
-          <a target="_blank" rel="noreferrer" href="https://www.harvardartmuseums.org/">
-          <img className="hamlogo" src={logo} />
-          </a>
+    <div>
+      <a target="_blank" rel="noreferrer" href="https://www.harvardartmuseums.org/">
+        <img className="hamlogo" src={logo} />
+      </a>
       <p className="hamintro">
-        The Harvard Art Museums are part of Harvard University and comprise three museums: the Fogg Museum (established in 1895),
-        the Busch-Reisinger Museum (established in 1903), and the Arthur M. Sackler Museum (established in 1985) and four research centers:
-        the Archaeological Exploration of Sardis (founded in 1958), the Center for the Technical Study of Modern Art (founded in 2002), the Harvard Art
-        Museums Archives, and the Straus Center for Conservation and Technical Studies (founded in 1928). The three museums that constitute the Harvard
-        Art Museums were initially integrated into a single institution under the name Harvard University Art Museums in 1983. The word University was
-        dropped from the institutional name in 2008. The collections include approximately 250,000 objects in all media, ranging in date from antiquity
-        to the present and originating in Europe, North America, North Africa, the Middle East, South Asia, East Asia, and Southeast Asia.
+      Ever since their founding, the Harvard Art Museums—the Fogg Museum, Busch-Reisinger Museum, and Arthur M. Sackler Museum—have been dedicated to advancing and supporting learning at Harvard University, in the local community, and around the world.
+        <br/>
+      The museums have played a leading role in the development of art history, conservation, and conservation science, and in the evolution of the art museum as an institution.
+      Through research, teaching, professional training, and public education, the museums strive to advance the understanding and appreciation of art. Programs encourage close looking at original works of art, collaboration with campus and community partners, and the production of new scholarship.
+        <br/>
+        <br/>
+      The Harvard Art Museums are comprised of three separate museums—the Fogg Museum, Busch-Reisinger Museum, and Arthur M. Sackler Museum—each with a different history, collection, guiding philosophy, and identity.
       </p>
-      </div>
+      <p className="ham-source">Source: harvardartmuseums.org</p>
+    </div>
   );
 }
 

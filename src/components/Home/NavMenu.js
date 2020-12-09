@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import NavmenuTheme from '../Darkmode/NavmenuTheme';
 
 import { Link } from 'react-router-dom';
-import { FaHome, FaPalette, FaUserFriends } from 'react-icons/fa';
-import { MdContactMail } from 'react-icons/md';
+import { FaHome, FaPalette } from 'react-icons/fa';
 import { GiGreekTemple } from 'react-icons/gi';
 import { AiOutlinePlus } from 'react-icons/ai';
 
@@ -44,34 +42,28 @@ class NavMenu extends Component {
           <div className="navmenu-toggle" id="navmenu-toggle">
             <i className="navmenu-react-icons" id="navmenu-add">
               {this.state.open === true ? <AiOutlinePlus style={ { transform: 'rotate(45deg)', transition: '1s' } } /> : <AiOutlinePlus style={ { transform: ['rotate(0deg)'], transition: ['1s'] } }/>}
-                </i>
+            </i>
           </div>
         </div>
         <div className="navmenu-menu" id="navmenu-menu">
-          <div className="navmenu-item">
-              <Link to='/ham'>
-              <i className="navmenu-react-icons" ><GiGreekTemple className="navmenu-icons-hover"/></i>
-              </Link>
-          </div>
-          <div className="navmenu-item">
-            <Link to='/aboutus'>
-              <i className="navmenu-react-icons"><FaUserFriends className="navmenu-icons-hover"/></i>
-            </Link>
-          </div>
           <div className="navmenu-item">
             <Link to='/'>
               <i className="navmenu-react-icons"><FaHome className="navmenu-icons-hover"/></i>
             </Link>
           </div>
           <div className="navmenu-item">
-            <a href="#">
-              <i className="navmenu-react-icons-navmenu-theme"><NavmenuTheme /></i>
-            </a>
+              <Link to='/ham'>
+                <i className="navmenu-react-icons" ><GiGreekTemple className="navmenu-icons-hover"/></i>
+              </Link>
           </div>
-          <div className="navmenu-item">
-            <Link to='/contact'>
-              <i className="navmenu-react-icons"><MdContactMail className="navmenu-icons-hover"/></i>
-            </Link>
+          <div>
+            <a href="#"></a>
+          </div>
+          <div>
+            <a href="#"></a>
+          </div>
+          <div>
+            <a href="#"></a>
           </div>
           <div className="navmenu-item">
             <Link to='/gallery'>

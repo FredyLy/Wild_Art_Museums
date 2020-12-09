@@ -1,8 +1,6 @@
 import React, { useContext } from 'react';
 import Switch from 'react-switch';
-
 import { ThemeContext } from '../../contexts/ThemeContext';
-
 import { IoMdSunny, IoMdMoon } from 'react-icons/all';
 
 const getStyles = (mode) => ({
@@ -24,7 +22,7 @@ const ThemeSwitch = () => {
       checked={mode === 'light' && true }
       offColor='#1d1f2f'
       onColor='#FDB813'
-      handleDiameter={30}
+      handleDiameter={20}
       checkedIcon={
         <IoMdSunny style={styles.switch} color='white' className='light' />
       }
