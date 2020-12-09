@@ -183,8 +183,12 @@ class Gallery extends Component {
         </div>
         { decision }
         <div className="divBouton">
+          <a href="#top">
           <input className="gallery.btn round" disabled={displayBtnPrev} type='button' value='<<' onClick={() => this.harvardArtMuseums(this.state.url.prev)} />
+          </a>
+          <a href="#top">
           <input className="gallery.btn round" disabled={displayBtnNext} type='button' value='>>' onClick={() => this.harvardArtMuseums(this.state.url.next)} />
+          </a>
         </div>
         <Modal showModal={this.state.openModal} closeModal={this.closeModal}>
           {resultInModal}
