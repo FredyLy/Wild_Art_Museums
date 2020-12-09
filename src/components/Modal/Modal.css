@@ -31,15 +31,6 @@
   flex-direction: column;
 }
 
-@media screen and (max-width: 375px) {
-  .modalContainer {
-    flex: 0 1 95%;
-  }
-
-  .modal-copy {
-  color: black;
-  }
-}
 
 .modalHeader {
   background-color: var(--dark-blue);
@@ -50,7 +41,6 @@
   justify-content: flex-end;
   padding: 15px;
 }
-
 .modalBody {
   background-color: var(--main-color);
   overflow: auto;
@@ -70,6 +60,7 @@
 }
 
 .modal-copy {
+  color: black;
   font-family: sans-serif;
   font-size: 0.8em;
   text-align: justify;
@@ -119,5 +110,11 @@
     padding: 30px 10px;
     /* background-color: var(--white-color); */
     overflow: auto;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .modalContainer {
+    flex: 0 1 95%;
   }
 }

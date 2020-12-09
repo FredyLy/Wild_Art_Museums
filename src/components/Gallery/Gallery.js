@@ -183,10 +183,10 @@ class Gallery extends Component {
         </div>
         { decision }
         <div className="divBouton">
-          <a href="#top">
+          <a className="scrolltop" href="#top">
           <input className="gallery.btn round" disabled={displayBtnPrev} type='button' value='<<' onClick={() => this.harvardArtMuseums(this.state.url.prev)} />
           </a>
-          <a href="#top">
+          <a className="scrolltop" href="#top">
           <input className="gallery.btn round" disabled={displayBtnNext} type='button' value='>>' onClick={() => this.harvardArtMuseums(this.state.url.next)} />
           </a>
         </div>

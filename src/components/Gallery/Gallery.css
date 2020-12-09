@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .container-gallery {
   position: relative;
   column-count: 3;
@@ -37,13 +41,16 @@
   margin-bottom: 40px;
 }
 
+.scrolltop {
+  margin-left: 2%;
+}
+
 .divBouton input {
   font-weight: bold;
   background-color: green;
   color: var(--second-color);
   text-decoration: none;
   display: inline-block;
-  margin-left: 2%;
   padding: 16px 16px;
   border-radius: 50px;
   box-shadow: 0 3px var(--dark-grey);
@@ -97,7 +104,6 @@ input:disabled, input[displayBtnNext], input[displayBtnPrev], input:disabled:hov
   font-family: sans-serif;
   font-size: 0.9em;
   text-align: justify;
-  text-align-last: center;
 }
 
 .comicDetails a:hover {
@@ -105,18 +111,20 @@ input:disabled, input[displayBtnNext], input[displayBtnPrev], input:disabled:hov
 }
 
 .comicDetails a {
+  font-size: 1em;
+  width: 5em;
+  font-family: sans-serif;
+  color: var(--second-color);
+  background-color: var(--dark-blue);
+  text-decoration: none;
   display: flex;
   justify-content:center ;
   text-align: center;
-  background-color: var(--dark-blue);
   padding: 10px 15px;
-  color: var(--second-color);
-  text-decoration: none;
   border-radius: 10px;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-  width: 5em;
 }
 
 @media screen and (max-width: 1024px) {
@@ -145,7 +153,7 @@ input:disabled, input[displayBtnNext], input[displayBtnPrev], input:disabled:hov
     width: 85%;
     margin-top: 20px;
   }
-  .divBouton input {
+  .scrolltop {
     margin-left: 7%;
   }
 }
@@ -181,9 +189,9 @@ input:disabled, input[displayBtnNext], input[displayBtnPrev], input:disabled:hov
     margin-top: 10px;
     margin-bottom: 90px;
   }
-  .divBouton input {
-    margin-left: 5%;
+  .scrolltop {
     padding: 14px 14px;
+    margin-left: 5%;
   }
   .comicDetails {
     flex: 0 1 85%;
@@ -191,6 +199,9 @@ input:disabled, input[displayBtnNext], input[displayBtnPrev], input:disabled:hov
   .description-content {
     text-align: justify;
     text-align-last: center;
+  }
+  .comicDetails a {
+    font-size: 0.9em;
   }
 }
 

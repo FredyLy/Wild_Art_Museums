@@ -10,7 +10,7 @@
 .ham-location {
     width : 10%;
 }
-  
+
 .hamintro {
     font-family: sans-serif;
     font-size: 0.9em;
@@ -32,7 +32,7 @@
 }
 
 .hamfront {
-    margin-left: 5%;
+    margin-left: 6%;
     margin-right: 2%;
     height: 200px;
     width: 250px;
@@ -45,7 +45,7 @@
     margin-right:0%;
     margin-top: 0;
     text-align: justify;
-    margin-left: 5%;
+    margin-left: 6%;
     margin-bottom: 2em;
 }
 
@@ -104,7 +104,7 @@
 
 .hamsocialMedia{
     text-align: center;
-    margin: 5% 5% 5% 5%;
+    margin: 2% 5% 5% 5%;
 }
 
 .hamimg:hover {
@@ -114,10 +114,30 @@
 
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
+    .ham-page {
+        width: 85%;
+    }
     .hamsocialMedia .hamimg{
         height: 25px;
         width: 25px;
+    }
+    .hamintro {
+        margin: 8% 7% 5% 7%;
+    }
+    .hamlogo {
+        width: 40%;
+        margin-top: 1.5em;
+    }
+    .hamfront {
+        margin-left: 6%;
+    }
+    .hamrightimg {
+        margin-right: 1%;
+    }
+    .ham-source {
+        margin-left: 7%;
+        margin-bottom: 5%;
     }
 }
 
@@ -154,52 +174,42 @@
     }
 }
 
-
 @media screen and (max-width: 375px) {
     .ham-location {
       display: none;
     }
-
     .hamlogo {
         width: 70%;
     }
-
     .ham-page {
         width: 100%;
     }
-    
     .hamintro {
         font-size: 0.9em;
         text-align: justify;
         margin: 5% 8% 2% 8%;
     }
-
     .ham-source {
         font-family: sans-serif;
         font-size: 0.7em;
         /* margin-left: 5%; */
         margin: 0 8% 8% 8%;
     }
-    
     .hamfront {
         margin-left: 9%;
         margin-bottom: 5%;
         height: 240px;
         width: 300px;
     }
-
     .hamfirsttitle {
         text-align: center;
     }
-
     .hamrightimg {
         margin: 5% 3% 5% 3%;
     }
-
     .hamrightimg p {
         margin: 5% 5% 2em 5%;
     }
-
     .hamsocialMedia .hamimg{
         height: 25px;
         width: 25px;
