@@ -8,9 +8,10 @@ const ThemeProvider = ({ children }) => {
     children: PropTypes.any
   };
   const [mode, setTheme] = useState('light');
+
   return (
     <ThemeContext.Provider
-      value={{
+      value = {{
         mode,
         setTheme: () => setTheme(mode === 'dark' ? 'light' : 'dark')
       }}

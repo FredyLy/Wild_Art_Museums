@@ -42,18 +42,18 @@ class NavMenu extends Component {
           <div className="navmenu-toggle" id="navmenu-toggle">
             <i className="navmenu-react-icons" id="navmenu-add">
               {this.state.open === true ? <AiOutlinePlus style={ { transform: 'rotate(45deg)', transition: '1s' } } /> : <AiOutlinePlus style={ { transform: ['rotate(0deg)'], transition: ['1s'] } }/>}
-                </i>
+            </i>
           </div>
         </div>
         <div className="navmenu-menu" id="navmenu-menu">
-        <div className="navmenu-item">
+          <div className="navmenu-item">
             <Link to='/'>
               <i className="navmenu-react-icons"><FaHome className="navmenu-icons-hover"/></i>
             </Link>
           </div>
           <div className="navmenu-item">
               <Link to='/ham'>
-              <i className="navmenu-react-icons" ><GiGreekTemple className="navmenu-icons-hover"/></i>
+                <i className="navmenu-react-icons" ><GiGreekTemple className="navmenu-icons-hover"/></i>
               </Link>
           </div>
           <div>

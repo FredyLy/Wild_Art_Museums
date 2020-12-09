@@ -29,11 +29,9 @@
     padding-top: 15%;
     left: 2%
   }
-
   .menu {
     display: none;
   }
-
 }
 
 @media screen and (min-width: 376px) {

@@ -115,8 +115,6 @@ a>.navmenulinemobile-react-icons:hover {
 }
 
 .react-switch-bg {
-    /* position: relative; */
-    /* right: 10px; */
     left: -6px;
     transform: scale(0.8);
 }

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import NavmenuTheme from '../Darkmode/NavmenuTheme';
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import { FaHome, FaPalette } from 'react-icons/fa';
 import { GiGreekTemple } from 'react-icons/gi';
 import { AiOutlinePlus } from 'react-icons/ai';
+import NavmenuTheme from '../Darkmode/NavmenuTheme';
+import PropTypes from 'prop-types';
 
 import './NavMenuLineMobile.css';
 
@@ -73,7 +73,7 @@ class NavMenuLineMobile extends Component {
             </a>
           </div>
           <div>
-          <a href="#">
+            <a href="#">
             </a>
           </div>
           <div className="navmenulinemobile-item">
@@ -81,15 +81,13 @@ class NavMenuLineMobile extends Component {
               <i className="navmenulinemobile-react-icons"><FaPalette className="navmenulinemobile-icons-hover"/></i>
             </Link>
           </div>
-
           <div className="backgd-navmobile">
             <a>
               <i className="backgd-navmobile"></i>
             </a>
           </div>
-
         </div>
-    </div>
+      </div>
     );
   }
 }
