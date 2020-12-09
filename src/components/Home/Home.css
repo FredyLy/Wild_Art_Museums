@@ -6,17 +6,28 @@
 }
 
 .logo img {
+  border-radius: 40px;
   position: relative;
   width: 40%;
   height: auto;
   left: 2%;
-  padding-top: 30px;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .logo img {
+    width: 80%;
+    padding-top: 10%;
+    left: 9%;
+  }
 }
 
 @media screen and (max-width: 375px) {
   .logo img {
     width: 85%;
-    padding-top: 40%;
+    padding-top: 15%;
+    left: 2%
   }
 
   .menu {

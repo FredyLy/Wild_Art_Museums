@@ -52,6 +52,7 @@ class Ham extends Component {
             </div>
           </div>
         <div className="hamfooter">
+          <p className="ham-source">Source: harvardartmuseums.org/about/history-and-the-three-museums</p>
           <SocialMedia />
         </div>
       </div>

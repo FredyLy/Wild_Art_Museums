@@ -5,7 +5,7 @@ import './Modal.css';
 const Modal = ({ showModal, children }) => {
   return (
     showModal && (
-      <div className="modalBackground close-modal-btn">
+      <div className="modalBackground">
         <div className="modalContainer">
           {children}
         </div>

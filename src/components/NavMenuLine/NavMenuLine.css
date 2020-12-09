@@ -10,34 +10,6 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 1500px) {
-    .navmenuline-container,
-    .navmenuline-menu {
-        right: 35px;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .navmenuline-container,
-    .navmenuline-menu {
-        right: 25px;
-    }
-}
-
-@media screen and (max-width: 1150px) {
-    .navmenuline-container,
-    .navmenuline-menu {
-        right: 17px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .navmenuline-container,
-    .navmenuline-menu {
-        right: 9px;
-    }
-}
-
 /* @media screen and (max-width: 375px) {
     .navmenuline-container,
     .navmenuline-menu {
@@ -121,7 +93,7 @@ a>.navmenuline-react-icons-navmenu-theme {
     color: var(--dark-blue);
     font-size: 30px;
     position: relative;
-    left: -7px;
+    left: -3px;
 }
 
 a>.navmenuline-react-icons:hover {
@@ -136,4 +108,33 @@ a>.navmenuline-react-icons:hover {
 .navmenuline-icons-hover {
     transition: 1s;
     transform: scale(1);
+}
+
+
+@media screen and (max-width: 1500px) {
+    .navmenuline-container,
+    .navmenuline-menu {
+        right: 35px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .navmenuline-container,
+    .navmenuline-menu {
+        right: 25px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .navmenuline-container,
+    .navmenuline-menu {
+        right: 17px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navmenuline-container,
+    .navmenuline-menu {
+        right: 20px;
+    }
 }
