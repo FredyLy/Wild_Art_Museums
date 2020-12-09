@@ -10,18 +10,6 @@
 .ham-location {
     width : 10%;
 }
-
-@media screen and (max-width: 375px) {
-    .ham-location {
-      display: none;
-    }
-}
-
-@media screen and (min-width: 376px) {
-    .ham-locationMobile {
-      display: none;
-    }
-}
   
 .hamintro {
     font-family: sans-serif;
@@ -116,8 +104,7 @@
 
 .hamsocialMedia{
     text-align: center;
-    margin-left: 5%;
-    margin-bottom: 5%;
+    margin: 5% 5% 5% 5%;
 }
 
 .hamimg:hover {
@@ -125,36 +112,98 @@
     transition: 1s;
 }
 
+
+
+@media screen and (max-width: 750px) {
+    .hamsocialMedia .hamimg{
+        height: 25px;
+        width: 25px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .hamsocialMedia .hamimg{
+        height: 25px;
+        width: 25px;
+        margin-left: 2%;
+    }
+    .hamintro{
+        padding-bottom: 2em;
+        padding-top: 2em;
+    }
+}
+
 @media screen and (max-width: 440px) {
     .hamfront{
         margin-left: 12.5%;
     }
     .hamsocialMedia .hamimg{
-        height: 7px;
-        width: 7px;
-        margin-left: 30px;
-        margin-right: 30px;
+        height: 25px;
+        width: 25px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
     .hamfirsttitle {
         margin-top: 1em;
     }
 }
 
-@media screen and (max-width: 750px) {
-    .hamsocialMedia .hamimg{
-        height: 35px;
-        width: 35px;
+@media screen and (min-width: 376px) {
+    .ham-locationMobile {
+      display: none;
     }
 }
 
-@media screen and (max-width: 660px) {
-    .hamsocialMedia .hamimg{
-        height: 18px;
-        width: 18px;
-        margin-left: 2%;
+
+@media screen and (max-width: 375px) {
+    .ham-location {
+      display: none;
     }
-    .hamintro{
-        padding-bottom: 2em;
-        padding-top: 2em;
+
+    .hamlogo {
+        width: 70%;
+    }
+
+    .ham-page {
+        width: 100%;
+    }
+    
+    .hamintro {
+        font-size: 0.9em;
+        text-align: justify;
+        margin: 5% 8% 2% 8%;
+    }
+
+    .ham-source {
+        font-family: sans-serif;
+        font-size: 0.7em;
+        /* margin-left: 5%; */
+        margin: 0 8% 8% 8%;
+    }
+    
+    .hamfront {
+        margin-left: 9%;
+        margin-bottom: 5%;
+        height: 240px;
+        width: 300px;
+    }
+
+    .hamfirsttitle {
+        text-align: center;
+    }
+
+    .hamrightimg {
+        margin: 5% 3% 5% 3%;
+    }
+
+    .hamrightimg p {
+        margin: 5% 5% 2em 5%;
+    }
+
+    .hamsocialMedia .hamimg{
+        background-color: var(--main-color);
+        height: 25px;
+        width: 25px;
+        margin-bottom: 25%;
     }
 }
