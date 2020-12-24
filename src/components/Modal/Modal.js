@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 
 import './Modal.css';
 
-const Modal = ({ showModal, children }) => {
+const Modal = ({ showModal, children, closeModal }) => {
   return (
     showModal && (
-      <div className="modalBackground">
+      <div className="modalBackground" onClick={closeModal}>
         <div className="modalContainer">
           {children}
         </div>
